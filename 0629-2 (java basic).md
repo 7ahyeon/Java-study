@@ -18,5 +18,5 @@
 
 **클래스 선언** 클래스 선언부 (클래스 이름) {클래스 블록}
 
-'public class Hello {
-    }'
+`public class Hello {
+    }`
