@@ -19,5 +19,10 @@
 **클래스 선언** 클래스 선언부 (클래스 이름) {클래스 블록}
 
 `public class Hello {
-
     }`
+    
+**메소드 선언** 메소드 선언부 (메소드 이름)(String[] args){메소드 블록}
+
+`public static void main(String[] args){
+  System.out.println("Hello, Java")
+  }`
