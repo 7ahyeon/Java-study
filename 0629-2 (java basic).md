@@ -42,3 +42,9 @@
 **모니터에 출력하는 메소드 호출**  `System.out.println("출력하고 싶은 것");`
 
 **저장 폴더** 소스파일(.java): src / 바이트 코드 파일(.class): bin
+
+**문자열과 숫자**
+`System.out.println("123456" + 1); //1234561
+System.out.println(1 + "123456"); //1123456
+System.out.println(12345 + 67890); //80235` 
+
