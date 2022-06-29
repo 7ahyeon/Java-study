@@ -25,7 +25,10 @@
          
 **LTS** 장기 지원 서비스 (Long Term Support) (ex: Oracle)
 
-**JDK** 자바로 프로그램을 개발할 수 있는 실행 환경 JVM(Java Virtual Machine)과 개발 도구(compiler) 제공 (Java Development Kit)
+**JDK** 자바로 프로그램을 개발할 수 있는 실행 환경 JVM(Java Virtual Machine)과 라이브러리 API, 개발 도구(ex: compiler) 포함된 SW Package (Java Development Kit)
+
+**JRE** 자바 프로그램 실행에 필요한 JVM, 라이브러리 API가 포함된 SW Package (JDK(JRE(JVM)))
+
 
 **환경 변수** 운영체제가 실행하는 데 필요한 정보를 제공해주는 변수
              명령라인(명령 프롬프트 cmd, 터미널)에서 컴파일러(javac)와 실행(java) 명령어 사용시 JAVA_HOME 환경 변수 등록/Path 환경 변수 수정 권장
