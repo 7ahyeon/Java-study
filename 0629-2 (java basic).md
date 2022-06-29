@@ -53,6 +53,52 @@
 
 **System.out.println()** sysout + Ctrl + Space
 
+**예제1** 
+
+/* 1. 화면(console)에 삼각형 모양을 출력
+ 
+ *
+ **
+ ***
+ ****
+ *****
+ ---------
+     *
+    **
+   ***
+  ****
+ *****
+ ==========
+ *****
+ *****
+ *****
+ *****
+ *****
+ 
+ 
+ 
+ */
+		
+		System.out.println("*");
+		System.out.println("**");
+		System.out.println("***");
+		System.out.println("****");
+		System.out.println("*****");
+		System.out.println("-------");
+		System.out.println("    *");
+		System.out.println("   **");
+		System.out.println("  ***");
+		System.out.println(" ****");
+		System.out.println("*****");
+		System.out.println("=======");
+		System.out.println("*****");
+		System.out.println("*****");
+		System.out.println("*****");
+		System.out.println("*****");
+		System.out.println("*****");
+		
+**예제2**
+		
 	/* 화면에 구구단 2단 출력
 		 2 * 1 = 2 // 2 * 1 출력값
 		 2 * 2 = 4
