@@ -45,6 +45,8 @@
 
 **문자열과 숫자**
 `System.out.println("123456" + 1); //1234561`
+
 `System.out.println(1 + "123456"); //1123456`
+
 `System.out.println(12345 + 67890); //80235` 
 
