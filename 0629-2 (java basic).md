@@ -44,9 +44,30 @@
 **저장 폴더** 소스파일(.java): src / 바이트 코드 파일(.class): bin
 
 **문자열과 숫자**
+
 `System.out.println("123456" + 1); //1234561`
 
 `System.out.println(1 + "123456"); //1123456`
 
 `System.out.println(12345 + 67890); //80235` 
+
+**System.out.println()** sysout + Ctrl + Space
+
+`	/* 화면에 구구단 2단 출력
+		 2 * 1 = 2 // 2 * 1 출력값
+		 2 * 2 = 4
+		 ...
+		 2 * 9 = 18
+		 */
+		
+		System.out.println("2 * 1 = " + 2 * 1);
+		System.out.println("2 * 2 = " + 2 * 2);
+		System.out.println("2 * 3 = " + 2 * 3);
+		System.out.println("2 * 4 = " + 2 * 4);
+		System.out.println("2 * 5 = " + 2 * 5);
+		System.out.println("2 * 6 = " + 2 * 6);
+		System.out.println("2 * 7 = " + 2 * 7);
+		System.out.println("2 * 8 = " + 2 * 8);
+		System.out.println("2 * 9 = " + 2 * 9);`
+		
 
