@@ -55,29 +55,8 @@
 
 **예제1** 
 
-/* 1. 화면(console)에 삼각형 모양을 출력
- 
- *
- **
- ***
- ****
- *****
- ---------
-     *
-    **
-   ***
-  ****
- *****
- ==========
- *****
- *****
- *****
- *****
- *****
- 
- 
- 
- */
+'1. 화면(console)에 삼각형 모양을 출력
+
 		
 		System.out.println("*");
 		System.out.println("**");
@@ -95,7 +74,7 @@
 		System.out.println("*****");
 		System.out.println("*****");
 		System.out.println("*****");
-		System.out.println("*****");
+		System.out.println("*****");`
 		
 **예제2**
 		
