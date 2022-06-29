@@ -55,7 +55,7 @@
 
 **예제1** 
 
-'1. 화면(console)에 삼각형 모양을 출력
+1. 화면(console)에 삼각형 모양을 출력
 
 		
 		System.out.println("*");
@@ -74,7 +74,7 @@
 		System.out.println("*****");
 		System.out.println("*****");
 		System.out.println("*****");
-		System.out.println("*****");`
+		System.out.println("*****");
 		
 **예제2**
 		
@@ -85,7 +85,7 @@
 		 2 * 9 = 18
 		 */
 		
-		System.out.println("2 * 1 = " + 2 * 1);
+		System.out.println("2 * 1 = " + (2 * 1)); //소괄호를 쓰면 
 		System.out.println("2 * 2 = " + 2 * 2);
 		System.out.println("2 * 3 = " + 2 * 3);
 		System.out.println("2 * 4 = " + 2 * 4);
