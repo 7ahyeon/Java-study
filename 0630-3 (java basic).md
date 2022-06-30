@@ -17,4 +17,10 @@
 
 **float보다 double이 더 정확하다.**
 
+**연산자 operator** 연산에 사용되는 표시 또는 기호
+
+**증감 연산자** 
+- ++ : Postfix Increment Operator (값을 1 증가시킴)
+- -- : Postfix Decrement Operator (값을 1 감소시킴)
+- 사용 형태 : ++(--)변수명, 변수명++(--)
 
