@@ -35,5 +35,10 @@
 
 **정수형 short** 정수 숫자 저장 65536개 (-32768 ~ 32767)
 
+**short 연산** (short) / 연산 결과 값이 표현 범위를 벗어나면 예상치 못한 값이 될 수 있음 (쓸모x)
+
+**short 최소값 :** Byte.MIN_VALUE
+
+**short 최대값 :** Byte.MAX_VALUE
 
 
