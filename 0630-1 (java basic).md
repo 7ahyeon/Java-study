@@ -84,7 +84,7 @@ int z;`
 `System.out.println("char1 다음 문자 : " + (char)(char1 + 1));`
 - char1 다음 문자 : B
 		
-**아스키 ASCII**  영문 알파벳을 사용하는 대표적인 문자 인코딩
+**아스키 ASCII**  7bit로 표현되는 영문자 기반 인코딩 (유니코드 앞부분에 할당되어있음)
 - 10 : LF(Line Feed ; 다음 줄로) / 13 : CR (Cariage return ; 제일 처음 칸으로)
 - 10과 13은 줄바꿈시 사용
 
