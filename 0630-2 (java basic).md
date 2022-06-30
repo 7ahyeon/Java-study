@@ -40,9 +40,9 @@
 
 **short 연산** (short) / 연산 결과 값이 표현 범위를 벗어나면 예상치 못한 값이 될 수 있음 (쓸모x)
 
-**short 최소값 :** Byte.MIN_VALUE
+**short 최소값 :** Short.MIN_VALUE
 
-**short 최대값 :** Byte.MAX_VALUE
+**short 최대값 :** Short.MAX_VALUE
 
 **정수형 int** 4byte
 - 정수 숫자 저장 (-2,147,483,648 ~ 2,147,483,647 ; 약 2억)
