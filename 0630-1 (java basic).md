@@ -20,8 +20,8 @@
 **기본 타입 primitive type** 8개
 - **논리형** boolean (true/false)
 - **문자형** char (모든 문자)
-- **실수형** float (4byte), <U>double (8byte)</U> **소수점 이하 존재**
-- **정수형** byte (1byte), short (2byte), <U>int (4byte)</U>, long (8byte)
+- **실수형** float (4byte), *double (8byte)* **소수점 이하 존재**
+- **정수형** byte (1byte), short (2byte), *int (4byte)*, long (8byte)
 
 **참조 타입 reference type** 무한히 많음 **문자열/날짜**
 
