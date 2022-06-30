@@ -15,7 +15,8 @@
 
 **객체 지향 프로그래밍 OOP** 객체(부품)를 만들고 서로 연결해 더 큰 프로그램을 완성하는 기법 (Object-Oriented Programming)
 
-**Java** 1. 객체 지향 프로그래밍을 위한 최적의 언어
+**Java** 
+1. 객체 지향 프로그래밍을 위한 최적의 언어
 2. 메모리(RAM) 자동 관리 및 정리
 3. 무료 오픈 소스 라이브러리 풍부 (개발시간 단축)
 - C:\Program Files\java\bin\javac.exe
