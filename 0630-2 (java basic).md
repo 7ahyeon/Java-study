@@ -25,6 +25,14 @@
 - 양수 **0**
 - 2^7 = 128 
 
-**byte 연산** (byte) > 값이 129일 경우 -127로 표현
-`byte byte3 = (byte)(byte1 + byte2);`
+**byte 연산** (byte) / 연산 결과 값이 표현 범위를 벗어나면 예상치 못한 값이 될 수 있음 (쓸모x)
+- ex: (byte)129>-127)
+- `byte byte3 = (byte)(byte1 + byte2);`
+
+**byte 최소값 :** Byte.MIN_VALUE
+
+**byte 최대값 :** Byte.MAX_VALUE
+
+**정수형 short** 정수 숫자 저장 65536개 (-32768 ~ 32767)
+
 
