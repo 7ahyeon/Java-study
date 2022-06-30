@@ -31,7 +31,8 @@
 **JRE** 자바 프로그램 실행에 필요한 JVM, 라이브러리 API가 포함된 SW Package (JDK(JRE(JVM)))
 
 
-**환경 변수** 운영체제가 실행하는 데 필요한 정보를 제공해주는 변수
+**환경 변수** 
+- 운영체제가 실행하는 데 필요한 정보를 제공해주는 변수
 - 명령라인(명령 프롬프트 cmd, 터미널)에서 컴파일러(javac)와 실행(java) 명령어 사용시 JAVA_HOME 환경 변수 등록/Path 환경 변수 수정 권장
 - bin 폴더 내 위치하므로 다른 폴더에서 실행 불가하기 때문
          
@@ -41,20 +42,24 @@
 
 **JAVA_HOME** JDK가 설치된 폴더 (C:\Program Files\Java\jdk1.8.0_333)
              
-**환경 변수 등록** 설정-디스플레이-정보-[고급 시스템 설정]-[환경 변수]-시스템 변수[새로 만들기]
+**환경 변수 등록** 
+- 설정-디스플레이-정보-[고급 시스템 설정]-[환경 변수]-시스템 변수[새로 만들기]
 - 변수 이름 'JAVA_HOME' 변수 값 'C:\Program Files\Java\jdk1.8.0_333)-[확인]
                   
-**환경 변수 수정** 설정-디스플레이-정보-[고급 시스템 설정]-[환경 변수]-시스템 변수-Path[편집]
+**환경 변수 수정** 
+- 설정-디스플레이-정보-[고급 시스템 설정]-[환경 변수]-시스템 변수-Path[편집]
 - [새로 만들기]-'%JAVA_HOME%\bin'-[위로 이동]-[확인]
 - 다른 경로에서 bin 폴더 안에 있는 명령어를 사용할 수 있게 함
                   
-**%JAVA_HOME%** JAVA_HOME의 환경 변수 값을 사용한다는 의미
+**%JAVA_HOME%** 
+- JAVA_HOME의 환경 변수 값을 사용한다는 의미
 - JAVA_HOME = C:\Program Files\Java\jdk1.8.0_333
 - %JAVA_HOME%\bin = C:\Program Files\Java\jdk1.8.0_333\bin
                 
 **환경 변수 설정 확인법** cmd에서 javac -version 입력
 
-**IDE** 통합 개발 환경 (Integrated Development Environment)
+**IDE** 
+- 통합 개발 환경 (Integrated Development Environment)
 - 개발에 필요한 기능들을 통합적으로 제공해주는 툴 (ex: 프로젝트 생성, 자동 코드 완성, 디버깅)
         1. Eclipse : Java
         2. Visual studio : C / C++
