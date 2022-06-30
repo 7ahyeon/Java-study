@@ -75,7 +75,7 @@ int z;`
 - char1 : 66
 `System.out.println("char1 : " + (char1+1));`
 
-**형변환**
+**형변환 cast**
 - **(int)변수** 변수의 정수값
 - **(char)변수** 변수를 문자로
 
