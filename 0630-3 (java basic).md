@@ -26,13 +26,13 @@
 
 **++num과 num++의 차이**
 - **sum = ++num; :** 다른 연산자를 처리하기 전에 1증가
-- **sum = num++; :** 다른 연산자를 처리한 이후에 num이 1증가 **(sum에는 영향을 미치지 않음)**
+- **sum = num++; :** 다른 연산자를 처리한 이후에 num이 1증가 **( sum에는 영향을 미치지 않음 )**
 
 `sum = ++num + 1;`
 - sum은 (num+1)+1값이 출력됨
 
 `sum = num++ + 1;`
-- sum은 num+1값이 출력됨 **(그이후 num에 ++처리 / sum에는 영향을 미치지 않음)**
+- sum은 num+1값이 출력됨 **( 그 이후 num에 ++처리 / sum에는 영향을 미치지 않음 )**
 - `sum = 0; num = 100;` sum = 101(num(100)+1); num = 101(num++);
 
 **비교 연산자** 
@@ -44,7 +44,16 @@
 - 논리 연산자 좌우에는 **true, false** 값이 있어야 함
 
 **&& (and)**
-- 좌우 중 하나라도 false라면 false 
+- 좌우 중 하나라도 false라면 false
+- 좌우 모두 true일 때만 true
 
+**비교 연산이 논리 연산에 우선함**
+- (num1 < num2) && bool1
 
+**|| (or)**
+- 좌우 중 하나라도 true라면 true
+- 좌우 모두 false일 때만 false
+
+**! (not)**
+- !true = false / !false = true
 
