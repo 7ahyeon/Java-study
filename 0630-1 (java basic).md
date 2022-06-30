@@ -18,7 +18,7 @@
 **타입 type** 데이터 저장 형식
 
 **기본 타입 primitive type** 8개
-- **논리형** boolean (true/false)
+- **논리형** **boolean (true/false)**
 - **문자형** char (2byte)(문자 1글자 저장(65536개))
 - **실수형** float (4byte), **double (8byte)** (소수점 이하 존재)
 - **정수형** byte (1byte), short (2byte), **int (4byte)**, long (8byte)
