@@ -19,7 +19,7 @@
 
 **기본 타입 primitive type** 8개
 - **논리형** boolean (true/false)
-- **문자형** char (모든 문자)
+- **문자형** char (2byte)(문자 1글자 저장(65536개))
 - **실수형** float (4byte), *double (8byte)* **소수점 이하 존재**
 - **정수형** byte (1byte), short (2byte), *int (4byte)*, long (8byte)
 
@@ -41,4 +41,31 @@ int z;`
 
 **int 변수 = 초기값** 선언과 동시에 값 지정 가능
 
+**bit** 0,1
+
+**byte** 1byte = 8bit (ex:00001111) 
+- 2^8 = 256개 (0~255)
+
+**char** 2byte = 16bit 
+- 2^16 = 65536개 (0~65535)
+- 문자 : 작은 따옴표 ('')
+- (ex : 'A'=문자 "A"=문자열)
+
+**유니코드 unicode** 세계 각국의 문자를 2byte로 표현할 수 있는 숫자(0~65535)로 매핑한 국제 표준 규약
+
+**문자열 String** 큰 따옴표 ("")
+
+**형변환**
+- **(int)변수** 변수의 정수값
+- **(char)변수** 변수를 문자로
+
+`System.out.println("char1 : " + char1);'
+- char1 : A
+
+`System.out.println("char1 정수값 : " + (int)char1);`
+- char1 정수값 : 65
+
+`System.out.println("char1 다음 문자 : " + (char)(char1 + 1));`
+- char1 다음 문자 : B
+		
 
