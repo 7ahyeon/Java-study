@@ -48,18 +48,33 @@ int z;`
 
 **char** 2byte = 16bit 
 - 2^16 = 65536개 (0~65535)
-- 문자 : 작은 따옴표 ('')
+- 문자(리터럴 literal) : 작은 따옴표 ('')
 - (ex : 'A'=문자 "A"=문자열)
 
-**유니코드 unicode** 세계 각국의 문자를 2byte로 표현할 수 있는 숫자(0~65535)로 매핑한 국제 표준 규약
-
 **문자열 String** 큰 따옴표 ("")
+
+**문자열+문자+숫자** = 문자열 문자 숫자
+- char1 : A1
+`System.out.println("char1 : " + char1+1);`
+
+**문자+숫자** = 숫자
+- 66
+`System.out.println(char1+1);`
+
+**문자열+숫자** = 문자열 숫자
+- char1 : 1
+`System.out.println("char1 : "+1);`
+
+
+**문자열+(문자+숫자)** = 문자열 숫자
+- char1 : 66
+`System.out.println("char1 : " + (char1+1));`
 
 **형변환**
 - **(int)변수** 변수의 정수값
 - **(char)변수** 변수를 문자로
 
-`System.out.println("char1 : " + char1);'
+`System.out.println("char1 : " + char1);`
 - char1 : A
 
 `System.out.println("char1 정수값 : " + (int)char1);`
@@ -68,4 +83,15 @@ int z;`
 `System.out.println("char1 다음 문자 : " + (char)(char1 + 1));`
 - char1 다음 문자 : B
 		
+**아스키 ASCII**  영문 알파벳을 사용하는 대표적인 문자 인코딩
+- 10 : LF(Line Feed ; 다음 줄로) / 13 : CR (Cariage return ; 제일 처음 칸으로)
+- 10과 13은 줄바꿈시 사용
 
+**이진법 Binary** bin파일 : 컴퓨터가 사용하는 이진 텍스트 파일
+
+**UTF-8** 1byte, 3byte 등 유동적으로 사용
+
+**UTF-16** 2byte만 사용
+
+**유니코드 unicode** 세계 각국의 문자를 2byte로 표현할 수 있는 숫자(0~65535)로 매핑한 국제 표준 규약
+- **\u숫자값** : 유니코드 (ex: \uAC00 = 가)
