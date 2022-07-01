@@ -26,7 +26,31 @@ int num1 = 95;
 int num2 = 90
 String str = (num1 > num2) ? "A등급" : "B등급";
 ```
+
+```java
+if (num1 > num2) {
+  str = "A등급";
+  
+
 **제어문 control statement**
 - 실행 흐름을 제어할 수 있게 해주는 것
- * 조건문 : if문, switch문
- * 반복문 : for문, while문, do-while
+ * 조건문 conditional statement : if문, switch문
+ * 반복문 loop : for문, while문, do-while
+ 
+ **if문 (분기문/비교문)**
+ ```java
+    int num1 = 20;
+		int num2 = 10;
+		
+		if (num1 < num2) {
+			System.out.println("num1이 num2보다 작다");
+		}
+		if (num1 >= num2) {
+			System.out.println("num1이 num2보다 크거나 같다");
+		}
+		System.out.println(">>비교작업 끝");
+ ```
+ 
+ 
+ 
+ 
