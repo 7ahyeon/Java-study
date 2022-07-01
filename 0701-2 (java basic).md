@@ -14,8 +14,8 @@
 - -for(; ;) {} : 무한 반복
 
 ```java
-for (int i = 1; i <= 5; i++) {
+for (int i = 0; i < 5; i++) {
 	System.out.println("*");
 }
 ```
-- 실행 순서 : int i =1 -> i <=5 -> System.out.println("*") -> i++
+- 실행 순서 : int i = 0 -> i <5 -> System.out.println("*") -> i++
