@@ -29,9 +29,11 @@
     
 **메소드 선언** 메소드 선언부 (메소드 이름 main)(String[] args){메소드 블록}
 
-`public static void main(String[] args){
+```java
+public static void main(String[] args){
   System.out.println("Hello, Java")
-  }`
+  }
+  ```
 
 **프로그램 실행 진입점** main() 메소드 
 
@@ -48,12 +50,11 @@
 
 **문자열과 숫자**
 
-`System.out.println("123456" + 1); //1234561`
-
-`System.out.println(1 + "123456"); //1123456`
-
-`System.out.println(12345 + 67890); //80235` 
-
+```java
+System.out.println("123456" + 1); //1234561
+System.out.println(1 + "123456"); //1123456
+System.out.println(12345 + 67890); //80235 
+```
 **System.out.println()** sysout + Ctrl + Space
 
 **예제1** 
