@@ -33,7 +33,6 @@ if (num1 > num2) {
   } else { str = "B등급";
   }
   ```
-  
 
 **제어문 control statement**
 - 실행 흐름을 제어할 수 있게 해주는 것
@@ -94,4 +93,5 @@ if (0 <= jumsu && jumsu <= 69) {
 	---성적 처리---
 	점수 : 99
 	평가 결과 : A
+
 
