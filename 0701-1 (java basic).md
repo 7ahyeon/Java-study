@@ -145,7 +145,7 @@ default :
 		 }
 ```
 
-**예제 날짜**
+**예제2 날짜**
 ```java
 switch (month) {
 case 1 :
