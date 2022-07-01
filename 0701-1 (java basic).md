@@ -39,7 +39,7 @@ if (num1 > num2) {
  * 조건문 conditional statement : if문, switch문
  * 반복문 loop : for문, while문, do-while
  
- #if문 (분기문/비교문)
+ # if문 (분기문/비교문)
  
  **if (조건) {}**
  
