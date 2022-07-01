@@ -233,7 +233,8 @@ System.out.println("추첨 결과 : " + resultMsg + "(" + result + " 당첨)");
 60-69 : D
 60 미만 (0-59) : F (재수강)
 - <출력 형태>
-` ■ 결과 출력
+` 
+■ 결과 출력
 국어 : 100
 영어 : 90
 수학 : 80
@@ -241,7 +242,8 @@ System.out.println("추첨 결과 : " + resultMsg + "(" + result + " 당첨)");
 총점 : 270
 평균 : 90
 <평가 결과>
-A`
+A
+`
 		
 		int kor = 10;
 		int eng = 20;
