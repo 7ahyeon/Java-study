@@ -198,8 +198,26 @@ default :
 System.out.println("추첨 결과 : " + resultMsg + " (" + result + " 당첨)");
 ```
 
+- 1등은 모든 경품, 차례대로 줄어들게 수정
 
-
+```java
+String result = "5등";
+String resultMsg = ""; // 빈 문자열
+		
+switch (result) {
+case "1등" :
+	resultMsg += "냉장고 ";
+case "2등" :	
+	resultMsg += "김치 냉장고 ";
+case "3등" :	
+	resultMsg += "세탁기 ";
+case "4등" :
+	resultMsg += "청소기 ";
+default :	
+	resultMsg += "휴지 ";
+}
+System.out.println("추첨 결과 : " + resultMsg + "(" + result + " 당첨)");
+```
 
 
 
