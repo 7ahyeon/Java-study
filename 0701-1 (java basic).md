@@ -42,16 +42,18 @@ if (num1 > num2) {
  
  **if문 (분기문/비교문)**
  ```java
-    int num1 = 20;
-		int num2 = 10;
+int num1 = 20;
+int num2 = 10;
 		
-		if (num1 < num2) {
-			System.out.println("num1이 num2보다 작다");
-		}
-		if (num1 >= num2) {
-			System.out.println("num1이 num2보다 크거나 같다");
-		}
-		System.out.println(">>비교작업 끝");
+if (num1 < num2) {
+	System.out.println("num1이 num2보다 작다");
+}
+if (num1 > num2) {
+	System.out.println("num1이 num2보다 크다");
+}
+if (num1 == num2) {
+	System.out.println("num1과 num2가 같다");
+System.out.println(">>비교작업 끝");
  ```
  
  
