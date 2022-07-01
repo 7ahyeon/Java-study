@@ -56,6 +56,38 @@ if (num1 == num2) {
 System.out.println(">>비교작업 끝");
  ```
  
- 
- 
+ **예제1 성적처리**
+ ```java
+
+// 점수 평가 결과 출력 : A, B, C, 노력하세요
+// 90~100 : A
+// 80~89 : B
+// 70~79 : C
+// 0~69 : 노력하세요
+// --------------
+// <출력 형태>
+// 점수 : 90
+// 평과 결과 : A
+		
+System.out.println("---성적 처리---");
+		
+int jumsu = 99;
+		
+if (90 <= jumsu && jumsu <= 100) {
+	System.out.println("점수 : " + jumsu);
+	System.out.println("평가 결과 : " + 'A');
+}
+if (80 <= jumsu && jumsu <= 89) {
+	System.out.println("점수 : " + jumsu);
+	System.out.println("평가 결과 : " + 'B');
+}
+if (70 <= jumsu && jumsu <= 79) {
+	System.out.println("점수 : " + jumsu);
+	System.out.println("평가 결과 : " + 'C');
+}
+if (0 <= jumsu && jumsu <= 69) {
+	System.out.println("점수 : " + jumsu);
+	System.out.println("평가 결과 : " + "노력하세요");
+}
+```
  
