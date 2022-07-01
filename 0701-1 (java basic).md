@@ -36,7 +36,7 @@ if (num1 > num2) {
 
 **제어문 control statement**
 - 실행 흐름을 제어할 수 있게 해주는 것
- * 조건문 conditional statement : if문, switch문
+ * 조건문 conditional statement : if문, switch(case)문
  * 반복문 loop : for문, while문, do-while
  
  # if문 (분기문/비교문)
@@ -126,4 +126,23 @@ if (num1 > num2) {
 	System.out.println("num1이 num2보다 작다");
 }
 ```
+
+# switch case문 (동등 비교 구문)
+
+**switch case문 ( if문**
+```java
+ switch (조건값) {
+		 case 비교값1 :
+		 	실행할 문장(들);
+		 	break;
+		 case 비교값2 :
+		 	실행할 문장(들);
+		 	break;
+		 ...
+		 default :
+		 	실행할 문장(들);
+		 	break;
+		 }
+```
+
 
