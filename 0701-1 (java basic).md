@@ -10,10 +10,12 @@ int score = 95;
 char grade = (score > 90) ? 'A' : 'B';
 ```
 
-- `int score = 95;
+```java
+int score = 95;
 char grade;
 if(score > 90){
   grade = 'A';
 } else {
   grade ='B';
-}`
+}
+```
