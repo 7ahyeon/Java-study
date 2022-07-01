@@ -14,7 +14,7 @@
 - -for(; ;) {} : 무한 반복
 
 ```java
-for (int i = 1; i <= 5; i += 1) {
+for (int i = 1; i <= 5; i++) {
 	System.out.println("*");
 }
 ```
