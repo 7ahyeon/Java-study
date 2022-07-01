@@ -131,7 +131,7 @@ if (num1 > num2) {
 
 **switch case문 ( if문**
 ```java
- switch (조건값) {
+ 		switch (조건값) {
 		 case 비교값1 :
 		 	실행할 문장(들);
 		 	break;
@@ -145,4 +145,25 @@ if (num1 > num2) {
 		 }
 ```
 
-
+**예제 날짜**
+```java
+		int month = 4;
+		
+		switch (month) {
+		case 1 :
+			System.out.println("31일까지 있습니다");
+			break; // 중단하고 빠져나감
+		case 2 :
+			System.out.println("28일 또는 29일까지 있습니다");
+			break;
+		case 3 :
+			System.out.println("31일까지 있습니다");
+			break;
+		case 4 :
+			System.out.println("30일까지 있습니다");
+			break;
+		default :
+			System.out.println("일치하는 값이 없습니다");
+			break;
+		}
+```
