@@ -71,23 +71,23 @@ System.out.println(">>비교작업 끝");
 System.out.println("---성적 처리---");
 		
 int jumsu = 99;
-		
+
+System.out.println("점수 : " + jumsu);
+String message = "평가 결과 없음";
+
 if (jumsu >= 90 && jumsu <= 100) {
-	System.out.println("점수 : " + jumsu);
-	System.out.println("평가 결과 : A");
+	message = "A";
 }
 if (jumsu >= 80 && jumsu <= 89) {
-	System.out.println("점수 : " + jumsu);
-	System.out.println("평가 결과 : B");
+	message = "B";
 }
 if (jumsu >= 70 && jumsu <= 79) {
-	System.out.println("점수 : " + jumsu);
-	System.out.println("평가 결과 : C");
+	message = "C";
 }
 if (jumsu >= 0 && jumsu <= 69) {
-	System.out.println("점수 : " + jumsu);
-	System.out.println("평가 결과 : 노력하세요");
+	message = "노력하세요";
 }
+System.out.println("평가 결과 : " + message);
 ```
 
 	---성적 처리---
