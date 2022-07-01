@@ -151,15 +151,15 @@ if (num1 > num2) {
 		
 		switch (month) {
 		case 1 :
+		case 3 :
+		case 5 :
+		case 7 : case 8 : case 10 : case 12 :
 			System.out.println("31일까지 있습니다");
 			break; // 중단하고 빠져나감
 		case 2 :
 			System.out.println("28일 또는 29일까지 있습니다");
 			break;
-		case 3 :
-			System.out.println("31일까지 있습니다");
-			break;
-		case 4 :
+		case 4 : case 6 : case 9 : case 11 : : case 6 : case 9 : case 11 :
 			System.out.println("30일까지 있습니다");
 			break;
 		default :
