@@ -23,7 +23,9 @@
 - **실수형** float (4byte), **double (8byte)** (소수점 이하 존재)
 - **정수형** byte (1byte), short (2byte), **int (4byte)**, long (8byte)
 
-**참조 타입 reference type** 무한히 많음 **문자열/날짜**
+**참조 타입 reference type** 무한히 많음 
+- **문자열/날짜**/클래스/배열 
+- 제공되는 것 + 개발자 생성
 
 **변수 선언** 어떤 타입의 데이터를 저장할 것인지 식별자(이름)는 무엇인지 결정
 
