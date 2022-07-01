@@ -250,13 +250,13 @@ int avg = tot / 3;
 		
 String h = "";
 		
-if (avg >= 90 && avg <= 100) {
+if (avg >= 90) {
 	h = "A";
-} else if (avg >= 80 && avg <= 89) {
+} else if (avg >= 80) {
 	h = "B";
-} else if (avg >= 70 && avg <= 79) {
+} else if (avg >= 70) {
 	h = "C";
-} else if (avg >= 60 && avg <= 69) {
+} else if (avg >= 60) {
 	h = "D";
 } else {
 	h = "F(재수강)";
