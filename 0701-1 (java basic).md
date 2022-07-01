@@ -219,7 +219,63 @@ default :
 System.out.println("추첨 결과 : " + resultMsg + "(" + result + " 당첨)");
 ```
 
+**예제3 성적**
 
+- 성적 처리
+- 입력 : 국어(kor), 영어(eng), 수학(math) 점수
+- 연산 처리
+- 총점(tot) = 국 + 영 + 수
+- 평균(avg) = 총점 / 과목수
+- 평균 점수 구간별 평가(학점)
+- 90~100 : A
+80~89 : B
+70~79 : C
+60~69 : D
+60 미만 (0~59) : F (재수강)
+		 ------------------------
+		 <출력 형태>
+		 ■ 결과 출력
+		 국어 : 100
+		 영어 : 90
+		 수학 : 80
+		 ----------
+		 총점 : 270
+		 평균 : 90
+		 <평가 결과>
+		 A
+		 */
+		
+		int kor = 10;
+		int eng = 20;
+		int math = 30;
+		
+		int tot = (kor+eng+math);
+		int avg = tot / 3;
+		
+		String h = "";
+		
+		if (avg >= 90 && avg <= 100) {
+			h = "A";
+		} else if (avg >= 80 && avg <= 89) {
+			h = "B";
+		} else if (avg >= 70 && avg <= 79) {
+			h = "C";
+		} else if (avg >= 60 && avg <= 69) {
+			h = "D";
+		} else {
+			h = "F(재수강)";
+		}
+		
+		System.out.println("■ 결과 출력");
+		System.out.println("국어 : " + kor);
+		System.out.println("영어 : " + eng);
+		System.out.println("수학 : " + math);
+		System.out.println("----------");
+		System.out.println("총점 : " + tot);
+		System.out.println("평균 : " + avg);
+		System.out.println();
+		System.out.println("<평가 결과>");
+		System.out.println(h);
 
 
 
