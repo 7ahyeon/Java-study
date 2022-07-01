@@ -39,7 +39,10 @@ if (num1 > num2) {
  * 조건문 conditional statement : if문, switch문
  * 반복문 loop : for문, while문, do-while
  
- **if문 (분기문/비교문)**
+ #if문 (분기문/비교문)
+ 
+ **if (조건) {}**
+ 
  ```java
 int num1 = 20;
 int num2 = 10;
@@ -94,4 +97,33 @@ System.out.println("평가 결과 : " + message);
 	점수 : 99
 	평가 결과 : A
 
+**1. if (조건) {}**
+ ```java
+if (num1 > num2) {
+	System.out.println("num1이 num2보다 크다");
+}
+if (num1 <= num2) {
+	System.out.println("num1이 num2보다 작거나 같다");
+}
+```
+		
+**2. if (조건) {} else {}**
+ ```java
+if (num1 > num2) {
+	System.out.println("num1이 num2보다 크다");
+} else {
+	System.out.println("num1이 num2보다 작거나 같다");
+}
+```
+		
+**3. if (조건) {} else if () {} else if () {} .... else {}**
+ ```java
+if (num1 > num2) {
+	System.out.println("num1이 num2보다 크다");
+} else if (num1 == num2) {
+	System.out.println("num1이 num2와 같다");
+} else {
+	System.out.println("num1이 num2보다 작다");
+}
+```
 
