@@ -22,4 +22,7 @@ if(score > 90){
 ```
 
 ```java
-String str = )n
+int num1 = 95;
+int num2 = 90
+String str = (num1 > num2) ? "A등급" : "B등급";
+```
