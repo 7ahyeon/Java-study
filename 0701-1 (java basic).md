@@ -30,6 +30,9 @@ String str = (num1 > num2) ? "A등급" : "B등급";
 ```java
 if (num1 > num2) {
   str = "A등급";
+  } else { str = "B등급";
+  }
+  ```
   
 
 **제어문 control statement**
