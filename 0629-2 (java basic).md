@@ -81,7 +81,8 @@ System.out.println(12345 + 67890); //80235
 ```
 		
 **예제2**
-		
+
+```java
 	/* 화면에 구구단 2단 출력
 		 2 * 1 = 2 // 2 * 1 출력값
 		 2 * 2 = 4
@@ -98,5 +99,5 @@ System.out.println(12345 + 67890); //80235
 		System.out.println("2 * 7 = " + 2 * 7);
 		System.out.println("2 * 8 = " + 2 * 8);
 		System.out.println("2 * 9 = " + 2 * 9);
-		
+```
 
