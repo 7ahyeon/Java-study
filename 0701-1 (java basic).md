@@ -72,19 +72,19 @@ System.out.println("---성적 처리---");
 		
 int jumsu = 99;
 		
-if (90 <= jumsu && jumsu <= 100) {
+if (jumsu >= 90 && jumsu <= 100) {
 	System.out.println("점수 : " + jumsu);
 	System.out.println("평가 결과 : A");
 }
-if (80 <= jumsu && jumsu <= 89) {
+if (jumsu >= 80 && jumsu <= 89) {
 	System.out.println("점수 : " + jumsu);
 	System.out.println("평가 결과 : B");
 }
-if (70 <= jumsu && jumsu <= 79) {
+if (jumsu >= 70 && jumsu <= 79) {
 	System.out.println("점수 : " + jumsu);
 	System.out.println("평가 결과 : C");
 }
-if (0 <= jumsu && jumsu <= 69) {
+if (jumsu >= 0 && jumsu <= 69) {
 	System.out.println("점수 : " + jumsu);
 	System.out.println("평가 결과 : 노력하세요");
 }
