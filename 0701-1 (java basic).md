@@ -161,6 +161,6 @@ case 4 : case 6 : case 9 : case 11 :
 	System.out.println(month + "월은 30일까지 있습니다");
 	break;
 default :
-	System.out.println("일치하는 값이 없습니다");
+	System.out.println(month + "은 잘못된 값입니다 (정상 : 1~12)");
 	break;
 ```
