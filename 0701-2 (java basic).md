@@ -23,7 +23,6 @@ for (int i = 0; i < 5; i++) {
 
 **예제1 1부터 4까지의 숫자를 출력하시오**
 ```java
-int num = 1;
 for (int i = 1; i < 5; i++) {
 	System.out.println(i);
 }
