@@ -167,13 +167,44 @@ default :
 
 **예제2 경품**
 
-추첨 결과에 따라서 상품 지급
-
-1등 : 냉장고, 2등 : 김치 냉장고, 3등 : 세탁기, 4등 청소기
-
-등수 안에 들지 못한 경우 (꽝) : 휴지
+- 추첨 결과에 따라서 상품 지급
+- 1등 : 냉장고, 2등 : 김치 냉장고, 3등 : 세탁기, 4등 청소기
+- 등수 안에 들지 못한 경우 (꽝) : 휴지
 
 	<출력 형태>
 	추첨 결과 : 냉장고 (1등 당첨)
 	
+```java
+String result = "5등";
+String resultMsg = ""; // 빈 문자열
+		
+switch (result) {
+case "1등" :
+	resultMsg = "냉장고";
+	break;
+case "2등" :	
+	resultMsg = "김치 냉장고";
+	break;
+case "3등" :	
+	resultMsg = "세탁기";
+	break;
+case "4등" :
+	resultMsg = "청소기";
+	break;
+default :	
+
+	resultMsg = "휴지";
+	break;
+}
+System.out.println("추첨 결과 : " + resultMsg + " (" + result + " 당첨)");
+```
+
+
+
+
+
+
+
+
+
 
