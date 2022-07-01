@@ -20,3 +20,10 @@ for (int i = 0; i < 5; i++) {
 ```
 - 실행 순서 : int i = 0 -> i <5 -> System.out.println("*") -> i++
 - () 안에서 선언된 변수는 ()밖에서 사용 불가
+
+```java
+int num = 1;
+for (int i = 1; i < 5; i++) {
+	System.out.println(i);
+}
+```
