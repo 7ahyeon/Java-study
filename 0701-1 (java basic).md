@@ -173,7 +173,7 @@ default :
 
 	<출력 형태>
 	추첨 결과 : 냉장고 (1등 당첨)
-	
+
 ```java
 String result = "5등";
 String resultMsg = ""; // 빈 문자열
@@ -192,7 +192,6 @@ case "4등" :
 	resultMsg = "청소기";
 	break;
 default :	
-
 	resultMsg = "휴지";
 	break;
 }
