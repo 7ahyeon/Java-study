@@ -75,19 +75,22 @@ int jumsu = 99;
 		
 if (90 <= jumsu && jumsu <= 100) {
 	System.out.println("점수 : " + jumsu);
-	System.out.println("평가 결과 : " + 'A');
+	System.out.println("평가 결과 : " + "A");
 }
 if (80 <= jumsu && jumsu <= 89) {
 	System.out.println("점수 : " + jumsu);
-	System.out.println("평가 결과 : " + 'B');
+	System.out.println("평가 결과 : " + "B");
 }
 if (70 <= jumsu && jumsu <= 79) {
 	System.out.println("점수 : " + jumsu);
-	System.out.println("평가 결과 : " + 'C');
+	System.out.println("평가 결과 : " + "C");
 }
 if (0 <= jumsu && jumsu <= 69) {
 	System.out.println("점수 : " + jumsu);
 	System.out.println("평가 결과 : " + "노력하세요");
 }
 ```
- 
+ `---성적 처리---
+점수 : 99
+평가 결과 : A`
+
