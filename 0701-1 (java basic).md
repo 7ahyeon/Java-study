@@ -240,38 +240,38 @@ System.out.println("추첨 결과 : " + resultMsg + "(" + result + " 당첨)");
 <평가 결과>
 A`
 
+```java
+int kor = 10;
+int eng = 20;
+int math = 30;
 		
-		int kor = 10;
-		int eng = 20;
-		int math = 30;
+int tot = (kor+eng+math);
+int avg = tot / 3;
 		
-		int tot = (kor+eng+math);
-		int avg = tot / 3;
+String h = "";
 		
-		String h = "";
+if (avg >= 90 && avg <= 100) {
+	h = "A";
+} else if (avg >= 80 && avg <= 89) {
+	h = "B";
+} else if (avg >= 70 && avg <= 79) {
+	h = "C";
+} else if (avg >= 60 && avg <= 69) {
+	h = "D";
+} else {
+	h = "F(재수강)";
+}
 		
-		if (avg >= 90 && avg <= 100) {
-			h = "A";
-		} else if (avg >= 80 && avg <= 89) {
-			h = "B";
-		} else if (avg >= 70 && avg <= 79) {
-			h = "C";
-		} else if (avg >= 60 && avg <= 69) {
-			h = "D";
-		} else {
-			h = "F(재수강)";
-		}
-		
-		System.out.println("■ 결과 출력");
-		System.out.println("국어 : " + kor);
-		System.out.println("영어 : " + eng);
-		System.out.println("수학 : " + math);
-		System.out.println("----------");
-		System.out.println("총점 : " + tot);
-		System.out.println("평균 : " + avg);
-		System.out.println();
-		System.out.println("<평가 결과>");
-		System.out.println(h);
+System.out.println("■ 결과 출력");
+System.out.println("국어 : " + kor);
+System.out.println("영어 : " + eng);
+System.out.println("수학 : " + math);
+System.out.println("----------");
+System.out.println("총점 : " + tot);
+System.out.println("평균 : " + avg);
+System.out.println();
+System.out.println("<평가 결과>");
+System.out.println(h);
 
 
 
