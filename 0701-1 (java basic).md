@@ -272,8 +272,11 @@ System.out.println("평균 : " + avg);
 System.out.println();
 System.out.println("<평가 결과>");
 System.out.println(h);
+```
 
-
+- double avg = tot / 3; < 소수점 이하 값 X (int/int)
+- double avg = tot / 3.0; < 소수점 이하 값 O (int/double)
+- double avg = tot * 100 / 3 / 100.0; <소수점 이하 둘째 자리까지 구할 수 있음
 
 
 
