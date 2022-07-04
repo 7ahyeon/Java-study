@@ -62,16 +62,12 @@ System.out.print("*");
 ```
 
 예제5. 삼각형 그리기  
-x
-
-xx
-
-xxx
-
-xxxx
-
-xxxxx
-
+x  
+xx  
+xxx  
+xxxx  
+xxxxx  
+  
 ```java
 for (int k = 1; k <= 5; k++) {
 	for (int i = 1; i <= k; i++) {
