@@ -53,6 +53,20 @@ for (int i = 1; i <= 9; i++) {
 }
 
 ```
-		
-	
+
+예제4. 반복문 사용 * 찍기
+```java
+for (int i = 1; i <= 5; i++) {
+System.out.print("*");
+}
+
+예제5. 삼각형 그리기
+```java
+for (int k = 1; k <= 5; k++) {
+	for (int i = 1; i <= k; i++) {
+		System.out.print("*");
+		}
+	System.out.println();
+}
+```
 	
