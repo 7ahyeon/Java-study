@@ -76,4 +76,52 @@ for (int k = 1; k <= 5; k++) {
 	System.out.println();
 }
 ```
-	
+
+xxxxx  
+xxxx  
+xxx  
+xx  
+x  
+
+```java
+for (int i = 1; i <= 5; i++ ) {
+	for (int k = 5; k >= i; k--) {
+		System.out.print("*");
+	}
+	System.out.println();
+}
+```
+
+     x  
+    xx  
+   xxx  
+  xxxx 
+ xxxxx  
+ 
+ ```java
+ for (int i = 1; i <= 5; i++ ) {
+	for (int k = 5; k >= i; k--) {
+		System.out.print(" ");
+	}
+	for (int d = 1; d <= i; d++) {
+		System.out.print("*");}
+	System.out.println();
+	}
+```
+
+xxxxx  
+ xxxx  
+  xxx  
+   xx  
+    x  
+
+```java
+for (int i = 1; i <= 5; i++ ) {
+	for (int k = 1; k <= i; k++) {
+		System.out.print(" ");
+	}
+	for (int d = 5; d >= i; d--) {
+		System.out.print("*");}
+	System.out.println();
+	}
+```
