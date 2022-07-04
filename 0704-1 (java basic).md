@@ -31,10 +31,24 @@ System.out.print() : 줄바꿈x
 예제1. 8 제외 ( continue ) 
 ```java
 for (int i =1; i <= 10; i++) {
-	if (i ==8) continue;
+	if (i == 8) continue;
 	System.out.print(i+" ");
 ```
-	
-	
+
+예제2. 8 보다 작을 시 출력 ( break ) 
+```java
+for (int i = 1; i <=10; i++) {
+	if(i == 8) break;
+	System.out.print(i+" ");
+```
+
+예제3. 구구단 
+```java
+System.out.println("====2단 출력===");
+for (int i = 1; i <= 9; i++) {
+	System.out.println("2 * " + i + " = " + (2 * i));
+}
+```
+		
 	
 	
