@@ -20,3 +20,21 @@ for (int i = 1; i <=10; i++) {
 		System.out.println(i);
 	}
 ```
+
+**제어문** 
+- break : 중단 ( 현재 실행중인 반복문을 중단하고 빠져나감 )
+- continue : 이어서 계속 ( 다음 반복 실행 )
+
+System.out.println() : 줄바꿈
+System.out.print() : 줄바꿈x
+
+continue
+```java
+for (int i =1; i <= 10; i++) {
+	if (i ==8) continue;
+	System.out.print(i+" ");
+```
+	
+	
+	
+	
