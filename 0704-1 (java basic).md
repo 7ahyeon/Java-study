@@ -59,6 +59,7 @@ for (int i = 1; i <= 9; i++) {
 for (int i = 1; i <= 5; i++) {
 System.out.print("*");
 }
+```
 
 예제5. 삼각형 그리기
 ```java
