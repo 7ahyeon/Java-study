@@ -63,9 +63,13 @@ System.out.print("*");
 
 예제5. 삼각형 그리기
 x
+
 xx
+
 xxx
+
 xxxx
+
 xxxxx
 
 ```java
