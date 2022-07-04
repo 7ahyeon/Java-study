@@ -28,7 +28,7 @@ for (int i = 1; i <=10; i++) {
 System.out.println() : 줄바꿈
 System.out.print() : 줄바꿈x
 
-continue
+예제1. 8 제외 ( continue ) 
 ```java
 for (int i =1; i <= 10; i++) {
 	if (i ==8) continue;
