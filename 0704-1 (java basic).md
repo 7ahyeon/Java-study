@@ -93,15 +93,15 @@ for (int i = 1; i <= 5; i++ ) {
 ```
 
 
-/////x  
-////xx  
-///xxx  
-//xxxx  
-/xxxxx  
+////x  
+///xx  
+//xxx  
+/xxxx  
+xxxxx  
  
  ```java
  for (int i = 1; i <= 5; i++ ) {
-	for (int k = 5; k >= i; k--) {
+	for (int k = 4; k >= i; k--) {
 		System.out.print(" ");
 	}
 	for (int d = 1; d <= i; d++) {
@@ -118,7 +118,7 @@ xxxxx
 
 ```java
 for (int i = 1; i <= 5; i++ ) {
-	for (int k = 1; k <= i; k++) {
+	for (int k = 2; k <= i; k++) {
 		System.out.print(" ");
 	}
 	for (int d = 5; d >= i; d--) {
