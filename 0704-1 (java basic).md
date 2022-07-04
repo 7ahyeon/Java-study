@@ -93,11 +93,11 @@ for (int i = 1; i <= 5; i++ ) {
 ```
 
 
-     x  
-    xx  
-   xxx  
-  xxxx 
- xxxxx  
+/////x  
+////xx  
+///xxx  
+//xxxx 
+/xxxxx  
  
  ```java
  for (int i = 1; i <= 5; i++ ) {
