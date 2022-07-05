@@ -1,6 +1,6 @@
 # Java-study
 
-예제 4. 숫자
+예제 1. 숫자(반복)
 
 - 1       : (1 + 빈칸) + 줄바꿈
 - 1 2     : (1 + 빈칸) + (2 + 빈칸) + 줄바꿈
@@ -20,7 +20,7 @@ for (int line = 1; line <= 4; line++) {
 }
 ```
 
-예제 5
+예제 2. 숫자(나열)
 
 - 1    
 - 2 3  
@@ -39,4 +39,29 @@ for (int line = 1; line <= 4; line++) {
 	dispCnt++;
 }
 ```
+
+예제 3. 배수
+
+```java
+System.out.print("27의 배수 : ");
+for (int num = 2000; num <= 3000; num++) {
+	if (num % 27 == 0)
+		System.out.print(num +" ");
+}
+```
+
+예제 4. 배수의 개수
+
+```java
+int count = 0;
+for (int num = 2000; num <= 3000; num++) {
+	if (num % 27 == 0) count++;
+}
+System.out.print("27의 배수 개수: " + count);
+```
+
+
+
+
+
 
