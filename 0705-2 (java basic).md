@@ -8,10 +8,9 @@
 
 ```java
 int num = 1;
-		while (true) {
-			System.out.print(num + " ");
-			num++;
-			if (num == 10) break;
-			
-		}
+while (true) {
+	System.out.print(num + " ");
+	num++;
+	if (num == 10) break;
+}
  ```
