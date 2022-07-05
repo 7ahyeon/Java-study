@@ -64,3 +64,40 @@ do {
 	System.out.println("do ~ while : " + doNum);
 } while (doNum <= 9);
 ```
+
+**중첩 반복문 종료**
+
+- out : 1, in : 1
+- out : 1, in : 2
+- out : 1, in : 3
+- out : 2, in : 1
+- out : 2, in : 2
+- out : 2, in : 3
+- out : 3, in : 1
+- out : 3, in : 2
+- out : 3, in : 3
+
+```java
+for (int out = 1; out <= 3; out++) {
+	for (int in = 1; in <= 5; in++) {
+		System.out.println("out : " + out + ", in : " + in);
+		if (in ==3) break;
+	}
+}
+```
+
+- out : 1, in : 1
+- out : 1, in : 2
+- out : 1, in : 3
+
+```java
+outFor:
+for (int out = 1; out <= 3; out++) {
+	for (int in = 1; in <= 5; in++) {
+		System.out.println("out : " + out + ", in : " + in);
+		if (in ==3) break outFor; // 외부 for문 중단
+	}
+}
+```
+		
+
