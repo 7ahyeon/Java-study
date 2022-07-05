@@ -113,3 +113,9 @@ public String toString() {
 System.out.println("car2 : " + car2);
 ```
 
+|한정자|클래스 내부|동일 패키지|하위 클래스|그 외의 영역|
+|:---:|:---:|:---:|:---:|:---:|
+|public|O|O|O|O|
+|protected|O|O|O|X|
+|default|O|O|X|X|
+|private|O|X|X|X|
