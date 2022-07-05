@@ -4,6 +4,10 @@
 - 속성 : 차량명, 모델명, 차량 색상, 차량 길이, 차량 폭
 - 기능 : 앞으로 이동, 정지, 뒤로 이동, 차량 정보 확인
 
+**final 제한자**
+- 변수에 값이 할당되면 더이상 변경 불가
+- final 붙은 변수 : 상수화된 변수(상수)
+
 ```java
 public class Car {
 
@@ -13,8 +17,6 @@ public class Car {
 	String model; //모델명
 	String color; //차량 색상
 	
-	// final 제한자: 변수에 값이 할당되면 더이상 변경 불가
-	// final 붙은 변수 : 상수화된 변수(상수)
 	final int CAR_LENGTH = 350;  //차량 길이
 	final int CAR_WIDTH = 200;  //차량 폭
 	
@@ -51,7 +53,11 @@ public class CarMain {
 		System.out.println("색상 : " + car.color);
 		System.out.println("길이 : " + car.CAR_LENGTH);
 		System.out.println("폭 : " + car.CAR_WIDTH);
+		car.name = "드림카"; // 변경 가능
 		
+		System.out.println("자동차 이름 : " + car.name);
+		
+//		car.CAR_LENGTH = 400; // final(상수 처리된 변수 값) 변경 불가능
 	}
 
 }
