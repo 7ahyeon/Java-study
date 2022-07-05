@@ -38,3 +38,29 @@ while (num < 10) {
 	System.out.print(num);
 }
 ```
+
+**do ~ while**
+- 무조건 한 번은 실행
+
+-  반복인자의 선언 및 초기값 설정;
+- do {
+- 증감설정 (선택적)
+- 실행문(들);
+- } while (조건식);
+
+- 1~10
+```java
+int doNum = 1;
+do {
+	System.out.println("do ~ while : " + doNum);
+	doNum++;
+} while(doNum <= 10);
+```	
+
+```java
+doNum = 0;
+do {
+	doNum++;
+	System.out.println("do ~ while : " + doNum);
+} while (doNum <= 9);
+```
