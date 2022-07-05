@@ -6,6 +6,9 @@
 - 반복인자값 증감설정
 - 실행문(들); }
 
+증감식의 위치에 따라 다른 결과
+- 1~9
+
 ```java
 int num = 1;
 while (true) {
@@ -14,3 +17,12 @@ while (true) {
 	if (num == 10) break;
 }
  ```
+- 1~10
+```java
+int num = 1;
+while (true) {
+	System.out.print(num + " ");
+	if (num == 10) break;
+	num++;
+}
+```
