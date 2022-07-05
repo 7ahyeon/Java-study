@@ -119,3 +119,7 @@ System.out.println("car2 : " + car2);
 |protected|O|O|O|X|
 |default|O|O|X|X|
 |private|O|X|X|X|
+
+- 접근 영역 : public > protected > default > private
+
+
