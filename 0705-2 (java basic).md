@@ -6,7 +6,7 @@
 - 반복인자값 증감설정
 - 실행문(들); }
 
-증감식의 위치에 따라 다른 결과
+증감식과 break문의 위치에 따라 다른 결과
 - 1~9
 
 ```java
@@ -24,5 +24,17 @@ while (true) {
 	System.out.print(num + " ");
 	if (num == 10) break;
 	num++;
+}
+```
+
+continue문
+- 무한 루프를 피하기 위해서 증감식 뒤에 위치
+- 1234678910
+```java
+num = 0;
+while (num < 10) {
+	num++;
+	if (num == 5) continue;
+	System.out.print(num);
 }
 ```
