@@ -9,14 +9,16 @@
 
 ```java
 int dispCnt = 1;
-		for (int line = 1; line <= 4; line++) {
-			for (int disp = 1; disp <= dispCnt; disp++) {
-				System.out.print(disp);
-				System.out.print(" ");
-			}
-			System.out.println();
-			dispCnt++;
-		}
+for (int line = 1; line <= 4; line++) {
+	int dispNum = 1;
+	for (int disp = 1; disp <= dispCnt; disp++) {
+		System.out.print(dispNum + " ");
+		dispNum++;
+	}
+	System.out.println();
+	dispCnt++;
+}
+		
 ```
 
 예제 5
