@@ -38,14 +38,34 @@ int num = 111;
 static int staticNum = 222;
 ```
 **생성자 선언 영역**
-1. 
-
-**메소드 선언 영역**
-
-
-
-
+기본 생성자 (default constructor) 
+- 생략 가능
+```java
+Ex02_class(){}
+```
 
 
+**메소드(기능/동작) 선언 영역**
+main method
+```java
+public static void main(String[] args){
+  int num1 = 333;
+  int num2 = 444;
+  system.out.println("num1 : " + num1 + ", num2 : " + num2);
+  
+  int result = num1 + num2;
+	System.out.println("result : " + result);
+  }
+```
+- method 선언 : 전달 받은 데이터(값)(=parameter)
+```java
+public static int add(int a, int b) {
+		return a+b;
+	}
+```
+- method 호출(부), 실행
+```java
+add(num1, num2);
+```
 
 
