@@ -1,8 +1,10 @@
 # Java-study
 
 **package 선언문**
-- java 파일의 맨 첫 줄에 위치하며 한 번만 작성
 - 자바 (class) 파일의 위치를 나타냄
+- java 파일의 맨 첫 줄에 위치하며 한 번만 작성
+- 일반적으로 회사의 도메인명을 반대로 사용하여 시작
+- ex) com.naver.project, com.github.mystudy
 
 ```java
 package edu.class1.basic;
