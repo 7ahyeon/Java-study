@@ -104,7 +104,8 @@ public class CarMain {
 **source-generate toString()**
 ```java
 public String toString() {
-		return "Car [name=" + name + ", model=" + model + ", color=" + color + ", CAR_LENGTH=" + CAR_LENGTH + ", CAR_WIDTH=" + CAR_WIDTH + "]";
+		return "Car [name=" + name + ", model=" + model + ", color=" + color + ", 
+		CAR_LENGTH=" + CAR_LENGTH + ", CAR_WIDTH=" + CAR_WIDTH + "]";
 	}
 ```
 - Car [name=패밀리카, model=그랜저, color=검정, CAR_LENGTH=350, CAR_WIDTH=200]
