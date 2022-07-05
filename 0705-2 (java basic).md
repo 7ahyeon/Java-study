@@ -110,5 +110,13 @@ for (int out = 1; out <= 3; out++) {
 - 파스칼 표기법 (Pascal case) : 대문자로 시작 / 복합어 첫글자 대문자
 - 낙타 표기법 (Camel case) : 
 
-- 변수명 / 메소드명 - 첫 글자 : 소문자
-- 클래스 / 인터페이스 - 첫 글자 : 대문자
+- 변수명 / 메소드명 - **첫 글자 : 소문자** (복합어 첫 글자 : 대문자)
+- ex) personName, totalValue, computeTotal(), getPersonInfo()
+- 클래스 / 인터페이스 - **첫 글자 : 대문자**
+- ex) System, HelloWorld
+- 상수 (상수화된 변수명) - **전체 : 대문자** (복합어 구분 : _ )
+- ex) PI, MIN_VALUE, MAX_VALUE
+
+
+
+
