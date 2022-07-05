@@ -59,6 +59,7 @@ public static void main(String[] args){
 ```
 - method 선언
 - 전달 받은 데이터(값)(=parameter/파라미터) : int a, int b
+- return문 : 호출한 곳으로 되돌아감
 ```java
 public static int add(int a, int b) {
 		return a+b;
@@ -80,8 +81,7 @@ add(num1, num2);
 4. 리턴값 O / 전달 받는 파라미터 O
 - 리턴 타입 메소드명(파라미터 타입 변수명, ...) {}
 
-**return문**
-- 호출한 곳으로 되돌아감
+
 
 
 
