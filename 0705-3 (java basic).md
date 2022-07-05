@@ -125,6 +125,7 @@ System.out.println("divide(num1, num2) : " + ex03.divide(num1, num2));
 
 3. 리턴값 X 호출 가능
 ```java
+Ex03_method ex03 = new Ex03_method();
 ex03.divide2(num1, num2);
 ex03.dispTitle();
 		
