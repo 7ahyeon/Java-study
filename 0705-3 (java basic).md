@@ -57,13 +57,15 @@ public static void main(String[] args){
 	System.out.println("result : " + result);
   }
 ```
-- method 선언 : 전달 받은 데이터(값)(=parameter)
+- method 선언
+- 전달 받은 데이터(값)(=parameter/파라미터) : int a, int b
 ```java
 public static int add(int a, int b) {
 		return a+b;
 	}
 ```
 - method 호출(부), 실행
+- 전달하는 데이터(값)(=argument/인수) : num1, num2
 ```java
 add(num1, num2);
 ```
