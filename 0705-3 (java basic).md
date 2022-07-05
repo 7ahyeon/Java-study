@@ -118,12 +118,24 @@ int sum = ex03.add(num1, num2);
 
 System.out.println("sum : " + sum);
 System.out.println("add(num1, num2) : " + ex03.add(num1, num2));
-System.out.println("subtract(num1, num2)" + ex03.subtract(num1, num2));
-System.out.println("multiply(num1, num2)" + ex03.multiply(num1, num2));
-System.out.println("divide(num1, num2)" + ex03.divide(num1, num2));
+System.out.println("subtract(num1, num2) : " + ex03.subtract(num1, num2));
+System.out.println("multiply(num1, num2) : " + ex03.multiply(num1, num2));
+System.out.println("divide(num1, num2) : " + ex03.divide(num1, num2));
 ```
 
-
+3. 리턴값 X 호출 가능
+```java
+ex03.divide2(num1, num2);
+ex03.dispTitle();
+		
+void divide2(int a, int b) {
+System.out.println(a + " / " + b + " : " + (a / b));
+}
+void dispTitle() {
+System.out.println("=== 메소드 알아보기 ===");
+System.out.println(">>> 4가지 형태 확인하기");
+}
+```
 
 
 
