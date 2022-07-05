@@ -18,7 +18,6 @@ for (int line = 1; line <= 4; line++) {
 	System.out.println();
 	dispCnt++;
 }
-		
 ```
 
 예제 5
@@ -29,4 +28,15 @@ for (int line = 1; line <= 4; line++) {
 - 7 8 9 10
 
 ```java
+dispCnt = 1;
+int dispNum = 1;
+for (int line = 1; line <= 4; line++) {
+	for (int disp = 1; disp <= dispCnt; disp++) {
+		System.out.print(dispNum + " ");
+		dispNum++;
+	}
+	System.out.println();
+	dispCnt++;
+}
+```
 
