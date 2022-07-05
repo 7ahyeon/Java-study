@@ -27,3 +27,25 @@ import java.util.*;
 ```java
 public class Ex01_package_import_class {}
 ```
+
+**변수 선언 영역**
+1. 필드 변수 (인스턴스/멤버/전역 변수, 속성 property) 선언
+```java
+int num = 111;
+```
+2. 클래스 변수 (스태틱/인스턴스(객체)공통 변수)
+```java
+static int staticNum = 222;
+```
+**생성자 선언 영역**
+1. 
+
+**메소드 선언 영역**
+
+
+
+
+
+
+
+
