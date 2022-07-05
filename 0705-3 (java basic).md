@@ -81,6 +81,52 @@ add(num1, num2);
 4. 리턴값 O / 전달 받는 파라미터 O
 - 리턴 타입 메소드명(파라미터 타입 변수명, ...) {}
 
+#정리 따로 할 것
+
+**객체**
+- =인스턴스
+- 붕어빵
+
+**non-static**
+- 무조건 호출 불가
+- 참조형(데이터 타입) 선언 이후 호출 가능
+
+1. 호출 불가
+```java
+public static void main(String[] args) {
+}
+
+	int add(int a, int b) {
+		return a + b; // return문 : 호출한 곳으로 되돌아 감
+	}
+	
+	int subtract(int a, int b) {
+		return a - b;
+	}
+	int multiply(int a, int b) {
+		return a * b;
+		}
+
+	int divide(int a, int b) {
+		return a / b;
+	}
+```
+2. 호출 가능
+```java
+Ex03_method ex03 = new Ex03_method();
+int sum = ex03.add(num1, num2);
+
+System.out.println("sum : " + sum);
+System.out.println("add(num1, num2) : " + ex03.add(num1, num2));
+System.out.println("subtract(num1, num2)" + ex03.subtract(num1, num2));
+System.out.println("multiply(num1, num2)" + ex03.multiply(num1, num2));
+System.out.println("divide(num1, num2)" + ex03.divide(num1, num2));
+```
+
+
+
+
+
 
 
 
