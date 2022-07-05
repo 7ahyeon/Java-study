@@ -113,10 +113,11 @@ for (int out = 1; out <= 3; out++) {
 - 변수명 / 메소드명 - **첫 글자 : 소문자** (복합어 첫 글자 : 대문자)
 - ex) personName, totalValue, computeTotal(), getPersonInfo()
 - 클래스 / 인터페이스 - **첫 글자 : 대문자**
-- ex) System, HelloWorld
+- ex) String, System, HelloWorld
 - 상수 (상수화된 변수명) - **전체 : 대문자** (복합어 구분 : _ )
 - ex) PI, MIN_VALUE, MAX_VALUE
-
+- 패키지명 - **전체 : 소문자** (폴더(디렉토리) 구분 : . )
+- ex) com.oracle.net, java.util, com.mystudy.작성모듈명
 
 
 
