@@ -122,4 +122,10 @@ System.out.println("car2 : " + car2);
 
 - 접근 영역 : public > protected > default > private
 
+**OOP**
+- Object Oriented Programming
+- 객체 지향 프로그래밍
+
+
+
 
