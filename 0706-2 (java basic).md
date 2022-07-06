@@ -85,10 +85,17 @@ for (int i = 0; i < ch.length; i++) {
 ```java
 
 int[] nums = new int[10];
-for (int i = 0; i < nums.length; i++) {
-	nums[i] = i+1;
-}
+
+nums[0] =1; // 값 : 인덱스 번호 + 1
+nums[1] =2; // 값 : 인덱스 번호 + 1
 		
+// 데이터 입력
+for (int i = 0; i < nums.length; i++) {
+	nums[i] = i + 1;
+	}
+System.out.println(Arrays.toString(nums));
+		
+// 배열 값 출력
 for (int i = 0; i < nums.length; i++) {
 	System.out.println("nums[" + i + "] : " + nums[i]);
 }
