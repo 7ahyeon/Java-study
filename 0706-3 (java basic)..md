@@ -46,3 +46,50 @@ for (int i = 0; i < ch.length; i++) {
 	System.out.println();
 }
 ```
+```java
+*****
+****
+***
+**
+*
+		
+for (int i = 0; i < ch.length; i++) {
+	for (int k = 4; k >= i; k--){
+		System.out.print(ch[k]);
+	}
+	System.out.println();
+}
+```
+```java
+    *
+   **
+  ***
+ ****
+*****
+
+for (int i = 0; i < ch.length; i++) {
+	for (int h = 4; h >= i; h--) {
+	System.out.print(" ");
+	}
+	for (int k = 0; k <= i; k++){
+		System.out.print(ch[k]);
+	}
+	System.out.println();
+}
+```
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
