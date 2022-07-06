@@ -16,21 +16,27 @@ System.out.println("arr[0] : " + arr[0]);
 
 arr[5] = 600; //ArrayIndexOutOfBoundsException : 5
 
+
 // 배열 데이터 합 구하기
 int sum = 0;
 sum = arr[0] + arr[1] + arr[2] + arr[3] + arr[4];
 System.out.println("sum : " + sum);
 
+
 // 배열 데이터 화면 출력
 for (int i = 0; i < 5; i++) { // 5 = index 개수
 	System.out.println("arr[" + i + "] : " + arr[i]);
 
+
+//배열의 크기 값 확인(조회)
+System.out.println("arr length : " + arr.length);
+
+
 //반복문 사용하여 배열값 합계 구하기
 sum =0;
-for (int index = 0; index <5; index++) {
+for (int index = 0; index <arr.length; index++) {
 	sum += arr[index];
 }
-
 ```
 2. 자료형[] 변수명 = new 자료형[]{값1, 값2, ..., 값n};
 3. 자료형[] 변수명 = {값1, 값2, ..., 값n}; (n개 저장 공간 생성)
