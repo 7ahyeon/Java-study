@@ -24,6 +24,7 @@ System.out.println("sum : " + sum);
 // 배열 데이터 화면 출력
 for (int i = 0; i < 5; i++) { // 5 = index 개수
 	System.out.println("arr[" + i + "] : " + arr[i]);
+
 //반복문 사용하여 배열값 합계 구하기
 sum =0;
 for (int index = 0; index <5; index++) {
