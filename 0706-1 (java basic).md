@@ -145,7 +145,7 @@ public class PhoneMain {
 - num3 = 30
 - num4 = 40
 - ...
-- numn-1 = x
+- num(n-1) = x
 - num 개수 = index + 1
 
 |num|10|20|30|40|
