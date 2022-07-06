@@ -53,7 +53,8 @@ for (int i = 0; i < ch.length; i++) {
 ***
 **
 *
-		
+char[] ch = new char[5];
+
 for (int i = 0; i < ch.length; i++) {
 	ch[i] = '*';
 	for (int k = (ch.length-1); k >= i; k--){
@@ -68,6 +69,8 @@ for (int i = 0; i < ch.length; i++) {
   ***
  ****
 *****
+
+char[] ch = new char[5];
 
 for (int i = 0; i < ch.length; i++) {
 	ch[i] = '*';
