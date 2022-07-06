@@ -7,7 +7,7 @@ int sum = 0;
 for (int i = 0; i < nums.length; i++) {
 	nums2[i] = i+1;
 	if (nums2[i] % 2 != 0) {
-		sum = sum + nums2[i];
+		sum += nums2[i];
 	}
 }
 System.out.println("1~10까지의 수 중에 홀수의 합 : " + sum);
@@ -20,9 +20,9 @@ int oddSum = 0;
 for (int i = 0; i < nums3.length; i++) {
 	nums3[i] = i + 1;
 	if (nums3[i] % 2 == 0) {
-		evenSum = evenSum + nums3[i];
+		evenSum += nums3[i];
 	} else {
-		oddSum = oddSum + nums3[i];
+		oddSum += nums3[i];
 		}
 }
 System.out.println("짝수 합계 : " + evenSum);
