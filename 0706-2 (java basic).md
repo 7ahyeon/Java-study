@@ -82,4 +82,15 @@ for (int i = 0; i < ch.length; i++) {
 3. 배열에 저장된 데이터 화면 출력
 - 출력 형태 : 변수명[인덱스 번호] : 값
 
+```java
+
+int[] nums = new int[10];
+for (int i = 0; i < nums.length; i++) {
+	nums[i] = i+1;
+}
+		
+for (int i = 0; i < nums.length; i++) {
+	System.out.println("nums[" + i + "] : " + nums[i]);
+}
+```
 
