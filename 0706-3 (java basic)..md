@@ -54,7 +54,7 @@ for (int i = 0; i < ch.length; i++) {
 *
 		
 for (int i = 0; i < ch.length; i++) {
-	for (int k = 4; k >= i; k--){
+	for (int k = (ch.length-1); k >= i; k--){
 		System.out.print(ch[k]);
 	}
 	System.out.println();
@@ -68,7 +68,7 @@ for (int i = 0; i < ch.length; i++) {
 *****
 
 for (int i = 0; i < ch.length; i++) {
-	for (int h = 4; h >= i; h--) {
+	for (int h = (ch.length-1); h >= i; h--) {
 	System.out.print(" ");
 	}
 	for (int k = 0; k <= i; k++){
