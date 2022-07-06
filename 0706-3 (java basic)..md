@@ -12,7 +12,7 @@ for (int i = 0; i < nums.length; i++) {
 }
 System.out.println("1~10까지의 수 중에 홀수의 합 : " + sum);
 ```
-**예제1 짝수끼리/홀수끼리 합산(evenSum/oddSum)**
+**예제2 짝수끼리/홀수끼리 합산(evenSum/oddSum)**
 ```java
 int[] nums3 = new int[10];
 int evenSum = 0;
@@ -27,4 +27,22 @@ for (int i = 0; i < nums3.length; i++) {
 }
 System.out.println("짝수 합계 : " + evenSum);
 System.out.println("홀수 합계 : " + oddSum);
+```
+**예제3 별**
+```java
+*
+**
+***
+****
+*****
+
+		
+char[] ch = {'*', '*', '*', '*', '*'};
+		
+for (int i = 0; i < ch.length; i++) {
+	for (int k = 0; k <= i; k++){
+		System.out.print(ch[k]);
+	}
+	System.out.println();
+}
 ```
