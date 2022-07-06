@@ -37,9 +37,10 @@ System.out.println("홀수 합계 : " + oddSum);
 *****
 
 		
-char[] ch = {'*', '*', '*', '*', '*'};
+char[] ch = new char[5];
 		
 for (int i = 0; i < ch.length; i++) {
+	ch[i] = '*';
 	for (int k = 0; k <= i; k++){
 		System.out.print(ch[k]);
 	}
@@ -54,6 +55,7 @@ for (int i = 0; i < ch.length; i++) {
 *
 		
 for (int i = 0; i < ch.length; i++) {
+	ch[i] = '*';
 	for (int k = (ch.length-1); k >= i; k--){
 		System.out.print(ch[k]);
 	}
@@ -68,6 +70,7 @@ for (int i = 0; i < ch.length; i++) {
 *****
 
 for (int i = 0; i < ch.length; i++) {
+	ch[i] = '*';
 	for (int h = (ch.length-1); h >= i; h--) {
 	System.out.print(" ");
 	}
