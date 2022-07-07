@@ -42,9 +42,22 @@ nums : [[I@15db9742
 nums[0] : [I@6d06d69c
 nums[0][0] : 10
 ```
-
-
-
+**nums[i][]길이 출력**
+```java
+System.out.println("nums.length : " + nums.length);
+System.out.println("nums[0].length : " + nums[0].length);
+```
+**이중 for문으로 2차원 배열 출력**
+```java
+for (int i = 0; i < nums.length; i++) {
+	for (int k = 0; k < nums[i].length; k++) {
+		System.out.print(nums[i][k] + " ");
+	}
+	System.out.println();
+	}
+}
+```
+	
 
 
 
