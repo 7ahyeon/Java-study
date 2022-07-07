@@ -42,26 +42,30 @@ System.out.println("num2 : " + num2);
 - 서로에게 영향을 주지 않음 (수정 별개)
 ```java
 for (int i = 0; i < num1.length; i++) {
-	num3[i] = num1[i];
+	num2[i] = num1[i];
 }
 ```
 3. **System.arraycopy() (물리적 복사)**
 - System.arraycopy(Object src, int srcPos, Object dest, int destPos, int length)
 - System.arraycopy(소스 배열, 시작 위치, 대상 배열, 대상 시작 위치, 크기)
 ```java
+int[] num2 = new int[num1.length];
+System.arraycopy(num1, 0, num2, 0, num1.length);
+```
+```java
 System.arraycopy(num3, 0, num4, 0, 2); // num3에서 num4에 [0]~[1](index 2개 복사)
 System.arraycopy(num3, 0, num4, 0, num3.length); 	
 ```
 4. **배열 객체.clone() (물리적 복사)**
 ```java
-int[] num5 = num4.clone();
+int[] num2 = num1.clone();
 ```
 
 5. **객체 비교**
 - 주소값 복사 : 같은 개체 (동일 주소값 참조)
 - 물리적/System.arraycopy()/대상 배열.clone() 복사 : 다른 개체 (2개의 독립된 데이터)
 ```java
-if (num3 == num4) {
+if (num1 == num2) {
 	System.out.println("같은 객체이다 (동일 주소값 참조)");
 } else {
 	System.out.println("다른 객체이다(2개의 독립된 데이터)");
