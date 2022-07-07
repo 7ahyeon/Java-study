@@ -56,7 +56,15 @@ for (int i = 0; i < nums.length; i++) {
 	System.out.println();
 }
 ```
-	
+**Arrays.deepToString()**
+```java
+System.out.println(Arrays.toString(nums));
+System.out.println(Arrays.deepToString(nums));
+```
+```java
+[[I@6d06d69c, [I@7852e922, [I@4e25154f, [I@70dea4e]
+[[10, 20], [30, 40], [50, 60], [70, 80]]
+```
 
 
 
