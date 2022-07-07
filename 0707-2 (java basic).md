@@ -57,9 +57,9 @@ System.arraycopy(num3, 0, num4, 0, num3.length);
 int[] num5 = num4.clone();
 ```
 
-5. 객체 비교
-- 얕은 복사는 같은 개체 : 동일 주소값 참조
-- 깊은 복사는 다른 개체 : 2개의 독립된 데이터
+5. **객체 비교**
+- 주소값 복사 : 같은 개체 (동일 주소값 참조)
+- 물리적/System.arraycopy()/대상 배열.clone() 복사 : 다른 개체 (2개의 독립된 데이터)
 ```java
 if (num3 == num4) {
 	System.out.println("같은 객체이다 (동일 주소값 참조)");
