@@ -91,6 +91,7 @@ public class ArrayCopyExam {
 		num1 = new int[] {10, 20, 30};
 		num1[2] = 100;
 		printData("num1", num1);
+		printArr("num1", num1);
 		
 		int[] num1Copy = new int[num1.length];
 		
@@ -99,6 +100,7 @@ public class ArrayCopyExam {
 		num1Copy = num1;
 		
 		printData("num1Copy", num1Copy);
+		printArr("num1Copy", num1Copy);
 		printObject(num1, num1Copy);
 		
 		
@@ -120,6 +122,7 @@ public class ArrayCopyExam {
 		System.arraycopy(num1, 0, num1Copy, 0, num1.length);
 	
 		printData("num1Copy", num1Copy);
+		printArr("num1Copy", num1Copy);
 		printObject(num1, num1Copy);
 		
 		
@@ -129,6 +132,7 @@ public class ArrayCopyExam {
 		num1Copy = num1.clone();
 	
 		printData("num1Copy", num1Copy);
+		printArr("num1Copy", num1Copy);
 		printObject(num1, num1Copy);
 	}
 	
@@ -138,8 +142,13 @@ public class ArrayCopyExam {
 			System.out.print(arr[i] + " ");
 			} 
 		System.out.println();
-	
 	}
+	
+	static void printArr(String name, int[] arr) {
+		System.out.print(name + " : ");
+		System.out.println(Arrays.toString(arr));
+	}
+	
 	static void printObject(int[] a, int[] b) {
 		if (a == b) {
 			System.out.println("같은 객체 (동일 주소값 참조)");
@@ -148,5 +157,15 @@ public class ArrayCopyExam {
 		}
 	}
 }
+```
+
+**printData와 printArr의 차이**
+- printData
+```java
+num1Copy : 10 20 100 
+```
+- printArr
+```java
+num1Copy : [10, 20, 100]
 ```
 
