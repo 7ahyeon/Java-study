@@ -80,6 +80,19 @@ System.out.println();
 System.out.println(">>추첨 끝");
 ```
 
+**배열 정렬 (오름차순 ASC)**
+```java
+for (int i = 1; i < num.length; i++){
+	for (int k = 0; k < num.length; k++) {
+		if (num[k] > num[i]) {
+			temp = num[k];
+			num[k] = num[i];
+			num[i] = temp;
+		}
+	}
+}
+```
+
 
 
 
