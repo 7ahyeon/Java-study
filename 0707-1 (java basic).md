@@ -22,10 +22,10 @@ nums[4] = temp;
 int temp = 0;
 for (int i = 0; i < nums.length; i++) {
 	temp = nums[i];
-	nums[i] = nums[nums.length-(i+1)];
+	nums[i] = nums[nums.length-(i+1)]; //i++사용시 i값이 변경되므로 사용X
 	nums[nums.length-(i+1)] = temp;
 	printArray(nums);
 }
-
 ```
-
+- i+1 != ++i/i++
+- i+1은 i값이 변하지 않지만 ++i/i++는 i값을 변경하므로 같지 않다.
