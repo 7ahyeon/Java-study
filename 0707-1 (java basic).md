@@ -94,6 +94,17 @@ for (int i = 1; i < num.length; i++){
 	}
 }
 ```
+```java
+for (int i = 0; i < (num.length-1); i++) {
+	for (int k = (i+1); k < num.length; k++) {
+		if (num[i] > num[k]) { //비교하고 위치 바꾸기
+			int temp = num[i];
+			num[i] = num[k];
+			num[k] = temp;
+		}		
+	}
+}
+```
 
 **배열 정렬 (내림차순 DESC)**
 - DESCending
