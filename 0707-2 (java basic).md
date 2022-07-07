@@ -45,3 +45,14 @@ for (int i = 0; i < num1.length; i++) {
 	num3[i] = num1[i];
 }
 ```
+3. System.arraycopy()
+
+
+
+
+
+
+
+
+
+
