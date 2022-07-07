@@ -91,9 +91,7 @@ public class ArrayCopyExam {
 		int[] num1Copy = new int[num1.length];
 		
 //		주소값 복사
-		System.out.println();
-		System.out.println("--- 주소값 복사 ---");
-		
+
 		num1Copy = num1;
 		
 		printData("num1Copy", num1Copy);
@@ -101,9 +99,7 @@ public class ArrayCopyExam {
 		
 		
 //		물리적 복사
-		System.out.println();
-		System.out.println("--- 물리적/데이터 복사 ---");
-		
+
 		num1Copy = new int[num1.length];
 		
 		for (int i = 0; i < num1.length; i++) {
@@ -115,9 +111,7 @@ public class ArrayCopyExam {
 		
 		
 //		System.arraycopy(소스 배열, 시작 위치, 대상 배열, 대상 시작 위치, 크기)
-		System.out.println();
-		System.out.println("--- System.arraycopy() ---");
-
+		
 		num1Copy = new int[num1.length];
 		System.arraycopy(num1, 0, num1Copy, 0, num1.length);
 	
@@ -126,21 +120,14 @@ public class ArrayCopyExam {
 		
 		
 //		배열 대상.clone()
-		System.out.println();
-		System.out.println("--- 배열 대상.clone() ---");
+		
 		num1Copy = new int[num1.length];
 		num1Copy = num1.clone();
 	
 		printData("num1Copy", num1Copy);
 		printObject(num1, num1Copy);
-
-	
-	
-	
-	
 	}
 	
-
 	static void printData(String name, int[] arr) {
 		System.out.print(name + " : ");
 		for (int i = 0; i < arr.length; i++) {
@@ -156,8 +143,6 @@ public class ArrayCopyExam {
 			System.out.println("다른 객체 (2개의 독립된 데이터)");
 		}
 	}
-
-
 }
 ```
 
