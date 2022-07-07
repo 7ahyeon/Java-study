@@ -19,11 +19,11 @@ nums[4] = temp;
 ```
 ```java
 // 배열 데이터 수와 관계 없이 데이터를 뒤집는 로직 작성
-int temp2 = 0;
+int temp = 0;
 for (int i = 0; i < nums.length; i++) {
-	temp2 = nums[i];
+	temp = nums[i];
 	nums[i] = nums[nums.length-(i+1)];
-	nums[nums.length-(i+1)] = temp2;
+	nums[nums.length-(i+1)] = temp;
 	printArray(nums);
 }
 
