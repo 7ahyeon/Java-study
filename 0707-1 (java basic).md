@@ -81,6 +81,7 @@ System.out.println(">>추첨 끝");
 ```
 
 **배열 정렬 (오름차순 ASC)**
+- ASCending
 ```java
 for (int i = 1; i < num.length; i++){
 	for (int k = 0; k < num.length; k++) {
@@ -93,6 +94,19 @@ for (int i = 1; i < num.length; i++){
 }
 ```
 
+**배열 정렬 (내림차순 DESC)**
+- DESCending
+```java
+for (int i = 1; i < num.length; i++){
+	for (int k = 0; k < num.length; k++) {
+		if (num[k] < num[i]) {
+			temp = num[k];
+			num[k] = num[i];
+			num[i] = temp;
+		}
+	}
+}
+```
 
 
 
