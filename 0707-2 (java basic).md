@@ -160,11 +160,11 @@ public class ArrayCopyExam {
 ```
 
 **printData와 printArr의 차이**
-- printData
+- printData (arr[i])
 ```java
 num1Copy : 10 20 100 
 ```
-- printArr
+- printArr (Arrays.toString(arr))
 ```java
 num1Copy : [10, 20, 100]
 ```
