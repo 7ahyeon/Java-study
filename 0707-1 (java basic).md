@@ -17,4 +17,14 @@ temp = nums[0];
 nums[0] = nums[4];
 nums[4] = temp;
 ```
+```java
+// 배열 데이터 수와 관계 없이 데이터를 뒤집는 로직 작성
+		
+for (int i = 0; i < nums.length; i++) {
+	int temp2 = 0;
+	nums[i] = temp2;
+	nums[i] = nums[nums.length-1];
+	nums[nums.length-1] = temp2;
+}
+```
 
