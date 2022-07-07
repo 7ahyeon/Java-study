@@ -22,8 +22,26 @@ if (nums == numsCopy) {
 int[] numsCopyRange = Arrays.copyOfRange(nums, 0, 3); //[0]부터 [3]이전까지(0부터 3개/[0]~[2])
 ```		
 
-
-
+# 2차원 배열 Two Dimension
+**2차원 배열 선언 및 객체 생성**
+1. 타입[][] 변수명 = new 타입[크기값][크기값];
+2. 타입 변수명[][] = new 타입[크기값][크기값];
+3. 타입[][] 변수명 = {{..}, {..}, ..., {..}};
+```java
+int[][] nums = {{10, 20}, 
+		{30, 40},
+		{50, 60},
+		{70, 80}
+		};
+System.out.println("nums : " + nums);
+System.out.println("nums[0] : " + nums[0]);
+System.out.println("nums[0][0] : " + nums[0][0]);
+```
+```java
+nums : [[I@15db9742
+nums[0] : [I@6d06d69c
+nums[0][0] : 10
+```
 
 
 
