@@ -11,11 +11,11 @@ int[][] copyClone = num2dim.clone();
 - O
 ```java
 space("num2dim->num2Copy 데이터 복사");
-		for (int d2 = 0; d2 < num2dim.length; d2++) {
-			for (int i = 0; i < num2dim[d2].length; i++) {
-				num2Copy[d2][i] = num2dim[d2][i];
-			}
-		}
+for (int d2 = 0; d2 < num2dim.length; d2++) {
+	for (int i = 0; i < num2dim[d2].length; i++) {
+		num2Copy[d2][i] = num2dim[d2][i];
+	}
+}
 ```
 
 **개선된/향상된 for문**
@@ -24,13 +24,13 @@ space("num2dim->num2Copy 데이터 복사");
 
 ```java
 for (int i = 0; i <nums.length; i++) {
-			System.out.println(nums[i]);
-		}
+	System.out.println(nums[i]);
+}
 ```
 ```java
 for (int num : nums) {
-			System.out.println(num);
-		}
+	System.out.println(num);
+}
 ```
 
 
