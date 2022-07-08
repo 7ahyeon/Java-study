@@ -38,7 +38,7 @@ String str = "900108-1234567"; //주민등록번호
 		} else if (str.charAt(7) == '3') {
 			System.out.println("성별 : 남성");
 			if (22 < birth) {
-				System.out.println("없는 년도입니다. 다시 입력해주십시오.");
+				System.out.println("존재하지 않는 년도입니다. 다시 입력해주십시오.");
 			} else {
 				System.out.print("생년 : 20");
 				System.out.println(birth);
@@ -50,7 +50,7 @@ String str = "900108-1234567"; //주민등록번호
 		}  else if (str.charAt(7) == '4') {
 			System.out.println("성별 : 여성");
 			if (22 < birth) {
-				System.out.println("없는 년도입니다. 다시 입력해주십시오.");
+				System.out.println("존재하지 않는 년도입니다. 다시 입력해주십시오.");
 			} else {
 				System.out.print("생년 : 20");
 				System.out.println(birth);
@@ -68,17 +68,17 @@ String str = "900108-1234567"; //주민등록번호
 		
 		
 		if (1 > month) {
-			System.out.println(">> 없는 달입니다. 다시 입력해주십시오.");
+			System.out.println(">> 존재하지 않는 달입니다. 다시 입력해주십시오.");
 		} else if (12 < month) {
-			System.out.println(">> 없는 달입니다. 다시 입력해주십시오.");
+			System.out.println(">> 존재하지 않는 달입니다. 다시 입력해주십시오.");
 		} else {
 			System.out.println("월 : " + month);
 		}
 		
 		if (1 > day) {
-			System.out.println(">> 없는 일입니다. 다시 입력해주십시오.");
+			System.out.println(">> 존재하지 않는 일입니다. 다시 입력해주십시오.");
 		} else if (31 < day) {
-			System.out.println(">> 없는 일입니다. 다시 입력해주십시오.");
+			System.out.println(">> 존재하지 않는 일입니다. 다시 입력해주십시오.");
 		} else {
 			System.out.println("일 : " + day);
 		}
