@@ -153,6 +153,27 @@ str.toUpperCase() : JAVA WORLD
 str.toLowerCase() : java world
 ```
 
+12. **trim()**
+- 문자열.trim()
+- 공백 제거
+```java
+str = "  Java World  ";
+System.out.println("str : -" + str + "-");
+System.out.println("str.trim() : -" + str.trim() + "-");
+```
+```java
+str : -  Java World  -
+str.trim() : -Java World-
+```
+
+
+
+
+
+
+
+
+
 
 
 
