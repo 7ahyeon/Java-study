@@ -31,7 +31,8 @@ for (int num : nums) {
 	System.out.println(num);
 }
 ```
-
+**static/instance method**
+- 객체 생성 필요 X / O
 
 
 
