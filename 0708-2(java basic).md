@@ -84,7 +84,7 @@ a + b + c : Java World~~~
 a.concat(b).concat(c) : Java World~~~
 ```
 
-** " " 출력법**
+**" " 출력법**
 - \"출력\"
 ```java
 result = a.concat(b).concat(c).concat("!!");
