@@ -1,13 +1,22 @@
 # Java-study
 
-**물리적 복사(독립적인 완전한 복제)**
-- 배열.clone(), System.arraycopy(), Arrays.copy0f 사용시
-- 데이터 저장하고 있는 **객체**를 대상으로 복사 처리
+**2차원 배열 복사**
+- 물리적 복사(독립적인 완전한 복제)
+- 배열.clone(), System.arraycopy(), Arrays.copy0f 사용시 데이터 저장하고 있는 **객체**를 대상으로 복사 처리 해야함
+
 - X
 ```java
 int[][] copyClone = num2dim.clone();
 ```
 - O
+```java
+space("num2dim->num2Copy 데이터 복사");
+		for (int d2 = 0; d2 < num2dim.length; d2++) {
+			for (int i = 0; i < num2dim[d2].length; i++) {
+				num2Copy[d2][i] = num2dim[d2][i];
+			}
+		}
+```
 
 **개선된/향상된 for문**
 - 타 프로그램 forEach문과 유사
