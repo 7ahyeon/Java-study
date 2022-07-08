@@ -39,10 +39,12 @@ for (int num : nums) {
 - 기본 데이터 타입처럼 사용
 2. String str = new String("자바"); 
 - 새로운 객체 생성 방식
-
-
-
-
+3. 같은 문자열 값을 가질시 동일 객체 (true)
+```java
+String str1 = "Java";
+String str11 = "Java";
+System.out.println("str1 == str11 : " + (str1 == str11));
+```
 
 
 
