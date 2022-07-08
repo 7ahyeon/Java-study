@@ -145,6 +145,34 @@ String str3 = String.copyValueOf(ch3, 0, 2);
 System.out.println("String.copyValueOf(ch3, 0, 2) : " + str3); // ab
 ```		
 
+4. **startsWith()/endsWith()**
+- 배열.startsWith("시작하는 말")
+- 배열.endsWith("끝내는 말")
+```java
+String str4 = "Java World";
+		
+System.out.println("str4.startsWith(\"Java\") : " + str4.startsWith("Java")); // true
+System.out.println("str4.endsWith(\"Java\") : " + str4.endsWith("Java")); // false
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
 
 
 
