@@ -12,7 +12,16 @@ int[][] copyClone = num2dim.clone();
 **개선된/향상된 for문**
 - 타 프로그램 forEach문과 유사
 
-
+```java
+for (int i = 0; i <nums.length; i++) {
+			System.out.println(nums[i]);
+		}
+```
+```java
+for (int num : nums) {
+			System.out.println(num);
+		}
+```
 
 
 
