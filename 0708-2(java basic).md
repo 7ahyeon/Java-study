@@ -58,6 +58,7 @@ str1.equalsIgnoreCase(str12) : true
 ```
 
 **concat()**
+- 시작말.concat(중간말).concat(끝말)
 - chainning 기법
 ```java
 String a = "Java ";
@@ -90,6 +91,56 @@ a.concat(b).concat(c) : Java World~~~
 result = a.concat(b).concat(c).concat("!!");
 System.out.println("a.concat(b).concat(c).concat(\"!!\") : " + result);
 ```		
+
+**String method**
+1. **charAt()**
+- 문자열.chartAt(위치)
+- 특정 위치의 문자 확인
+```java
+String str = "Java World";
+char ch = str.charAt(0);
+System.out.println("str.charAt(0) : " + ch);
+```
+```java
+str.charAt(0) : J
+```
+```java
+char[] ch2 = new char[4];
+for (int i = 0; i < ch2.length; i++) {
+	ch2[i] = str.charAt(i);
+}
+System.out.println("ch2 : " + Arrays.toString(ch2));
+```
+```java
+ch2 : [J, a, v, a]
+```
+
+2. **compareTo()**
+- "a".compareTo("b") : a - b
+- 동일 위치 동일 문자열 무시
+```java
+System.out.println("A vs A : " + "A".compareTo("A")); // 0
+System.out.println("A vs B : " + "A".compareTo("B")); // -1
+System.out.println("B vs A : " + "B".compareTo("A")); // 1
+```
+```java
+System.out.println("AA vs AB : " + "AA".compareTo("AB")); // -1
+System.out.println("ABCA vs ABCB : " + "ABCA".compareTo("ABCB")); // -1
+System.out.println("abcA vs abcB : " + "abcA".compareTo("abcB")); // -1
+System.out.println("BA vs AB : " + "BA".compareTo("AB")); // -1
+```
+
+3. **copyValueOf()**
+- copyValueOf(배열, 시작, 끝)
+- 배열을 문자열로 만듦
+```java
+char[] ch3 = {'a', 'b', 'c', 'd'};
+String str2 = String.copyValueOf(ch3);
+System.out.println("String.copyValueOf(ch3) : " + str2); // abcd
+```
+
+
+
 
 
 
