@@ -138,7 +138,10 @@ char[] ch3 = {'a', 'b', 'c', 'd'};
 String str2 = String.copyValueOf(ch3);
 System.out.println("String.copyValueOf(ch3) : " + str2); // abcd
 ```
-
+```java
+String str3 = String.copyValueOf(ch3, 0, 2);
+System.out.println("String.copyValueOf(ch3, 0, 2) : " + str3); // ab
+```		
 
 
 
