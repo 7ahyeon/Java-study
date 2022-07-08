@@ -34,6 +34,27 @@ for (int num : nums) {
 **static/instance method**
 - 객체 생성 필요 X / O
 
+**String class**
+1. String str = "자바";
+- 기본 데이터 타입처럼 사용
+2. String str = new String("자바"); 
+- 새로운 객체 생성 방식
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
