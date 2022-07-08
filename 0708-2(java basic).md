@@ -31,6 +31,7 @@ str1 == strObj1 : false
 ```
 
 **equals()**
+- 비교대상1.equals(비교대상2)
 - 동일한 문자열 여부 확인
 - 대소문자 구분 O
 ```java
@@ -43,6 +44,7 @@ str1.equals(strObj1) : true
 ```
 
 **equalsIgnoreCase()**
+- 비교대상1.equalsIgnoreCase(비교대상2)
 - 동일한 문자열 여부 확인
 - 대소문자 구분 X
 ```java
