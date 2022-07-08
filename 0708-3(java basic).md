@@ -128,6 +128,30 @@ str.substring(0, str.length()) : Java World //처음부터 끝까지
 str.substring(0, str.length()-3) : Java Wo // 뒤에서 3개 문자 제외
 ```
 
+10. **toCharArray()**
+- char[] 변수명 = 문자열.toCharArray()
+- 문자열을 문자 배열로 변환
+```java
+char[] ch4 = str.toCharArray();
+System.out.println("ch4 : " + ch4);
+System.out.println(Arrays.toString(ch4));
+```
+```java
+ch4 : [C@153f5a29
+[J, a, v, a,  , W, o, r, l, d]
+```
+
+11. **toUpperCase() / toLowerCase()**
+- 문자열.toUpperCase() : 대문자 변환
+- 문자열.toLowerCase() : 소문자 변환
+```java
+System.out.println("str.toUpperCase() : " + str.toUpperCase());
+System.out.println("str.toLowerCase() : " + str.toLowerCase());
+```
+```java
+str.toUpperCase() : JAVA WORLD
+str.toLowerCase() : java world
+```
 
 
 
