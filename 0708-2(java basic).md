@@ -18,3 +18,49 @@ String str1 = "Java";
 String strObj1 = new String("Java");
 System.out.println("str1 == strObj1 : " + (str1 == strObj1));
 ```
+
+**==**
+- 동일한 객체 여부 확인
+```java
+System.out.println("str1 == str11 : " + (str1 == str11));
+System.out.println("str1 == strObj1 : " + (str1 == strObj1));
+```
+```java
+str1 == str11 : true
+str1 == strObj1 : false
+```
+
+**equals()**
+- 동일한 문자열 여부 확인
+```java
+System.out.println("str1.equals(str11) : " + str1.equals(str11));
+System.out.println("str1.equals(strObj1) : " + str1.equals(strObj1));
+```
+```java
+str1.equals(str11) : true
+str1.equals(strObj1) : true
+```
+
+**equalsIgnoreCase()**
+```java
+String str1 = "Java";
+String str12 = "JAVA";
+
+System.out.println("str1.equals(str12) : " + str1.equals(str12));
+System.out.println("str1.equalsIgnoreCase(str12) : " + str1.equalsIgnoreCase(str12));
+```
+```java
+str1.equals(str12) : false
+str1.equalsIgnoreCase(str12) : true
+```
+
+
+
+
+
+
+
+
+
+
+
