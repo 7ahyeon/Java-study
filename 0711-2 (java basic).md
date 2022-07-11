@@ -79,10 +79,7 @@
 					System.out.println(i + ": " + names[i] + " = " + k + ": " + names[k]);
 				}
 			}
-			
 		}
-		
-	}
 		
 }
 
