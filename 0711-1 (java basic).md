@@ -8,10 +8,6 @@ String str = "900108-1234567"; //주민등록번호
 
 ```java
 
-package com.mystudy.string;
-
-public class Ex03_StringExam2 {
-
 	public static void main(String[] args) {
 		
 		String str = "900717-1234567";
@@ -130,10 +126,7 @@ public class Ex03_StringExam2 {
 		} if (day < 1 || day > 31) {
 			System.out.println("[비정상] 일 데이터가 범위(1-31)를 벗어났습니다. (데이터 : " + day + ")");				
 		}
-	}
-	
-	static void print(String w) {
-		System.out.println("-----" + w + "-----");}
-
 }
+	
+	
 ```
