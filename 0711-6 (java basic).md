@@ -9,8 +9,8 @@
 **StringBuffer**
 - 가변 (mutable)
 - 동일 객체 내 추가, 수정, 삭제 다수 발생시 적합
-- thread-safe O: 멀티 스레드 환경에서의 안정성 (동기화Synchronized 키워드Keyword 제공)
-- 문자열 연산이 많고 멀티 스레드일 경우 (스레드에 안전한 프로그램이 필요할 때)
+- thread-safe O: 멀티 스레드 환경에서의 안정성 (동기화Synchronized 키워드Keyword 제공 : dead-lock 위험성 존재)
+- 문자열 연산이 많고 멀티 스레드일 경우 (스레드에 안전한 프로그램이 필요할 때 )
 
 **StringBuilder**
 - 가변 (mutable)
@@ -26,6 +26,12 @@
 |Thread-safe|O(multi)|O(multi)|X(single)|
 |Synchronized|O|O|X|
 |Performance|Fast|Slow|Fast|
+
+**동기화 Synchronized**
+- 한 스레드가 진행중인 작업을 다른 스레드가 간섭하지 못하게 막는 것
+- 문자열 연산 시행 : 메모리 공간에서 직접 저장된 값을 변경 X -> 새로 인스턴스 생성 후 주소값을 저장 O
+
+
 
 # Wrapper class : 
 
