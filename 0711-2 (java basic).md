@@ -14,10 +14,6 @@
 - (기타) 이름 비교시에는 대소문자 구분 없이 비교처리(Tom, TOM 은 같다)
 
 ```java
-package com.mystudy.string;
-
-public class Ex04_StringExam02 {
-	
 
 	public static void main(String[] args) {
 		
@@ -87,9 +83,7 @@ public class Ex04_StringExam02 {
 		}
 		
 	}
-	static void print(String w) {
-		System.out.println("-----" + w + "-----");
-	}	
+		
 }
 
 ```
