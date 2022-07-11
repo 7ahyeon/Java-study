@@ -26,3 +26,17 @@
 |Thread-safe|O(multi)|O(multi)|X(single)|
 |Synchronized|O|O|X|
 |Performance|Fast|Slow|Fast|
+
+# Wrapper class : 
+
+**Wrapper class**
+- 기본 데이터 타입primitive type의 기능 확장한 클래스 통칭
+
+- 기본 데이터 타입 : 전체 소문자
+- ex) boolean, char, byte, short, int, long, float,double
+		
+- Wrapper class : 기본 데이터 타입의 첫 글자를 대문자로 
+- ( 예외 : char -> Character, int -> Integer)
+- ex) Boolean, Character, Byte, Short, Integer, Long, Float,Double
+
+
