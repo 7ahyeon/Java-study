@@ -19,3 +19,10 @@
 - thread-safe X : 멀티 쓰레드 환경 부적합 (동기화 키워드 제공X)
 - 문자열 연산이 많고 단일 쓰레드거나 동기화를 고려하지 않아도 되는 경우
 
+||String|StringBuffer|StringBuilder|
+|:---:|:---:|:---:|:---:|
+|Storage|String pool|Heap|Heap|
+|Modifiable|X (immutable)|O (mutable)|O (mutable)|
+|Thread-safe|O|O|X|
+|Synchoronized|O|O|X|
+|Performance|Fast|Slow|Fast|
