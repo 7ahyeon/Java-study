@@ -48,4 +48,27 @@
 - ( 예외 : char -> Character, int -> Integer)
 - ex) Boolean, Character, Byte, Short, Integer, Long, Float,Double
 
+**Integer**
+- String <- Integer : X
+- Integer <-> int : O (자동 형변환)
 
+
+```java
+int num = 100;
+//num = "100"; //Type mismatch : cannot convert from String to int
+System.out.println("num : " + num);
+		
+Integer numInteger = new Integer(100);
+//numInteger = "100"; //Type mismatch : cannot convert from String to Integer
+System.out.println("numInteger : " + numInteger);
+
+numInteger = 900; //Integer <- int : 자동 형변환
+num = numInteger; //Integer -> int : 자동 형변환
+		
+System.out.println("num : " + num); //900
+System.out.println("numInteger : " + numInteger); //900
+```
+```java
+System.out.println("정수형 int 최대값 : " + Integer.MAX_VALUE);
+System.out.println("정수형 int 최소값 : " + Integer.MIN_VALUE);
+```
