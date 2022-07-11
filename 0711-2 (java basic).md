@@ -51,11 +51,19 @@
 //		3. 배열에 있는 데이터의 첫 글자만 출력-구분자 콤마(,) 사용 한 라인에 출력
 		print("배열 데이터 첫 글자만 출력");
 		
+		//		for (int i = 0; i < names.length; i++) {
+//			if (i != (names.length-1)) {
+//				System.out.print(names[i].substring(0, 1) + ", ");
+//			} else {
+//				System.out.print(names[i].substring(0, 1));
+//			}
+//		}	
+//		
 		for (int i = 0; i < names.length; i++) {
 			if (i != (names.length-1)) {
-				System.out.print(names[i].substring(0, 1) + ", ");
+				System.out.print(names[i].charAt(0)  + ", ");
 			} else {
-				System.out.print(names[i].substring(0, 1));
+				System.out.print(names[i].charAt(0));
 			}
 		}	
 		System.out.println();
