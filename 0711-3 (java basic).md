@@ -46,12 +46,13 @@
 //			}
 //		}
 //		System.out.println();
-		
+
+		String comma = ", ";
 		for (int i = 0; i < names.length; i++) {
 			if (i == 0) {
 				System.out.print(names[i]);
 			} else {
-				System.out.print(", " + names[i]);				
+				System.out.print(comma + names[i]);				
 			}
 		}
 		
@@ -81,7 +82,7 @@
 			if (i == 0) {
 				System.out.print(names[i].charAt(0)  );
 			} else {
-				System.out.print(", " + names[i].charAt(0));
+				System.out.print(comma + names[i].charAt(0));
 			}
 		}	
 		System.out.println();
