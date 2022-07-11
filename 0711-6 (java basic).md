@@ -7,13 +7,13 @@
 - 문자열 연산이 적고 조회가 많은 멀티 쓰레드일 경우
 
 **StringBuffer**
-- 가변 (mutable)
+- 가변 (mutable) : append 가능
 - 동일 객체 내 추가, 수정, 삭제 다수 발생시 적합
 - thread-safe O: 멀티 스레드 환경에서의 안정성 (동기화Synchronized 키워드Keyword 제공 : dead-lock 위험성 존재)
 - 문자열 연산이 많고 멀티 스레드일 경우 (스레드에 안전한 프로그램이 필요할 때 )
 
 **StringBuilder**
-- 가변 (mutable)
+- 가변 (mutable) : append 가능
 - 동일 객체 내 추가, 수정, 삭제 다수 발생시 적합
 - 단일 쓰레드 환경에서의 성능 뛰어남
 - thread-safe X : 멀티 스레드 환경 부적합 (동기화 키워드 제공X)
@@ -26,6 +26,9 @@
 |Thread-safe|O(multi)|O(multi)|X(single)|
 |Synchronized|O|O|X|
 |Performance|Fast|Slow|Fast|
+
+**멀티 스레드 multi thread**
+- 가변 객체는 동시 접근이 가능하여 안전하지 않음
 
 **동기화 Synchronized**
 - 한 스레드가 진행중인 작업을 다른 스레드가 간섭하지 못하게 막는 것
