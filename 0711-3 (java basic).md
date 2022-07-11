@@ -68,7 +68,7 @@
 //			}
 //		}	
 //		
-		//		for (int i = 0; i < names.length; i++) {
+//		for (int i = 0; i < names.length; i++) {
 //			if (i != (names.length-1)) {
 //				System.out.print(names[i].charAt(0)  + ", ");
 //			} else {
