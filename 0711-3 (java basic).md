@@ -38,11 +38,20 @@
 //		2. 배열에 있는 값을 구분자 콤마(,)로 구분하여 한 라인에 출력
 		print("names 배열 데이터 출력");
 		
+//		for (int i = 0; i < names.length; i++) {
+//			if (i != (names.length-1)) {
+//				System.out.print(names[i] + ", ");
+//			} else {
+//				System.out.print(names[i]);				
+//			}
+//		}
+//		System.out.println();
+		
 		for (int i = 0; i < names.length; i++) {
-			if (i != (names.length-1)) {
-				System.out.print(names[i] + ", ");
+			if (i == 0) {
+				System.out.print(names[i]);
 			} else {
-				System.out.print(names[i]);				
+				System.out.print(", " + names[i]);				
 			}
 		}
 		
@@ -51,7 +60,7 @@
 //		3. 배열에 있는 데이터의 첫 글자만 출력-구분자 콤마(,) 사용 한 라인에 출력
 		print("배열 데이터 첫 글자만 출력");
 		
-		//		for (int i = 0; i < names.length; i++) {
+//		for (int i = 0; i < names.length; i++) {
 //			if (i != (names.length-1)) {
 //				System.out.print(names[i].substring(0, 1) + ", ");
 //			} else {
@@ -59,11 +68,20 @@
 //			}
 //		}	
 //		
+		//		for (int i = 0; i < names.length; i++) {
+//			if (i != (names.length-1)) {
+//				System.out.print(names[i].charAt(0)  + ", ");
+//			} else {
+//				System.out.print(names[i].charAt(0));
+//			}
+//		}	
+//		System.out.println();
+		
 		for (int i = 0; i < names.length; i++) {
-			if (i != (names.length-1)) {
-				System.out.print(names[i].charAt(0)  + ", ");
+			if (i == 0) {
+				System.out.print(names[i].charAt(0)  );
 			} else {
-				System.out.print(names[i].charAt(0));
+				System.out.print(", " + names[i].charAt(0));
 			}
 		}	
 		System.out.println();
