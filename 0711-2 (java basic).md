@@ -1,5 +1,4 @@
-# Java-study
-총정리
+# 실습. 문자열 다루기 총정리
 ```java
 	public static void main(String[] args) {
 		/* String str = "900108-1234567"; //주민등록번호
