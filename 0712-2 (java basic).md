@@ -57,7 +57,8 @@ a: 소문자 문자 유니코드
 
 **String 클래스 split vs StringTokenizer 클래스**
 
-1. 문자열.Split("기본 구분자")
+1. **문자열.Split("기본 구분자")**
+- 빈 문자열 표시 O
 ```java
 print("String split() method");
 String str = "사과,배,복숭아,,포도";
@@ -110,8 +111,32 @@ for (String str2 : strSplit) {
 4 : 포도
 ```
 
-
-
+2. **SpringTokenizer**
+- 빈 문자열 표시 X
+- nextToken() : 토큰이 부족한 상태로 꺼내려하면 오류 발생
+```java
+StringTokenizer strToken = new StringTokenizer(str, ",");
+System.out.println("strToken.countTokens() : " + strToken.countTokens());
+		
+while (strToken.hasMoreTokens()) {
+	System.out.println(strToken.nextToken());
+	System.out.println(strToken.nextToken());
+	System.out.println(">>");
+}
+System.out.println("strToken.countTokens() : " + strToken.countTokens());
+	
+```
+```java
+strToken.countTokens() : 4 //5일시
+사과
+배
+>>
+복숭아
+포도
+>> 
+//오류 발생
+strToken.countTokens() : 0
+```
 
 
 
