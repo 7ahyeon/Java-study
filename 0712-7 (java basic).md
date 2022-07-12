@@ -12,8 +12,8 @@
 	int[] math = {80, 81, 80};
 	int[][] sungjuk = {kor, eng, math};
 	
-	int[] sum = new int [3];
-	double[] avg = new double [3];
+	int[] sum = new int[3];
+	double[] avg = new double[3];
 	for (int i = 0; i < sungjuk.length; i++) {
 		for (int k = 0; k < sungjuk[i].length; k++) {
 			sum[i] += sungjuk[k][i];
