@@ -50,6 +50,8 @@
 
 **Integer**
 - String <- Integer : X
+- Integer <-String : O (Integer.valueOf("String"))
+- int <- String : O (Integer.parseInt("String"))
 - Integer <-> int : O (자동 형변환)
 
 
@@ -69,6 +71,10 @@ System.out.println("num : " + num); //900
 System.out.println("numInteger : " + numInteger); //900
 ```
 ```java
-System.out.println("정수형 int 최대값 : " + Integer.MAX_VALUE);
-System.out.println("정수형 int 최소값 : " + Integer.MIN_VALUE);
+num = Integer.parseInt("999"); //int <- String
+numInteger = Integer.valueOf("888"); // Integer <- String
+```
+```java
+System.out.println("정수형 int 최대값 : " + Integer.MAX_VALUE); //2147483647
+System.out.println("정수형 int 최소값 : " + Integer.MIN_VALUE); //-2147483648
 ```
