@@ -81,6 +81,8 @@ System.out.println("String str2 : " + str2);
 
 //d = "12.5"; // Type mismatch : cannot convert from String to Double
 d = Double.valueOf("12.5"); // Double <- String
+d = Double.valueOf("12.5d"); // Double <- String
+d = Double.valueOf("12.5f"); // Double <- String
 System.out.println("Double d : " + d);
 ```
 **Overloading**
@@ -88,6 +90,12 @@ System.out.println("Double d : " + d);
 - 같은 이름의 메소드를 여러개 정의하는 것
 - 매개변수의 타입이 다르거나 개수가 달라야 한다.
 - return type과 접근 제어자는 영향을 주지 않음.
+
+
+
+
+
+
 
 
 
