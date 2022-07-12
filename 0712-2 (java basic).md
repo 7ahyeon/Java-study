@@ -140,13 +140,13 @@ strToken.countTokens() : 0
 ```java
 while (strToken.hasMoreTokens()) {
 	String token = strToken.nextToken();
-	System.out.println(token + " : " + "-" + token + "-"); //오류X
+	System.out.println(token + " : " + "-" + token + "-"); // 출력시 오류X
 }
 System.out.println("strToken.countTokens() : " + strToken.countTokens());
 ```
 - countTokens() : nextToken()실행시 감소
 ```java
-int tokenCnt = strToken.countTokens(); //없을시 값 반토막
+int tokenCnt = strToken.countTokens(); //고정값 설정 : 없을시 값 반토막
 for (int i = 0; i < tokenCnt; i++) {
 	System.out.println(strToken.nextToken());
 }
