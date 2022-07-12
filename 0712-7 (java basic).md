@@ -13,11 +13,11 @@
 	int[][] sungjuk = {kor, eng, math};
 	
 	int[] sum = new int[3];
-	double[] avg = new double[3];
+	double[] avg = new double[3]; //소수점 둘째 자리 (a * 100 / b / 100.0)
 	for (int i = 0; i < sungjuk.length; i++) {
 		for (int k = 0; k < sungjuk[i].length; k++) {
 			sum[i] += sungjuk[k][i];
-			avg[i] = sum[i] * 100 / sungjuk.length / 100.0;
+			avg[i] = sum[i] * 100 / sungjuk.length / 100.0; //소수점 둘째자리
 		}
 		System.out.println("개인별 총점 : " + sum[i]); 
 		System.out.println("평균 : " + avg[i]); 
