@@ -20,11 +20,6 @@
 ```java
 public class Student { //public유무로 외부 접근 허용 유무가 결정됨
 	private String name; //private 선언시 클래스 내에서만 사용 가능 (외부 접근 불가)
-	private int kor;
-	private int eng;
-	private int math;
-	private int tot;
-	private double avg;
 	
 	// 외부에서 접근(사용) 가능하도록 method 제공(public)
 	// 명칭 : set method, setter, set property
