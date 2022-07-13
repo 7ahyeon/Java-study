@@ -4,7 +4,7 @@
 - 확장된 하위 클래스는 데이터 타입을 자신과 상위 클래스들 모두 쓸 수 있다.
 
 - 하위 클래스는 상위 클래스 타입으로 형변환 가능 
-- Object <- Object/Phone/Mp3Phone | Phone <- Phone/Mp3Phone
+- [ Object <- Object/Phone/Mp3Phone ] [ Phone <- Phone/Mp3Phone ]
 
 ```java
 // Phone 클래스를 상속받아(= extends : 확장해서) Mp3Phone 만들기
