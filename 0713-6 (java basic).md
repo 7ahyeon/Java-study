@@ -1,4 +1,9 @@
 # Extends
+**Object <- Phone <- Mp3Phone**
+- 확장시 기능은 하위 클래스로 갈수록 많아진다.
+- 확장된 하위 클래스는 데이터 타입을 자신과 상위 클래스들 모두 쓸 수 있다.
+- 
+
 ```java
 // Phone 클래스를 상속받아(= extends : 확장해서) Mp3Phone 만들기
 class Mp3Phone extends Phone { // Phone에 기본 생성자 없을시 오류
