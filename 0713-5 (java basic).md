@@ -30,6 +30,7 @@
 - interface extends inteface1, interface2, ...interfaceN : 인터페이스는 다중 상속 허용
    
    
+   
 2. **실체화 / 구현 implements**
 - 인터페이스(interface 추상체 : method가 선언만 되어있는 것)를 구현해서 사용할 때 사용 
 - class implements interface (,interface, inteface...)
