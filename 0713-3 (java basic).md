@@ -8,7 +8,7 @@
 ```java
 public class StudentVO {
 
-	//field 선언 ---
+	//field 선언 (변수 선언 : 클래스 전체 영역에서 사용) ---
 	//성명 - name : String
 	//국어 - kor : int
 	//영어 - eng : int
