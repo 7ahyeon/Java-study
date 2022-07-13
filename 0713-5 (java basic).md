@@ -21,14 +21,16 @@
    
 
 **핵심 키워드**
-1. 확장 extends
+
+1. **확장 extends**
 - 동일한 타입간에 확장해서 사용할 때 사용
 - extends문 좌우에 동일한 타입(class, interface)이 와야한다.
    
 - class extends class : 클래스는 단일 상속만 허용 (in java)
 - interface extends inteface1, interface2, ...interfaceN : 인터페이스는 다중 상속 허용
    
-2. 실체화 / 구현 implements
+   
+2. **실체화 / 구현 implements**
 - 인터페이스(interface 추상체 : method가 선언만 되어있는 것)를 구현해서 사용할 때 사용 
 - class implements interface (,interface, inteface...)
 
