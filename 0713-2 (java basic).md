@@ -21,6 +21,14 @@
 public class Student { //public유무로 외부 접근 허용 유무가 결정됨
 	private String name; //private 선언시 클래스 내에서만 사용 가능 (외부 접근 불가)
 	
+	//기본 생성자 default constructor
+	public Student() {
+		//super : 부모(조상) 클래스로 만들어진 객체(인스턴스)
+		//super() : 부모 클래스의 기본 생성자 호출
+		//부모 클래스 생성자 호출은 생성자의 맨 처음에 작성되어야 함
+		super();//생략시 컴파일 과정에서 자동 삽입되어 처리됨
+	}
+	
 	// 외부에서 접근(사용) 가능하도록 method 제공(public)
 	// 명칭 : set method, setter, set property
 	//source -> setters getters
