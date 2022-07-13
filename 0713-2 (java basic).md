@@ -77,7 +77,11 @@ public Student(String name, int kor, int eng, int math) {
 	
 // kor set method
 public void setKor(int kor) {
-	this.kor = kor;
+	if(kor >= 0 && kor <= 100) {
+		this.kor = kor;
+		} else {
+			System.out.println("[예외] 0-100 범위가 아님");
+		}
 }
 // kor get method
 public int getKor() {
@@ -118,6 +122,18 @@ public void setAvg() {
 public double getAvg() {
 	return avg;
 }
+
+public void computeTotAvg() {
+	tot = kor  + eng + math;
+	avg = tot * 100 / 3 / 100.0;
+}
+//source -> toString()
+@Override
+public String toString() {
+	return "Student [name=" + name + ", kor=" + kor + ", eng=" + eng + ", math=" + math + ", tot=" + tot + ", avg="
+				+ avg + "]";
+}
+	
 ```
 ```java
 stu.setKor(100);
@@ -134,6 +150,12 @@ System.out.println("tot : " + stu.getTot());
 		
 stu.setAvg();
 System.out.println("avg : " + stu.getAvg());
+
+System.out.println(stu);
+
+Student stu2 = new Student("자바2", 80, 70, 65);
+stu2.computeTotAvg();
+System.out.println(stu2);
 ```	
 		
 
