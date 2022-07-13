@@ -1,4 +1,4 @@
-# Java-study
+# Extends
 ```java
 // Phone 클래스를 상속받아(= extends : 확장해서) Mp3Phone 만들기
 class Mp3Phone extends Phone { // Phone에 기본 생성자 없을시 오류
