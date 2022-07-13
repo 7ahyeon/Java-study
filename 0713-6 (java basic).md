@@ -19,6 +19,11 @@ class Mp3Phone extends Phone { // Phone에 기본 생성자 없을시 오류
 	public void playMusic() {
 		System.out.println(">> 음악 플레이 ~ ");
 	}
+	@Override
+	public String toString() {
+		return "Mp3Phone [toString()=" + super.toString() + "]";
+	}
+
 ```
 ```java
 System.out.println("\n---Mp3Phone---");
@@ -37,8 +42,9 @@ System.out.println("mp3ph.getPhoneNo() : " + mp3ph.getPhoneNo());
 타입 : Mp3Phone, 전화 번호 : 010-3333-3333
 >> 전화 걸기 ~ 
 >> 전화 받기 ~ 
->> 음악 플레이 ~ 
-Phone [type=Mp3Phone, phoneNo=010-3333-3333]//Phone에서 호출시 (Phone에 toString()추가)  
+>> 음악 플레이 ~
+Mp3Phone [toString()=Phone [type=Mp3Phone, phoneNo=010-3333-3333]] //Mp3Phone에서 호출시 (Mp3Phone에 toString()추가)  
+// Phone [type=Mp3Phone, phoneNo=010-3333-3333]//Phone에서 호출시 (Phone에 toString()추가)  
 //com.mystudy.ex02_extends.Mp3Phone@59e84876 //Object에서 호출시
 mp3ph.getType() : Mp3Phone
 mp3ph.getPhoneNo() : 010-3333-3333
