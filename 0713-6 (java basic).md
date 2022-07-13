@@ -28,6 +28,9 @@ mp3ph.call();
 mp3ph.receiveCall();
 mp3ph.playMusic();
 System.out.println(mp3ph.toString());
+System.out.println("mp3ph.getType() : " + mp3ph.getType());
+System.out.println("mp3ph.getPhoneNo() : " + mp3ph.getPhoneNo());
+		
 ```
 ```java
 ---Mp3Phone---
@@ -36,6 +39,8 @@ System.out.println(mp3ph.toString());
 >> 전화 받기 ~ 
 >> 음악 플레이 ~ 
 com.mystudy.ex02_extends.Mp3Phone@59e84876
+mp3ph.getType() : Mp3Phone
+mp3ph.getPhoneNo() : 010-3333-3333
 ```
 
 
