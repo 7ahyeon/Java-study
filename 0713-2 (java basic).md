@@ -23,6 +23,7 @@ public class Student { //public유무로 외부 접근 허용 유무가 결정�
 	
 	// 외부에서 접근(사용) 가능하도록 method 제공(public)
 	// 명칭 : set method, setter, set property
+	//source -> setters getters
 	public void setName(String name) {
 		this.name = name;
 	}
@@ -52,6 +53,14 @@ private int eng;
 private int math;
 private int tot;
 private double avg;
+
+//source -> constructor using fields
+public Student(String name, int kor, int eng, int math) { //타입 (생성자)
+	super(); // 부모 클래스 타입
+	this.name = name;
+	this.kor = kor;
+	this.eng = eng;
+	this.math = math;
 	
 // kor set method
 public void setKor(int kor) {
