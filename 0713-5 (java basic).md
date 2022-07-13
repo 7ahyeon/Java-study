@@ -89,7 +89,104 @@
 		}
 ```
 ```java
+class Mp3Phone { //현재 패키지에서만 사용 가능
+	private String type;
+	private String phoneNo;
+	
+	public Mp3Phone(String phoneNo) {
+		type = "Mp3Phone 타입";
+		this.phoneNo = phoneNo;
+	}
 
+	public Mp3Phone(String type, String phoneNo) {
+		super();
+		this.type = type;
+		this.phoneNo = phoneNo;
+	}
+
+	public String getType() {
+		return type;
+	}
+
+	public String getPhoneNo() {
+		return phoneNo;
+	}
+	
+	//전화 걸기 기능
+	public void call() {
+		System.out.println(">> 전화 걸기 ! ");
+	}
+			
+	//전화 받기 기능
+	public void receiveCall() {
+		System.out.println(">> 전화 받기 ! ");
+	}
+			
+	//전화 정보 보기
+	public void view() {
+		System.out.println("타입 : " + type + ", " + "전화 번호 : " + phoneNo);
+	}
+	//음악 플레이 기능 -------
+	public void playMusic() {
+		System.out.println(">> 음악 플레이 ! ");
+	}
+
+	@Override
+	public String toString() {
+		return "Mp3Phone [type=" + type + ", phoneNo=" + phoneNo + "]";
+	}
+
+}
+
+```
+```java
+public class PhoneTest {
+
+	public static void main(String[] args) {
+		// Phone 객체 생성 후 사용 
+		System.out.println("---Phone---");
+
+		Phone ph1 = new Phone("010-1111-1111");
+		ph1.view();
+		ph1.call();
+		ph1.receiveCall();
+		
+		Phone ph2 = new Phone("se2", "010-2222-2222");
+		ph2.view();
+		ph2.call();
+		ph2.receiveCall();
+		String objString = ph2.toString(); //Object 클래스의 메서드 호출(실행)
+		System.out.println("ph2.toString() : " + objString);
+		
+		System.out.println("\n---Mp3Phone---");
+		Mp3Phone mp3ph = new Mp3Phone("010-3333-3333");
+		mp3ph.view();
+		mp3ph.call();
+		mp3ph.receiveCall();
+		mp3ph.playMusic();
+		System.out.println(mp3ph.toString());
+		
+	}
+
+}
+
+```
+```java
+---Phone---
+타입 : Phone 타입, 전화 번호 : 010-1111-1111
+>> 전화 걸기 ~ 
+>> 전화 받기 ~ 
+타입 : se2, 전화 번호 : 010-2222-2222
+>> 전화 걸기 ~ 
+>> 전화 받기 ~ 
+ph2.toString() : com.mystudy.ex01_class.Phone@7ca48474
+
+---Mp3Phone---
+타입 : Mp3Phone 타입, 전화 번호 : 010-3333-3333
+>> 전화 걸기 ! 
+>> 전화 받기 ! 
+>> 음악 플레이 ! 
+Mp3Phone [type=Mp3Phone 타입, phoneNo=010-3333-3333]
 ```
 
 
