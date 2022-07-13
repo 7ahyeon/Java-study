@@ -74,6 +74,7 @@ public Student(String name, int kor, int eng, int math) {
 	this.kor = kor;
 	this.eng = eng;
 	this.math = math;
+	computeTotAvg();
 	
 // kor set method
 public void setKor(int kor) {
@@ -154,7 +155,6 @@ System.out.println("avg : " + stu.getAvg());
 System.out.println(stu);
 
 Student stu2 = new Student("자바2", 80, 70, 65);
-stu2.computeTotAvg();
 System.out.println(stu2);
 ```	
 		
