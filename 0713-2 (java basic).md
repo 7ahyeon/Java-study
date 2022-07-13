@@ -32,6 +32,7 @@ public class Student { //public유무로 외부 접근 허용 유무가 결정�
 		this.name = name;
 	}
 	
+	// 명칭 : get method, getter, get property
 	public String getName() {
 		return name;
 	}
