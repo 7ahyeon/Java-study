@@ -80,6 +80,7 @@ public Student(String name, int kor, int eng, int math) {
 public void setKor(int kor) {
 	if(kor >= 0 && kor <= 100) {
 		this.kor = kor;
+		computeTotAvg();
 		} else {
 			System.out.println("[예외] 0-100 범위가 아님");
 		}
@@ -90,15 +91,24 @@ public int getKor() {
 }
 	
 public void setEng(int eng) {
-	this.eng = eng;
+	if (eng >= 0 && eng <= 100) {
+		this.eng = eng;
+	} else {
+		System.out.println("[오류] 1-100의 범위를 벗어났습니다.");
+	}
 }
+		
 	
 public int getEng() {
 	return eng;
 }
 	
 public void setMath(int math) {
-	this.math = math;
+	if (math >= 0 && math <= 100) {
+		this.math = math;
+	} else {
+		System.out.println("[오류] 1-100의 범위를 벗어났습니다.");
+	}
 }
 	
 public int getMath() {
