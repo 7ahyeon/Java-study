@@ -1,4 +1,4 @@
-# StudentVO 사용 3명의 성적 처리
+# StudentVO 사용 3명의 성적 처리 
 
 **VO (Value Object)**
 - 자바 빈(JavaBean) 형태의 클래스 작성 
