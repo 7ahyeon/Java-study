@@ -115,8 +115,51 @@ public class StudentVO {
 					+ ", avg=" + avg + "]";
 		}
 ```
+```java
+static final String TITLE = "성명\t국어\t영어\t수학\t총점\t평균";
+static final String LINE = "----------------------------------------------";
 
+	
+public static void main(String[] args) {
+	/* (실습) 3명의 성적처리(StudentVO 사용)
+	"홍길동", 100, 90, 81
+	"이순신", 95, 88, 92
+	"김유신", 90, 87, 77
+	==============================
+	성명\t국어\t영어 수학 총점 평균
+	------------------------------
+	홍길동	100	90	81	271	90.33
+	이순신	95	88	92	275	91.66
+	김유신	90	87	77	254	84.66
+	*/	
+		
+	StudentVO stu1 = new StudentVO("자바1", 100, 90, 81);
+	StudentVO stu2 = new StudentVO("자바2", 95, 88, 92);
+	StudentVO stu3 = new StudentVO("자바3", 90, 87, 77);
+		
+	System.out.println(LINE);
+	System.out.println(TITLE);
+	System.out.println(LINE);
+	TOTAL(stu1, stu2, stu3);
+		
+	stu1.setKor(70);
+	stu2.setKor(50);
+	stu3.setKor(70);
+	
+	System.out.println(LINE);
+	System.out.println(TITLE);
+	System.out.println(LINE);
+	TOTAL(stu1, stu2, stu3);
 
+}
+
+static void TOTAL(StudentVO a, StudentVO b, StudentVO c) {
+	System.out.println(a.getName() + "\t" + a.getKor() + "\t" + a.getEng() + "\t" + a.getMath() + "\t" + a.getTot() + "\t" + a.getAvg());
+	System.out.println(b.getName() + "\t" + b.getKor() + "\t" + b.getEng() + "\t" + b.getMath() + "\t" + b.getTot() + "\t" + b.getAvg());
+	System.out.println(c.getName() + "\t" + c.getKor() + "\t" + c.getEng() + "\t" + c.getMath() + "\t" + c.getTot() + "\t" + c.getAvg());
+		
+}
+```
 
 
 
