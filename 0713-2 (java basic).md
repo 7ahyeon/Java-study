@@ -45,9 +45,75 @@ public class Student { //public유무로 외부 접근 허용 유무가 결정�
 	}
 }
 ```
-
-
-
+**실습**
+```java
+private int kor;
+private int eng;
+private int math;
+private int tot;
+private double avg;
+	
+// kor set method
+public void setKor(int kor) {
+	this.kor = kor;
+}
+// kor get method
+public int getKor() {
+	return kor;
+}
+	
+public void setEng(int eng) {
+	this.eng = eng;
+}
+	
+public int getEng() {
+	return eng;
+}
+	
+public void setMath(int math) {
+	this.math = math;
+}
+	
+public int getMath() {
+	return math;
+}
+	
+	
+public void setTot() {
+	int tot = kor + eng + math;
+	this.tot = tot;
+}
+	
+public int getTot() {
+	return tot;
+}
+	
+public void setAvg() {
+	double avg = (double)(tot * 100 / 3 / 100.0) ;
+	this.avg = avg;
+}
+	
+public double getAvg() {
+	return avg;
+}
+```
+```java
+stu.setKor(100);
+System.out.println("kor : " + stu.getKor());
+		
+stu.setEng(90);
+System.out.println("eng : " + stu.getEng());
+		
+stu.setMath(70);
+System.out.println("math : " + stu.getMath());
+		
+stu.setTot();
+System.out.println("tot : " + stu.getTot());
+		
+stu.setAvg();
+System.out.println("avg : " + stu.getAvg());
+```	
+		
 
 
 
