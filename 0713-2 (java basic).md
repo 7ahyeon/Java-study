@@ -68,6 +68,7 @@ private int math;
 private int tot;
 private double avg;
 public Student(String name, int kor, int eng, int math) {
+	//this :부모 클래스로 인해 만들어진 현재 객체
 	this(name); //생성자 호출 코드 첫번째 실행 코드 
 //	this.name = name;
 	this.kor = kor;
