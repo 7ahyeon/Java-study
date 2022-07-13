@@ -11,8 +11,8 @@
 
 - 멤버 변수(property)의 접근 제한자(제어자) : private으로 선언
 - 멤버 변수(property)마다 get/set method(public으로 선언) 제공 (선택적으로 get만 제공) 
-- set method : 하나 이상의 파라미터 O
-- get method : 파라미터 X 
+- set method : 하나 이상의 파라미터 O · 데이터 설정
+- get method : 파라미터 X · 데이터 읽기
 - 멤버 변수(property)가 boolean 타입이면 get 대신 is method 사용 가능
 
 - 외부에서 멤버 변수(property) 접근시에는 get/set method 통해 접근
