@@ -10,6 +10,7 @@
 
 **확장 Extends**
 - 좌우 동일 타입 (하위 extends 상위)
+- 클래스는 1개만 상속확장 가능(단일 상속)
 - class extends class / interface extends interface1, interface2, ... interfaceN
 
 **구현 Implements**
