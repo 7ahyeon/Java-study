@@ -97,7 +97,21 @@ class PhoneImpl implements I_Phone {
 		
 	}
 ```
+```java
+// 인터페이스에는 final 속성값, 추상 method가 있다
+interface I_Phone { // public 유무 ok
+	// {} X : 추상 메서드 (abstract method) : 구현부 X
+	// 인터페이스에 정의된 method는 모두 public abstract method
+	public abstract void view(); //public abstract method
+	public void call(); //public abstract method
+	void receiveCall(); //public abstract method
+	
+	void sendMsg();
+	void receiveMsg();
 
+	
+}
+```
 
 
 
