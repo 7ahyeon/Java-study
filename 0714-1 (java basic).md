@@ -49,5 +49,21 @@ Webph.receiveCall();
 Webph.view();
 Webph.webSearch();
 ```
-
+- 음악 플레이 기능 추가
+```java
+public class WebPhone extends Mp3Phone { //Phone
+	
+	public WebPhone(String phoneNo) {
+		super("WebPhone", phoneNo);
+	}
+	
+	public void webSearch() {
+		System.out.println(">> WebPhone - 웹 검색");
+	}
+	
+//	public void playMusic() {
+//		System.out.println(">> 음악 플레이 !!");
+//	}
+}
+```
 
