@@ -14,6 +14,7 @@
 
 **구현 Implements**
 - class implements interface1, interface2, ... interfaceN
+- class extends class implements interface1, interface2, ... interfaceN 
 
 
 
