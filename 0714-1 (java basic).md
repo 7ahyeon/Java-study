@@ -66,4 +66,48 @@ public class WebPhone extends Mp3Phone { //Phone
 //	}
 }
 ```
+```java
+// 인터페이스(interface) 구현(implements)해서 클래스 만들기
+class PhoneImpl implements I_Phone {
+
+	//source -> override/implement methods
+	
+	@Override //메서드 오버라이딩해서 만든 메서드를 의미(재정의)
+	public void view() {
+		
+	}
+
+	@Override
+	public void call() {
+		
+	}
+
+	@Override
+	public void receiveCall() {
+		
+	}
+
+	@Override
+	public void sendMsg() {
+		
+	}
+
+	@Override
+	public void receiveMsg() {
+		
+	}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
 
