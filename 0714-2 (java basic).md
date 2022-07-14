@@ -106,3 +106,11 @@ interface I_Phone { // public 있거나 없거나
 
 }
 ```
+```java
+public class PhoneImpl implements I_Phone {
+
+	@Override
+	public void view() {
+		I_Phone.staticMethod(); //인터페이스의 static method 호출(실행)
+	}
+```
