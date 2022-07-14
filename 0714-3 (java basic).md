@@ -62,3 +62,44 @@ public static void main(String[] args) {
 		fe.siren();
 		fe.water();
 ```
+```java
+	System.out.println("\n--- 형변환 ---");
+		Car carTemp = new Car(); // Car <- Car
+		carTemp.type = "자동차(Car)";
+		System.out.println("타입 : " + carTemp.type);
+		carTemp.drive();
+		carTemp.stop();
+//		carTemp.siren(); //undefined : 컴파일 오류 : Car 타입에 siren() 없음
+		
+		System.out.println("--- Car <- Ambulance 저장 ---");
+		// Car <- Ambulance : 상위 타입 <- 하위 타입 (자동 형변환)
+		carTemp = am; // Car <- Ambulance : 자동 형변환 //(Car)필요X
+		carTemp.drive();
+		carTemp.stop();
+//		carTemp.siren(); //undefined : 컴파일 오류 : Car 타입에 siren() 없음
+		
+		print("Ambulance <- Car <- Ambulance");
+		// 하위 타입 <- 상위 타입 (명시적(강제) 형변환 처리 필요)
+		Ambulance am2 = (Ambulance)carTemp; // Ambulance <- Car //(Ambulance)필요O
+		System.out.println("타입 : " + am2.type);
+		am2.drive();
+		am2.stop();
+		am2.siren();
+		
+		// Ambulance 고유 기능 siren() 사용 : Ambulance 타입이 되어야 함
+		// (Ambulance).siren()
+		((Ambulance)carTemp).siren();
+		
+		print("Ambulance <- Car");
+		System.out.println("타입 : " + car.type);
+		
+		// 하위 타입 <- 상위 타입 형변환 : 컴파일 오류X 실행 오류O
+		// 실행시 예외 발생 : ClassCastException
+//		Ambulance am3 = (Ambulance)car; //명시적(강제) 형변환
+//		print("Ambulance <- Car 형변환 후 : " + am3.type);
+	
+		// 실행시 예외 발생 : ClassCastException
+// ((Ambulance)car).siren(); // Car cannot be cast to Ambulance
+	
+	}
+```
