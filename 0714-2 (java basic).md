@@ -47,8 +47,8 @@ class Phone implements I_Phone{
 	public void receiveMsg() {
 		System.out.println(">> receiveMsg() 실행 !");
 	}
-	```
-  ```java
+```
+```java
   // I_Phone 인터페이스를 구현한 Phone을 상속 확장(extends)하고
 // I_Mp3Phone 인터페이스를 구현(implements)해서 클래스 만들기
 class Mp3Phone extends Phone implements I_Mp3Phone {
