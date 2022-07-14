@@ -100,7 +100,7 @@ interface I_Phone { // public 있거나 없거나
 	} 
 	//public static 메서드 
 	//재정의 없이 인터페이스명으로 참조 사용
-	public default void staticMethod() {
+	public static void staticMethod() {
 		System.out.println("I_Phone 인터페이스의 static 메서드");
 	}
 
