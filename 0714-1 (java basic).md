@@ -18,7 +18,36 @@
 - class extends class implements interface1, interface2, ... interfaceN 
 
 
+**객체 생성**
+- 하위 클래스에서 객체 생성시 모든 상위 클래스 객체 포함
 
-
+# 클래스 상속 확장(extends) 생성 및 사용 실습
+ - Phone 클래스 상속 확장해서 만들기
+ 생성자
+ - 폰 번호(phoneNo)만 받아서 객체 생성
+ - 타입 값은 "WebPhone"으로 입력
+ 기능
+ - 전화 걸기, 받기, 정보 보기, 웹 검색 기능 추가
+ - 웹 검색 기능 : webSearch() : ">> WebPhone - 웹 검색" 화면 출력
+ 
+ ```java
+ public class WebPhone extends Phone {
+	
+	public WebPhone(String phoneNo) {
+		super("WebPhone", phoneNo);
+	}
+	
+	public void webSearch() {
+		System.out.println(">> WebPhone - 웹 검색");
+	}
+}
+```
+```java
+WebPhone Webph = new WebPhone("010-4444-4444");
+Webph.call();
+Webph.receiveCall();
+Webph.view();
+Webph.webSearch();
+```
 
 
