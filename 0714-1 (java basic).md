@@ -14,6 +14,7 @@
 - class extends class / interface extends interface1, interface2, ... interfaceN
 
 **구현 Implements**
+- 구현체 implements 인터페이스(들)
 - class implements interface1, interface2, ... interfaceN
 - class extends class implements interface1, interface2, ... interfaceN 
 
