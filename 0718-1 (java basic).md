@@ -34,7 +34,26 @@ System.out.println(">> 가장 큰 수 : " + max);
 - 다른 메서드 동일 메서드명 사용 가능
 - 1개 클래스 내에서 적용 (상속 X)
 - printBoolean(boolean), printInt(int), ... , printObject(object) : print()
-- 
+```java
+sound(cat);
+sound(chicken);
+```
+```java
+static void sound(Animal animal) {
+		if(animal instanceof Cat) {
+			((Cat)animal).sound();
+		} else if(animal instanceof Chicken) {
+			((Chicken)animal).sound();
+		}
+		
+	}
+//	static void sound(Cat cat) {
+//		cat.sound();
+//	}
+//	static void sound(Chicken chicken) {
+//		chicken.sound();
+//	}
+```
 
 **메서드 오버라이딩 method overrriding**
 - 동일 선언 / 서로 다른 기능 구현
