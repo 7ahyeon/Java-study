@@ -130,7 +130,52 @@ static int divThrows(int num1, int num2) throws ArithmeticException{
 
 	}
 ```
+```java
+	title("main() 시작");
 
+	try {
+		firstMethod();
+	} catch (MyException e) {
+		e.printStackTrace(); // 예외 객체 추적
+		print("main-catch문 실행됨");
+		System.out.println(">> 오류메시지 : " + e.getMessage());
+	}
+
+	title("main() 끝");
+```
+```java
+static void firstMethod() throws MyException {
+	title("firstMethod() 시작");
+	print("firstMethod() : 실행문");
+	secondMethod();
+	title("firstMethod() 끝");
+}
+
+//throws : 예외를 호출한 곳에서 처리하도록 던짐(예외 처리 전가)
+static void secondMethod() throws MyException {
+	title("secondMethod() 시작");
+	print("secondMethod() : 실행문");
+	//예외 발생시키기
+	throw new MyException("secondMethod() 예외 발생");
+
+//		title("secondMethod() 끝");
+}
+	
+```
+```java
+---main() 시작---
+---firstMethod() 시작---
+>> firstMethod() : 실행문
+---secondMethod() 시작---
+>> secondMethod() : 실행문
+com.mystudy.ex02_myexception.MyException: >> 내가 만든 Exception : secondMethod() 예외 발생
+	at com.mystudy.ex02_myexception.MyExcepionTest.secondMethod(MyExcepionTest.java:32)
+	at com.mystudy.ex02_myexception.MyExcepionTest.firstMethod(MyExcepionTest.java:23)
+	at com.mystudy.ex02_myexception.MyExcepionTest.main(MyExcepionTest.java:9)
+>> main-catch문 실행됨
+>> 오류메시지 : >> 내가 만든 Exception : secondMethod() 예외 발생
+---main() 끝---
+```
 
 
 
