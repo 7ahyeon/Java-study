@@ -37,10 +37,16 @@ System.out.println(">> 가장 큰 수 : " + max);
 - 
 
 **메서드 오버라이딩 method overrriding**
-- 서로 다른 기능
-- 상속 관계 메서드 재정의
+- 동일 선언 / 서로 다른 기능 구현
+- 상속 관계 메서드 재정의 : 상속 관계에 있는 클래스에서 수퍼(상위)타입에 있는 메서드를 서브(하위)타입 클래스에서 재정의
 - 상위 클래스 toString : 주소값 출력 -> 하위 클래스 toString : 객체 속성값 출력
-
+```java
+@Override
+	void sound() {
+//		super.sound(); // 상위 클래스의 기능을 사용
+		System.out.println(">> 야옹 야옹");
+	}
+```
 
 
 
