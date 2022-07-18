@@ -88,6 +88,7 @@ static void sound(Animal animal) {
 
 **Interface**
 - 추상체 : 메서드 선언부만 존재 (구현X)
+- 단, default/static 구현 메서드가 있다.
 
 
 **Abstract Class**
