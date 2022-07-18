@@ -91,8 +91,8 @@ static void sound(Animal animal) {
 
 
 **Abstract Class**
-- 추상 메서드 1개 이상 존재
-- 객체 생성 불가
+- 구현 메서드와 추상 메서드가 함께 있는 클래스
+- 추상 메서드 1개 이상 존재 (객체(인스턴스) 생성 불가)
 
 
 
