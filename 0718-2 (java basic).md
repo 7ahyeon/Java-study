@@ -1,8 +1,10 @@
 
+# Exception
+
 1. 에러(error) : 프로그램적으로 처리할 수 없음(JVM에서 처리)
 2. 예외(Exception) : 프로그래머가 해결해야하는 오류
 
-#Exception
+
 
 **예외 Exception**
 - 예외 중 최상 클래스 : java.lang.Throwable
