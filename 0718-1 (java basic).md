@@ -153,6 +153,44 @@ class Cat extends AbstractAnimal {
 
 }
 ```
+```java
+public class Cat extends AbstractAnimal {
 
+	@Override
+	public void sound() {
+		System.out.println(">> 야옹");
+		
+	}
+}
+```
+```java
+	title("Cat");
+		Cat cat = new Cat();
+		cat.eat();
+		cat.sleep();
+		cat.sound();
+		cat.test();
 
+		AbstractAnimal cat2 = new Cat(); //상위 타입 <- 하위 타입
+		cat2.eat();
+		cat2.sleep();
+		cat2.sound();
+//		cat2.test(); //정의되지 않은 메서드
+		
+		Animal cat3 = new Cat(); //인터페이스 <- 구현한 객체
+		cat3.eat();
+		cat3.sleep();
+		cat3.sound();
+//		cat3.test();
+```
+```java
+//상위 클래스에 저장해서 사용(AbstractAnimal 타입으로 사용)
+static void sound(AbstractAnimal animal) {
+		animal.sound();
+	}
+// 인터페이스 타입으로 사용
+	static void sound(Animal animal) {
+		animal.sound();
+	}
+```
 
