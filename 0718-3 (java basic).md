@@ -24,16 +24,16 @@ System.out.println("[Exception] 0으로 나누려고 했습니다");
 **try ~ catch ~ finally문**
 ```java
 try {
-print("try문 시작");
-result = 100 / num;
+	print("try문 시작");
+	result = 100 / num;
 
-print("연산 처리 정상 실행");
-print("try문 끝");
-} catch(ArithmeticException e) {
-	print("catch문 실행");
-} finally {
-	print("finally : 항상 실행(무조건)");
-}
+	print("연산 처리 정상 실행");
+	print("try문 끝");
+	} catch(ArithmeticException e) {
+		print("catch문 실행");
+	} finally {
+		print("finally : 항상 실행(무조건)");
+	}
 ```
 
 
