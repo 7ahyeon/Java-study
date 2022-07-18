@@ -35,8 +35,27 @@ try {
 		print("finally : 항상 실행(무조건)");
 	}
 ```
+- 예외 발생시 return에 의해 finally 구문 뒤 일반 명령문은 실행되지 않음
+```java
+try {
+	print("try문 시작");
+	result = 100 / num;
 
-
+	print("연산 처리 정상 실행");
+	print("try문 끝");
+} catch(ArithmeticException e) {
+	print("catch문 실행");
+	return;
+} finally {
+	print("finally : 항상 실행(무조건)");
+}
+print("finally 구문 뒤에 작성된 일반 명령문");
+```
+```java
+>> try문 시작
+>> catch문 실행
+>> finally : 항상 실행(무조건)
+```
 
 
 
