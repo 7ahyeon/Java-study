@@ -64,6 +64,7 @@ static void sound(Animal animal) {
 - 동일 선언 / 서로 다른 기능 구현
 - 상속 관계 메서드 재정의 : 상속 관계에 있는 클래스에서 수퍼(상위)타입에 있는 메서드를 서브(하위)타입 클래스에서 재정의
 - 상위 클래스 toString : 주소값 출력 -> 하위 클래스 toString : 객체 속성값 출력
+- sound() 추가 : Animal 상속확장(extends)해서 Aniaml 클래스에 있는 sound() method override 구현 
 ```java
 @Override
 	void sound() {
@@ -81,9 +82,17 @@ static void sound(Animal animal) {
 	}
 ```
 
+**Class**
+- 구현체 : 모든 메서드를 구현
+- 객체(인스턴스) 생성
+
+**Interface**
+- 추상체 : 메서드 선언부만 존재 (구현X)
 
 
-
+**Abstract Class**
+- 추상 메서드 1개 이상 존재
+- 객체 생성 불가
 
 
 
