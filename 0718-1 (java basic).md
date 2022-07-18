@@ -94,6 +94,42 @@ static void sound(Animal animal) {
 - 구현 메서드와 추상 메서드가 함께 있는 클래스
 - 추상 메서드 1개 이상 존재 (객체(인스턴스) 생성 불가)
 
+```java
+abstract class AbstractAnimal { //abstract class에서만 abstract method 사용 가능
+
+	String name; // 이름, 명칭
+	int legCnt; // 다리 개수
+	
+	void eat() {
+		System.out.println(">> 먹는다");
+	}
+	void sleep() {
+		System.out.println(">> 잠을 잔다");
+	}
+	
+	abstract void sound(); // 추상 메서드 (abstract method)
+}
+```
+```java
+class Cat extends AbstractAnimal {
+
+	// 추상 클래스에서 선언된 메서드 반드시 구현
+	@Override
+	void sound() {
+		System.out.println(">> 야옹");
+	}
+
+}
+```
+```java
+		//Cannot instantiate the type AbstractAnimal
+//		AbstractAnimal abstractAnimal = new AbstractAnimal();
+		
+		title("cat");
+		Cat cat = new Cat();
+		sound(cat);
+```
+
 
 
 
