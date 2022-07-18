@@ -95,6 +95,7 @@ static void sound(Animal animal) {
 - 추상 클래스 : 구현 메서드와 추상 메서드가 함께 있는 클래스
 - 직접 객체 생성(인스턴스화) 할 수 없고 반드시 추상 메서드가 구현되어야 한다.
 
+-예제1
 ```java
 abstract class AbstractAnimal { //abstract class에서만 abstract method 사용 가능
 
@@ -130,8 +131,28 @@ class Cat extends AbstractAnimal {
 		Cat cat = new Cat();
 		sound(cat);
 ```
+- 예제2
+```java
+// 추상 메서드가 1개라도 있으면 클래스도 추상 클래스가 되어야 함
+ abstract class AbstractAnimal implements Animal {
 
+	@Override
+	public void eat() {
+		System.out.println(">> 먹는다");
+		
+	}
 
+	@Override
+	public void sleep() {
+		System.out.println(">> 잠을 잔다");
+		
+	}
+
+	@Override
+	public abstract void sound(); // 추상 메서드
+
+}
+```
 
 
 
