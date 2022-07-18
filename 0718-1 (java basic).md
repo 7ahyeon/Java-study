@@ -91,8 +91,8 @@ static void sound(Animal animal) {
 
 
 **Abstract Class**
-- 구현 메서드와 추상 메서드가 함께 있는 클래스
-- 추상 메서드 1개 이상 존재 (객체(인스턴스) 생성 불가)
+- 추상 클래스 : 구현 메서드와 추상 메서드가 함께 있는 클래스
+- 직접 객체 생성(인스턴스화) 할 수 없고 반드시 추상 메서드가 구현되어야 한다.
 
 ```java
 abstract class AbstractAnimal { //abstract class에서만 abstract method 사용 가능
