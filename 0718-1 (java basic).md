@@ -39,20 +39,25 @@ sound(cat);
 sound(chicken);
 ```
 ```java
+static void sound(Cat cat) {
+		cat.sound();
+	}
+static void sound(Chicken chicken) {
+		chicken.sound();
+	}
+```
+- methodoverriding X : 타입을 확인하는 방식 (instanceof 사용)
+```java
 static void sound(Animal animal) {
 		if(animal instanceof Cat) {
 			((Cat)animal).sound();
 		} else if(animal instanceof Chicken) {
 			((Chicken)animal).sound();
+		} else if (animal instanceof Dog) {
+			((Dog)animal).sound();
 		}
 		
 	}
-//	static void sound(Cat cat) {
-//		cat.sound();
-//	}
-//	static void sound(Chicken chicken) {
-//		chicken.sound();
-//	}
 ```
 
 **메서드 오버라이딩 method overrriding**
@@ -64,6 +69,15 @@ static void sound(Animal animal) {
 	void sound() {
 //		super.sound(); // 상위 클래스의 기능을 사용
 		System.out.println(">> 야옹 야옹");
+	}
+```
+```java
+sound(animal);
+sound(cat);
+```
+```java
+static void sound(Animal animal) {
+		animal.sound();
 	}
 ```
 
