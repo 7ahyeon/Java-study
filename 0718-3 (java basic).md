@@ -45,7 +45,7 @@ try {
 	print("try문 끝");
 } catch(ArithmeticException e) {
 	print("catch문 실행");
-	return;
+	return; //main() 메서드 종료하고 호출한 곳으로 되돌아감
 } finally {
 	print("finally : 항상 실행(무조건)");
 }
