@@ -59,7 +59,7 @@ print("finally 구문 뒤에 작성된 일반 명령문");
 
 **throw/throws**
 - throw : 예외를 발생시킬 때 사용
-- throws : 발생한 예외 객체를 호출한 곳으로 던질 때(위임/전가) 사용
+
 ```java
 throw new ArithmeticException(">>예외 메시지 작성 전달");
 throw new ArrayIndexOutOfBonusException(10);
@@ -97,6 +97,7 @@ static int divide(int num1, int num2) {
 divide() 결과 : -999
 ---main() 끝---
 ```
+- throws : 발생한 예외 객체를 호출한 곳으로 던질 때(위임/전가) 사용
 ```java
 result = 0;
 try {
