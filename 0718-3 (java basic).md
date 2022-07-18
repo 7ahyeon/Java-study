@@ -57,10 +57,46 @@ print("finally 구문 뒤에 작성된 일반 명령문");
 >> finally : 항상 실행(무조건)
 ```
 
+**throw/throws**
+- throw : 예외를 발생시킬 때 사용
+- throws : 발생한 예외 객체를 호출한 곳으로 던질 때(위임/전가) 사용
+```java
+throw new ArithmeticException(">>예외 메시지 작성 전달");
+throw new ArrayIndexOutOfBonusException(10);
+```
+```java
+	print("연산 시작");
 
+	result = divide(num1, num2);
 
+	System.out.println("divide() 결과 : " + result);
+	title("main() 끝");
 
+}
 
+static int divide(int num1, int num2) {
+	System.out.println("-> divide() 시작");
+	int result = -999;
+
+	try {
+		result = num1 / num2;
+	} catch(ArithmeticException e) {
+		System.out.println("[예외 발생] " + e.getMessage());
+	}
+
+	System.out.println("-> divide() 끝");
+	return result;
+}
+```
+```java
+---main() 시작---
+>> 연산 시작
+-> divide() 시작
+[예외 발생] / by zero
+-> divide() 끝
+divide() 결과 : -999
+---main() 끝---
+```
 
 
 
