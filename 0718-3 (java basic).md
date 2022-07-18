@@ -72,8 +72,8 @@ throw new ArrayIndexOutOfBonusException(10);
 	System.out.println("divide() 결과 : " + result);
 	title("main() 끝");
 
-}
-
+```
+```java
 static int divide(int num1, int num2) {
 	System.out.println("-> divide() 시작");
 	int result = -999;
@@ -97,6 +97,43 @@ static int divide(int num1, int num2) {
 divide() 결과 : -999
 ---main() 끝---
 ```
+```java
+result = 0;
+try {
+	result = divThrows(num1, num2);
+} catch(ArithmeticException e) {
+	System.out.println("[예외 발생] main() divThrows() : " + e.getMessage());
+
+}
+System.out.println("divThrows() 연산 결과 : " + result);
+
+title("main() 끝");
+```
+```java
+// RuntimeException 계열 예외는 throws 하지 않아도 됨 (필수X)
+// 코드 작성시 예외 처리 필수 아님
+static int divThrows(int num1, int num2) throws ArithmeticException{
+		System.out.println("-> divThrows() 시작");
+
+		int result = -999;
+
+		try {
+			result = num1 / num2;
+		} catch(ArithmeticException e) {
+			System.out.println("[divThrows() 연산 중 예외 발생] ");
+			throw new ArithmeticException("[예외 발생] 0값으로 나누려고 했습니다");
+		}
+
+		System.out.println("-> divThrows() 끝");
+		return result;
+
+	}
+```
+
+
+
+
+
 
 
 
