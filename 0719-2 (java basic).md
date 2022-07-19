@@ -75,7 +75,51 @@ Inner 클래스 필드변수 in : 888
 - 외부 클래스의 필드변수 선언위치에 선언
 - 외부 클래스의 static 멤버처럼 사용
 - 외부 클래스의 static 멤버와 관련된 작업을 처리하기 위한 경우 사용
-  
+```java
+- 외부 클래스명.내부 클래스명 변수명 = new 외부클래스명.내부 클래스명()
+- StaticClass.Inner inner = new StaticClass.Inner();
+```
+```java
+int a = 100;
+	private int b = 10;
+	static int c = 300;
+	
+	static int sum = 0;
+	static int sNum1 = 20;
+	static int sNum2 = 30;
+	
+	static void sum() { // 로컬 클래스 
+		sum = Inner.d + sNum2; //static 변수만 사용 가능
+	}
+	
+	// 내부 스테틱 클래스 (inner class중 static class)
+	static class Inner{
+		static int d = 1000;
+		int e = 2000;
+		void printData() {
+//			System.out.println("int a : " + a); //non-static 변수 사용 불가
+//			System.out.println("int b : " + b); //non-static 변수 사용 불가
+			System.out.println("static int c : " + c); //static 변수 사용 가능
+			
+			System.out.println("내부 선언된 static int d : " + d); 
+			System.out.println("내부 선언된 int e : " + e); 
+			
+```
+```java
+public static void main(String[] args) {
+	int num = StaticClass.c; //클래스명.static변수명 : static 변수 사용
+	StaticClass.sum(); //클래스명.static메서드명 : static 메서드 사용
+
+	// 클래스명.내부클래스명.static변수명 : 내부 클래스인 static 클래스의 Static 필드변수 사용
+	int innerNum = StaticClass.Inner.d;
+
+	// : static 내부 클래스 객체 생성 후! non-static 메서드 사용
+	// 외부 클래스명.내부 클래스명 변수명 = new 외부클래스명.내부 클래스명()
+	StaticClass.Inner inner = new StaticClass.Inner();
+	inner.printData(); // 생성된 객체(인스턴스)로 non-static 메서드 실행
+}
+```
+
 3. 지역 클래스(local class)
 - 외부클래스의 메소드나 초기화 블럭 내에 선언
 - 선언된 영역 내부에서만 사용
