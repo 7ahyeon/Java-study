@@ -202,6 +202,7 @@ public class AnonymousClassTest {
 		System.out.println("---인터페이스 직접 구현 객체 사용---");
 		
 		//익명 클래스 : 클래스의 이름이 없는 클래스		
+		//한번만 사용하는 용도로 만들어 사용하는 클래스
 		TestInter test = new TestInter() {
 
 			@Override
