@@ -26,7 +26,7 @@ public class InstanceClass {
 	static int c = 300;
 	int sum = 0;
 	
-	void sum() {
+	void sum() { //로컬 
 		sum = a + b;
 	}
 	
@@ -69,7 +69,6 @@ sum : 110
 ------
 Inner 클래스 필드변수 in : 888
 ```
-
 
 2. 스태틱 클래스(static class)
 - 클래스의 구성멤버의 일부가 static인 경우 클래스를 static 선언
