@@ -91,7 +91,44 @@
 		System.out.println("remove(obj) 리턴값 : " + removeSuccess);
 		System.out.println("----------------------------------");
 ```  
-  
-  
-  
-  
+```java
+System.out.println("Collections.reverse(list1) 전 : " + list1);
+	Collections.reverse(list1);
+	System.out.println("Collections.reverse(list1) 후 : " + list1);
+
+	System.out.println("------------------list2-----------------");
+
+	List<Integer> subList = list1.subList(1, 4);
+	System.out.println(subList);
+
+	ArrayList<Integer> list2 = new ArrayList<>(list1.subList(1, 4));
+	System.out.println("list2 : " + list2);
+
+	System.out.println(">> Collections.sort()");
+	Collections.sort(list2);
+	System.out.println("Collections.sort(list2) 후 : " + list2);
+```
+```java
+System.out.println("---반복문 사용 전체 데이터 조회---");
+	System.out.println("list1 : " + list1);
+
+	for(int i = 0; i < list1.size(); i++) {
+		System.out.println(i  + " : " + list1.get(i));
+	}
+
+	System.out.println("---");
+
+	for (Integer num : list1) {
+		System.out.println(num);
+	}
+
+	System.out.println("---");
+
+	int idx = 0;
+	for (Integer num : list1) {
+		System.out.println(idx++ + " : " + num);
+	}
+```
+```java
+System.out.println("list1.contains(700) : " + list1.contains(700));
+```
