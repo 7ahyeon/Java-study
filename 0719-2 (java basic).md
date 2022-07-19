@@ -3,14 +3,42 @@
 **inner class / nested class 내부 클래스**
 
 1. 인스턴스 클래스 (instance class)
+
 - 객체를 생성해야 사용 가능
 - 외부 클래스의 필드변수 선언위치에 선언
 - 외부 클래스의 인스턴스 변수처럼 취급
 - 외부 클래스의 인스턴스 변수들과 관련된 작업에 사용할 목적으로 선언 사용
+
+- 외부 클래스명.내부 클래스명 : 내부 클래스의 타입
+- 객체 생성 : new 외부 클래스().new 내부 클래스()
 ```java
 - 외부 클래스명.내부 클래스명 변수명 = new 외부클래스명().new 내부 클래스명()
 - InstanceClass.Inner inner = new InstanceClass().new Inner();
 ```
+```java
+public class InstanceClass {
+	
+	int a = 100;
+	private int b = 10;
+	static int c = 300;
+	int sum = 0;
+	
+	void sum() {
+		sum = a + b;
+	}
+	
+	//내부 클래스 Inner class : 인스턴스 클래스 (객체를 생성해야 사용 가능)
+	class Inner{
+		int in = 888;
+		void printData() {
+			System.out.println("int a : " + a);
+			System.out.println("int b : " + b);
+		}	
+	}
+}
+```
+```java
+
 
 2. 스태틱 클래스(static class)
 - 클래스의 구성멤버의 일부가 static인 경우 클래스를 static 선언
