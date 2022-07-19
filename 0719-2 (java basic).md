@@ -172,28 +172,45 @@ public class LocalClassTest {
 
 4. 익명 클래스(anonymous class)
 - 클래스의 선언과 객체의 생성을 동시에 하는 이름없는 클래스(일회용)
-
 ```java
-class 외부클래스 {
-	//필드변수
+
+interface TestInter {
+	int DATA = 100; //public/static/final
+	void printData(); //추상 메서드
 	
-	//생성자
+}
+
+class TestInterImpl implements TestInter{
+
+	@Override
+	public void printData() {
+		System.out.println(">> 구현한 메서드");
+	}
 	
-	//메소드
-	void method() {
-		class 지역클래스 {
+}
+
+public class AnonymousClassTest {
+
+	public static void main(String[] args) {
+		TestInterImpl imp = new TestInterImpl();
+		imp.printData();
 		
-		}
-	
+		TestInter imp2 = new TestInterImpl();
+		imp2.printData();
+		
+		
+		System.out.println("---인터페이스 직접 구현 객체 사용---");
+		
+		//익명 클래스 : 클래스의 이름이 없는 클래스		
+		TestInter test = new TestInter() {
+
+			@Override
+			public void printData() {
+				System.out.println("DATA : " + DATA);
+			}
+		};
+		test.printData();
 	}
 
-	class 인스턴스클래스 {
-	
-	}
-	
-	static class 스태틱클래스 {
-	
-	}
-	
 }
 ```
