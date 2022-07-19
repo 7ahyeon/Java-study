@@ -14,6 +14,9 @@
 ```java
 - 외부 클래스명.내부 클래스명 변수명 = new 외부클래스명().new 내부 클래스명()
 - InstanceClass.Inner inner = new InstanceClass().new Inner();
+
+- 외부 클래스명.내부 클래스명 변수명 = out.new 내부클래스명()
+- InstanceClass.Inner inner = out.new Inner();
 ```
 ```java
 public class InstanceClass {
