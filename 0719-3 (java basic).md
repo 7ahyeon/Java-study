@@ -59,15 +59,19 @@ Box box = new Box();
 		
 		boxg.setObj(str);
 //		boxg.setObj(str2); // 타입이 맞지 않으면 컴파일 오류 발생
+
 		System.out.println(boxg.getObj());
+		String strReturn = boxg.getObj();
 
 		System.out.println("------");
 		BoxG<Integer> boxg2 = new BoxG<Integer>();
 		boxg2.setObj(100);
+
 //		boxg2.setObj(str); // 타입이 맞지 않으면 컴파일 오류 발생
 		boxg2.setObj(str2);
 		
 		System.out.println(boxg2.getObj());
+		Integer intReturn = boxg2.getObj();
 ```
 
 
