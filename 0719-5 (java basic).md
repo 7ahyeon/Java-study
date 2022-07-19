@@ -70,6 +70,13 @@
 			} 
 		}
 	
+		String nameData = "을지문덕";
+		
+		if (names.contains(nameData)) {
+			int idx = names.indexOf(nameData);
+			System.out.println(idx + " : " + names.get(idx) );
+		}
+	
 //		for (int i = 0; i < names.size(); i++) {
 //			if (names.get(i).contains("을지문덕")) {
 //				System.out.println(i + " : " + names.get(i));
