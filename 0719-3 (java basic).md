@@ -6,15 +6,6 @@
 - API -> <T> : 객체자료형, <E> : 하나의 요소(즉 객체 하나를 의미)
 - Map형식 : <K, V> K는 key(키), V는 value(값)
 
-**대표문자 wildcard**
-1. <?> : 모든 타입(객체) 자료형에 대한 대표문자를 의미
-2. <? extends 자료형> : 자료형을 상속받은 자녀(sub) 클래스 타입 사용
-3. <? super 자료형> : 자료형의 부모(super) 타입 사용           
-
-**Collection**
-- 객체들을 모아 놓은 것(객체를 모아서 관리)
-- Collection<E> => Set<E>, List<E>, Queue<E>, Map<K,V>
-
 ```java
 class Box {
 	Object obj; //필드(멤버) 변수의 타입
@@ -74,7 +65,36 @@ Box box = new Box();
 		Integer intReturn = boxg2.getObj();
 ```
 
+**대표문자 wildcard**
+1. <?> : 모든 타입(객체) 자료형에 대한 대표문자를 의미
+2. <? extends 자료형> : 자료형을 상속받은 하위(sub) 클래스 타입 사용
+3. <? super 자료형> : 자료형의 상위(super) 타입 사용           
 
+```java
+//		 Wild card 
+
+//		1. <?> : 모든 타입(객체) 자료형에 대한 대표문자를 의미
+		BoxT<?> box = new BoxT<String>();
+		box = new BoxT<Integer>();
+		box = new BoxT<StringBuilder>();
+		
+//		2. <? extends 자료형> : 자료형을 상속받은 하위(sub) 클래스 타입 사용
+		BoxT<? extends Number> box2 = new BoxT<Number>();
+		box2 = new BoxT<Byte>();
+		box2 = new BoxT<Integer>();
+		box2 = new BoxT<Double>();
+//		box2 = new BoxT<Object>(); 
+//		box2 = new BoxT<String>(); 
+		
+//		3. <? super 자료형> : 자료형의 상위(super) 타입 사용  
+		BoxT<? super Number> box3 = new BoxT<Number>();
+		box3 = new BoxT<Object>();
+```
+
+
+**Collection**
+- 객체들을 모아 놓은 것(객체를 모아서 관리)
+- Collection<E> => Set<E>, List<E>, Queue<E>, Map<K,V>
 
 
 
