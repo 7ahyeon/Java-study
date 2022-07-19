@@ -13,7 +13,7 @@
 - 구현클래스 : ArrayList, LinkedList, Stack, Vector 등
 
 - ArrayList vs LinkedList 비교
-||ArrayList|LinkedList|
+| |ArrayList|LinkedList|
 |:---:|:---:|:---:|
 |맨뒤에 추가|빠름|느림|
 |중간CUD|느림|빠름|
