@@ -42,25 +42,25 @@
 		
 //		4. 이름이 을지문덕인 데이터를 찾아서 "인덱스번호:이름" 형태로 출력
 		for (int i = 0; i < names.size(); i++) {
-			if (names.get(i) == "을지문덕") {
+			if (names.get(i).equals("을지문덕")) {
 				System.out.println(i + " : " + names.get(i));
 			} 
 		}
 	
 		for (int i = 0; i < names.size(); i++) {
-			if (names.get(i).contains("을지문덕") == true) {
+			if (names.get(i).contains("을지문덕")) {
 				System.out.println(i + " : " + names.get(i));
 			}
 		}
 	
 //		5. 이름이 이순신인 데이터를 찾아서 "인덱스번호:이름" 형태로 출력
 		for (int i = 0; i < names.size(); i++) {
-			if (names.get(i) == "이순신") {
+			if (names.get(i).equals("이순신")) {
 				System.out.println(i + " : " + names.get(i));
 			} 
 		}
 		for (int i = 0; i < names.size(); i++) {
-			if (names.get(i).contains("이순신") == true) {
+			if (names.get(i).contains("이순신")) {
 				System.out.println(i + " : " + names.get(i));
 			}
 		}
