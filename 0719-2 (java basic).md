@@ -123,6 +123,52 @@ public static void main(String[] args) {
 3. 지역 클래스(local class)
 - 외부클래스의 메소드나 초기화 블럭 내에 선언
 - 선언된 영역 내부에서만 사용
+```java
+public class LocalClassTest {
+	
+	int a = 100;
+	
+	void innerTest(int k) {
+		System.out.println(">> innerTest() 메서드 시작");
+		int b = 200; //지역 변수(local variable)
+		int c = k;
+		
+		// 지역 클래스(local class) : 메서드 내에 선언된 클래스
+		// 선언된 메서드 내부에서만 사용 가능
+		class Inner{
+			void printData() {
+				System.out.println(">> 지역 클래스 printData() 실행 시작");
+				System.out.println("외부 int a : " + a);
+				System.out.println("외부 메서드 int b : " + b);
+				System.out.println("외부 메서드 int c : " + c);
+				System.out.println("외부 메서드 파라미터 k : " + k);
+				System.out.println(">> 지역 클래스 printData() 실행 끝");
+			}
+		}
+		Inner in = new Inner();
+		in.printData();
+		System.out.println(">> innerTest() 메서드 끝");
+	}
+	
+	public static void main(String[] args) {
+		
+		LocalClassTest outer = new LocalClassTest();
+		outer.innerTest(999);
+
+	}
+
+}
+```
+```java
+>> innerTest() 메서드 시작
+>> 지역 클래스 printData() 실행 시작
+외부 int a : 100
+외부 메서드 int b : 200
+외부 메서드 int c : 999
+외부 메서드 파라미터 k : 999
+>> 지역 클래스 printData() 실행 끝
+>> innerTest() 메서드 끝
+```
 
 4. 익명 클래스(anonymous class)
 - 클래스의 선언과 객체의 생성을 동시에 하는 이름없는 클래스(일회용)
