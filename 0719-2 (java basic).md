@@ -33,11 +33,39 @@ public class InstanceClass {
 		void printData() {
 			System.out.println("int a : " + a);
 			System.out.println("int b : " + b);
+			System.out.println("int c : " + c);
+			sum();
+			System.out.println("sum : " + sum);
+			System.out.println("내부 클래스 필드 in : " + in);
 		}	
 	}
 }
 ```
 ```java
+InstanceClass out = new InstanceClass();
+	System.out.println("필드 변수 a : " + out.a);
+
+	title("내부 인스턴스 클래스 사용");
+	// 클래스 내부에 있는 Inner 클래스에 있는 printData() 메서드 실행
+	// 외부 클래스명.내부 클래스명 : 내부 클래스의 타입
+	// 객체 생성 : new 외부 클래스().new 내부 클래스()
+	InstanceClass.Inner inner = new InstanceClass().new Inner();
+	inner.printData();
+
+	title("");
+	System.out.println("Inner 클래스 필드변수 in : " + inner.in);
+```
+```java
+필드 변수 a : 100
+---내부 인스턴스 클래스 사용---
+int a : 100
+int b : 10
+int c : 300
+sum : 110
+내부 클래스 필드 in : 888
+------
+Inner 클래스 필드변수 in : 888
+```
 
 
 2. 스태틱 클래스(static class)
