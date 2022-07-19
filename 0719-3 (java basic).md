@@ -94,9 +94,6 @@ Box box = new Box();
 ```
 
 
-**Collection**
-- 객체들을 모아 놓은 것(객체를 모아서 관리)
-- Collection<E> => Set<E>, List<E>, Queue<E>, Map<K,V>
 
 
 
