@@ -14,3 +14,63 @@
 **Collection**
 - 객체들을 모아 놓은 것(객체를 모아서 관리)
 - Collection<E> => Set<E>, List<E>, Queue<E>, Map<K,V>
+
+```java
+class Box {
+	Object obj; //필드(멤버) 변수의 타입
+	public Object getObj() {
+		return obj;
+	}
+	public void setObj(Object obj) {
+		this.obj = obj;
+	}
+}
+```
+```java
+//제네릭 적용된 박스
+class BoxG<T> {
+	T obj;
+	T getObj() {
+		return obj;
+	}
+	void setObj(T obj) {
+		this.obj = obj;
+	}
+}
+```
+```java
+Box box = new Box();
+		box.setObj("문자열 String");
+		box.setObj(100);
+		box.setObj(new Box());
+		box.setObj(new Integer(999));
+		System.out.println(box.getObj());
+		
+		Integer integer = (Integer)box.getObj();
+		System.out.println("Integer : " + integer);
+```
+```java
+	System.out.println("---Generic 적용---");
+		BoxG<String> boxg = new BoxG<String>();
+		boxg.setObj("문자열 String");
+		
+		String str = "World";
+		int str2 = 333;
+		
+		boxg.setObj(str);
+//		boxg.setObj(str2); // 타입이 맞지 않으면 컴파일 오류 발생
+		System.out.println(boxg.getObj());
+
+		System.out.println("------");
+		BoxG<Integer> boxg2 = new BoxG<Integer>();
+		boxg2.setObj(100);
+//		boxg2.setObj(str); // 타입이 맞지 않으면 컴파일 오류 발생
+		boxg2.setObj(str2);
+		
+		System.out.println(boxg2.getObj());
+```
+
+
+
+
+
