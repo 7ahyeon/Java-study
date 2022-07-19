@@ -41,8 +41,56 @@
 - Update : 수정 / 변경
 - Delete : 삭제
   
-  
-  
+```java
+// ArrayList : Array(배열)의 속성을 가진 List(목록)
+		
+//		ArrayList<Integer> list1 = new ArrayList<Integer>();
+		ArrayList<Integer> list1 = new ArrayList<>();
+		
+		System.out.println("list1.size() : " + list1.size());
+		
+		// 입력(C) : 맨 뒤에 입력(추가)
+		list1.add(new Integer(500)); // Integer 저장
+		list1.add(100); // int -> Integer 자동 형변환되어 입력(추가)
+		list1.add(500);
+		list1.add(600);
+		list1.add(700);
+		System.out.println(list1.toString());
+		
+		// 입력(C) : 지정된 특정 위치에 입력(추가)
+		list1.add(0, 777);
+		System.out.println("0번 인덱스에 777 추가 후 : " + list1);
+		
+		
+		// 수정(U) : 지정된 위치의 데이터 수정(변경)
+		int returnValue = list1.set(0, 888);
+		System.out.println("0번 인덱스에 888 set 후 : " + list1);
+		System.out.println("리턴값 : " + returnValue);
+		
+		
+		// 삭제(D) : 특정 위치 데이터 삭제
+		returnValue = list1.remove(0); // 0번 인덱스 번호 데이터 삭제
+		System.out.println("0번 인덱스 remove : " + list1);
+		System.out.println("리턴값 : " + returnValue);
+		
+		
+		// 조회, 선택, 읽기(R) : 특정 위치 데이터 읽기
+		int firstData = list1.get(0); // 0qjs dlseprtm epdlxj
+		System.out.println("list1.get(0) : " + firstData);
+		System.out.println("list1.get(1) : " + list1.get(1));
+		System.out.println("list1.get(2) : " + list1.get(2));
+		
+		// add, set, get, remove 사용시 접근할 수 없는 인덱스 사용시 예외 발생
+		//List1.add(100,999); //IndexOutOfException
+		//List1.set(100,999); //IndexOutOfException
+//		list1.remove(100);
+		
+//		list1.remove(500); // 500번째 인덱스 데이터 삭제 시도
+		boolean removeSuccess = list1.remove(new Integer(500));
+		System.out.println("500  remove : " + list1);
+		System.out.println("remove(obj) 리턴값 : " + removeSuccess);
+		System.out.println("----------------------------------");
+```  
   
   
   
