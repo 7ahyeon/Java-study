@@ -1,4 +1,5 @@
-# Java-study
+# Exception
+
 ```java
 public class JumsuOutOfValueException extends SungjukProcessException {
 
