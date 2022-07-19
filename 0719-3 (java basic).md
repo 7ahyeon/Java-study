@@ -83,12 +83,14 @@ Box box = new Box();
 		box2 = new BoxT<Byte>();
 		box2 = new BoxT<Integer>();
 		box2 = new BoxT<Double>();
-//		box2 = new BoxT<Object>(); 
-//		box2 = new BoxT<String>(); 
+//		box2 = new BoxT<Object>();  // 오류
+//		box2 = new BoxT<String>();  // 오류
 		
 //		3. <? super 자료형> : 자료형의 상위(super) 타입 사용  
 		BoxT<? super Number> box3 = new BoxT<Number>();
 		box3 = new BoxT<Object>();
+		box3 = new BoxT<Number>();
+//		box3 = new BoxT<Integer>(); // 오류
 ```
 
 
