@@ -106,35 +106,34 @@ public class StudentVO {
 ```java
 public class StudentListManager {
 
-	public static void main(String[] args) {
-		StudentVO stu1 = new StudentVO("홍길동", 100, 90, 81);
-		StudentVO stu2 = new StudentVO("이순신", 95, 88, 92);
-		StudentVO stu3 = new StudentVO("김유신", 90, 87, 77);
-		
-		ArrayList<StudentVO> list = new ArrayList<>();
-		list.add(stu1);
-		list.add(stu2);
-		list.add(stu3);
-		
-		System.out.println("성명\t국어\t영어\t수학\t총점\t평균");
-		printData(list, 0);
-		printData(list, 1);
-		printData(list, 2);
-		
-		System.out.println("---김유신 국어 점수 95---");
-		list.get(2).setKor(95);
-		printData(list, 2);
-		
+public static void main(String[] args) {
+	StudentVO stu1 = new StudentVO("홍길동", 100, 90, 81);
+	StudentVO stu2 = new StudentVO("이순신", 95, 88, 92);
+	StudentVO stu3 = new StudentVO("김유신", 90, 87, 77);
 
-	}
-	
-	static void printData(ArrayList<StudentVO> list, int i) {
-			System.out.println(list.get(i).getName() + "\t" + 
-							   list.get(i).getKor() + "\t" + 
-							   list.get(i).getEng() + "\t" + 
-							   list.get(i).getMath() + "\t" + 
-							   list.get(i).getTot() + "\t" + 
-							   list.get(i).getAvg());	
-		}	
-	}
+	ArrayList<StudentVO> list = new ArrayList<>();
+	list.add(stu1);
+	list.add(stu2);
+	list.add(stu3);
+
+	System.out.println("성명\t국어\t영어\t수학\t총점\t평균");
+	printData(stu1);
+	printData(stu2);
+	printData(stu3);
+
+	System.out.println("---김유신 국어 점수 95---");
+	list.get(2).setKor(95);
+	printData(stu3);
+
+}
+
+static void printData(StudentVO vo) {
+	System.out.println(vo.getName() + "\t" + 
+			  vo.getKor() + "\t" + 
+			   vo.getEng() + "\t" + 
+			  vo.getMath() + "\t" + 
+			   vo.getTot() + "\t" + 
+			   vo.getAvg());	
+	}	
+}
 ```
