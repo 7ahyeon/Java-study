@@ -134,14 +134,24 @@ public static void main(String[] args) {
 			printData(gi);
 		}
 	}	
-}
-static void printData(StudentVO vo) { //list에 담아두고 기능은 StudentVO를 이용
-	System.out.println(vo.getName() + "\t" + 
-			   vo.getKor() + "\t" + 
-			   vo.getEng() + "\t" + 
-			   vo.getMath() + "\t" + 
-			   vo.getTot() + "\t" + 
-			   vo.getAvg());	
-	}	
+		System.out.println("---수정 후 전체 데이터 출력---");
+		
+		printData(list);
+		
+	}
+	
+	static void printData(StudentVO vo) { //list에 담아두고 기능은 StudentVO를 이용
+			System.out.println(vo.getName() + "\t" + 
+							   vo.getKor() + "\t" + 
+							   vo.getEng() + "\t" + 
+							   vo.getMath() + "\t" + 
+							   vo.getTot() + "\t" + 
+							   vo.getAvg());	
+		}	
+	static void printData(ArrayList<StudentVO> list) {
+		for (StudentVO vo : list) {
+			printData(vo);
+		}
+	}		
 }
 ```
