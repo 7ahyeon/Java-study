@@ -103,6 +103,7 @@ public class StudentVO {
 	
 }
 ```
+- ArrayList / Vector / LinkedList 모두 적용 가능
 ```java
 public class StudentListManager {
 
