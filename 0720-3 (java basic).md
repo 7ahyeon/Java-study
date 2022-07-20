@@ -117,16 +117,21 @@ public static void main(String[] args) {
 	list.add(stu3);
 
 	System.out.println("성명\t국어\t영어\t수학\t총점\t평균");
-		for (int i = 0; i < list.size(); i++) {
-			printData(list.get(i));
-		}
-		
-	System.out.println("---김유신 국어 점수 95---");
-		
 	for (int i = 0; i < list.size(); i++) {
-		if (list.get(i).getName().equals("김유신")) {
-			list.get(i).setKor(95);
-			printData(list.get(i));
+		StudentVO gi = list.get(i);
+		printData(gi);
+	}
+
+	System.out.println("---김유신 국어 점수 95---");
+
+	String name = "김유신";
+	int updateJumsu = 95;
+
+	for (int i = 0; i < list.size(); i++) {
+		StudentVO gi = list.get(i);
+		if (gi.getName().equals(name)) {
+			gi.setKor(updateJumsu);
+			printData(gi);
 		}
 	}	
 }
