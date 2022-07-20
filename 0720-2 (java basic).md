@@ -28,7 +28,7 @@ System.out.println("list : " + list );
 2. 자바 -> 자바2 모두 수정 (Update)
 
 ```java
-//		1. 파이썬 모두 삭제 (Delete)
+// 1. 파이썬 모두 삭제 (Delete)
 StringBuilder sb = new StringBuilder();
 for (int i = 0; i < list.size(); i++) {
   if (!list.get(i).equals("파이썬")) {
@@ -37,7 +37,7 @@ for (int i = 0; i < list.size(); i++) {
 }
 System.out.println(sb.toString());
 
-//		2. 자바 -> 자바2 모두 수정 (Update)  
+// 2. 자바 -> 자바2 모두 수정 (Update)  
 sb.setLength(0);
 
 for (int i = 0; i < list.size(); i++) {
