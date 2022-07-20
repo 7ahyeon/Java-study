@@ -29,6 +29,7 @@ System.out.println("list : " + list );
 
 ```java
 // 1. 파이썬 모두 삭제 (Delete)
+
 StringBuilder sb = new StringBuilder();
 for (int i = 0; i < list.size(); i++) {
   if (!list.get(i).equals("파이썬")) {
@@ -38,6 +39,7 @@ for (int i = 0; i < list.size(); i++) {
 System.out.println(sb.toString());
 
 // 2. 자바 -> 자바2 모두 수정 (Update)  
+
 sb.setLength(0);
 
 for (int i = 0; i < list.size(); i++) {
@@ -51,6 +53,29 @@ System.out.println(sb.toString());
  ```
 
 
+# 리스트에 있는 데이터 변경하기 해답
+
+```java
+// 1. 파이썬 모두 삭제 (Delete)
+
+for (int i = 0; i < list.size(); i++) {
+  if (list.get(i).equals("파이썬")) {
+    list.remove(i);
+  }
+}
+System.out.println("list : " + list );
+System.out.println("list : " + list.size() );
+
+// 2. 자바 -> 자바2 모두 수정 (Update)  
+
+for (int i = 0; i < list.size(); i++) {
+  if (list.get(i).equals("자바")) {
+    list.set(i, "자바2");
+  }
+}
+System.out.println("list : " + list );
+System.out.println("list : " + list.size() );
+```
 
 
 
