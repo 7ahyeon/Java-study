@@ -1,5 +1,6 @@
 # Linked_List
 
+- List계열 : 순서 존재
 
 ```java
 // LinkedList : List 계열
@@ -48,4 +49,14 @@ for (int i = 0; i < list.size(); i++) {
 }
 System.out.println(sb.toString());
  ```
-		
+
+
+
+
+
+
+
+
+
+
+
