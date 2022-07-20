@@ -122,7 +122,7 @@ public static void main(String[] args) {
 	printData(stu3);
 
 	System.out.println("---김유신 국어 점수 95---");
-	list.get(2).setKor(95);
+	stu3.setKor(95);
 	printData(stu3);
 
 }
