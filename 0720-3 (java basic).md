@@ -129,9 +129,9 @@ public static void main(String[] args) {
 
 static void printData(StudentVO vo) {
 	System.out.println(vo.getName() + "\t" + 
-			  vo.getKor() + "\t" + 
+			   vo.getKor() + "\t" + 
 			   vo.getEng() + "\t" + 
-			  vo.getMath() + "\t" + 
+			   vo.getMath() + "\t" + 
 			   vo.getTot() + "\t" + 
 			   vo.getAvg());	
 	}	
