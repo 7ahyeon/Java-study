@@ -85,5 +85,81 @@ html
 [css, 자바 스크립트, html, 자바]
 ```
 
+```java
+
+class Person {
+	String name; //이름
+	String id; //주민등록번호
+	int age; //나이
+	public Person(String name, String id, int age) {
+		super();
+		this.name = name;
+		this.id = id;
+		this.age = age;
+	}
+	
+	@Override
+	public int hashCode() {
+		System.out.println(">> hashCode() 실행");
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((id == null) ? 0 : id.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		System.out.println(">> equals() 실행");
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Person other = (Person) obj;
+		if (id == null) {
+			if (other.id != null)
+				return false;
+		} else if (!id.equals(other.id))
+			return false;
+		return true;
+	}
+	
+	@Override
+	public String toString() {
+		return "person [name=" + name + ", id=" + id + ", age=" + age + "]";
+	}
+}
+
+public class HashSet_equals {
+
+	public static void main(String[] args) {
+		
+		Person p1 = new Person("자바1", "980116-1234567", 25);
+		Person p2 = new Person("자바2", "980717-1234567", 25);
+		Person p3 = new Person("자바3", "980116-1234567", 25);
+		
+		System.out.println("p1.hashCode() : " + p1.hashCode());
+		System.out.println("p2.hashCode() : " + p2.hashCode());
+		System.out.println("p3.hashCode() : " + p3.hashCode());
+
+		System.out.println("---Set에 저장---");
+		HashSet<Person> set = new HashSet<>();
+		set.add(p1);
+		System.out.println(">> 1번째 데이터 입력 후");
+		set.add(p2);
+		System.out.println(">> 2번째 데이터 입력 후");
+		set.add(p3);
+		System.out.println(">> 3번째 데이터 입력 후"); 
+		
+		System.out.println(set);
+		
+	}
+
+}
+
+```
+
+
 
 
