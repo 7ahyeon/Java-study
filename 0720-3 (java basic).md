@@ -122,12 +122,12 @@ public static void main(String[] args) {
 	printData(stu3);
 
 	System.out.println("---김유신 국어 점수 95---");
-	stu3.setKor(95);
+	stu3.setKor(95); //list에 담아두고 기능은 StudentVO를 이용
 	printData(stu3);
 
 }
 
-static void printData(StudentVO vo) {
+static void printData(StudentVO vo) { //list에 담아두고 기능은 StudentVO를 이용
 	System.out.println(vo.getName() + "\t" + 
 			   vo.getKor() + "\t" + 
 			   vo.getEng() + "\t" + 
