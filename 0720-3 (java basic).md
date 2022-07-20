@@ -112,7 +112,7 @@ public static void main(String[] args) {
 	StudentVO stu2 = new StudentVO("이순신", 95, 88, 92);
 	StudentVO stu3 = new StudentVO("김유신", 90, 87, 77);
 
-	ArrayList<StudentVO> list = new ArrayList<>();
+	List<StudentVO> list = new ArrayList<>();
 	list.add(stu1);
 	list.add(stu2);
 	list.add(stu3);
@@ -141,18 +141,24 @@ public static void main(String[] args) {
 		
 	}
 	
-	static void printData(StudentVO vo) { //list에 담아두고 기능은 StudentVO를 이용
-			System.out.println(vo.getName() + "\t" + 
-							   vo.getKor() + "\t" + 
-							   vo.getEng() + "\t" + 
-							   vo.getMath() + "\t" + 
-							   vo.getTot() + "\t" + 
-							   vo.getAvg());	
-		}	
-	static void printData(ArrayList<StudentVO> list) {
-		for (StudentVO vo : list) {
-			printData(vo);
-		}
-	}		
+static void printData(StudentVO vo) { //list에 담아두고 기능은 StudentVO를 이용
+		System.out.println(vo.getName() + "\t" + 
+						   vo.getKor() + "\t" + 
+						   vo.getEng() + "\t" + 
+						   vo.getMath() + "\t" + 
+						   vo.getTot() + "\t" + 
+						   vo.getAvg());	
+	}	
+	// 수퍼(super)타입인 List 인터페이스 타입으로 받아서 처리
+static void printData(List<StudentVO> list) {
+	for (StudentVO vo : list) {
+		printData(vo);
+	}
+}
+//	static void printData(ArrayList<StudentVO> list) {
+//		for (StudentVO vo : list) {
+//			printData(vo);
+//		}
+//	}		
 }
 ```
