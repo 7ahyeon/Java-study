@@ -56,6 +56,7 @@ vector.add("6");
 System.out.println(vector); 
 System.out.println(vector2); 
 ```
+- Collection 출력 : Enumeration / Iterator
 ```java
 System.out.println("---Enumeration 타입 사용---");
 Enumeration<String> enu = vector.elements();
