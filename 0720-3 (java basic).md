@@ -117,16 +117,19 @@ public static void main(String[] args) {
 	list.add(stu3);
 
 	System.out.println("성명\t국어\t영어\t수학\t총점\t평균");
-	printData(stu1);
-	printData(stu2);
-	printData(stu3);
-
+		for (int i = 0; i < list.size(); i++) {
+			printData(list.get(i));
+		}
+		
 	System.out.println("---김유신 국어 점수 95---");
-	stu3.setKor(95); //list에 담아두고 기능은 StudentVO를 이용
-	printData(stu3);
-
+		
+	for (int i = 0; i < list.size(); i++) {
+		if (list.get(i).getName().equals("김유신")) {
+			list.get(i).setKor(95);
+			printData(list.get(i));
+		}
+	}	
 }
-
 static void printData(StudentVO vo) { //list에 담아두고 기능은 StudentVO를 이용
 	System.out.println(vo.getName() + "\t" + 
 			   vo.getKor() + "\t" + 
