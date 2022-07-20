@@ -159,6 +159,23 @@ public class HashSet_equals {
 }
 
 ```
+```java
+>> hashCode() 실행
+p1.hashCode() : 729695243
+>> hashCode() 실행
+p2.hashCode() : 1025434514
+>> hashCode() 실행
+p3.hashCode() : 729695243
+---Set에 저장---
+>> hashCode() 실행
+>> 1번째 데이터 입력 후
+>> hashCode() 실행
+>> 2번째 데이터 입력 후
+>> hashCode() 실행
+>> equals() 실행
+>> 3번째 데이터 입력 후
+[person [name=자바1, id=980116-1234567, age=25], person [name=자바2, id=980717-1234567, age=25]]
+```
 
 
 
