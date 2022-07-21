@@ -94,7 +94,13 @@ System.out.println("로또 번호 : " + lottoSet);
 }
 
 ```
-
+```java
+@Override
+public String printString() {
+		return name + "\t" + kor + "\t" + eng + "\t" + math + "\t"
+				+ tot + "\t" + avg;
+	}
+```
 
 
 
