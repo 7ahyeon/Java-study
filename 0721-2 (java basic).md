@@ -141,6 +141,15 @@ while (ite.hasNext()) {
 	Entry<String, Integer> entry = ite.next();
 	System.out.println("key : " + entry.getKey()
 			+ ", value : " + entry.getValue());
+// 개선된 for문으로 entrySet 데이터 조회
+
+System.out.println("---개선된 for문으로 entrySet 데이터 조회---");
+
+for (Entry<String, Integer> entry : entrySet) {
+	System.out.println("key : " + entry.getKey()
+	+ ", value : " + entry.getValue());
+}
+		
 ```
 ```java
 ---entrySet() : Map.Entry 타입---
@@ -148,10 +157,15 @@ entrySet : [css=11, 파이썬=95, html=88]
 key : css, value : 11
 key : 파이썬, value : 95
 key : html, value : 88
+---개선된 for문으로 entrySet 데이터 조회---
+key : css, value : 11
+key : 파이썬, value : 95
+key : html, value : 88
 ```
 ```java
 //TreeMap : 키 key값 기준으로 정렬해서 데이터 저장
 TreeMap<String, Integer> map = new TreeMap<String, Integer>();
+
 ```
 
 
