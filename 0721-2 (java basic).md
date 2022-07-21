@@ -54,7 +54,90 @@ System.out.println("---삭제 : remove()---");
 System.out.println(">> map.remove(\"자바\") : " + map.remove("자바"));
 System.out.println(">> map.remove(\"html\") : " + map.remove("html", 80));
 System.out.println(map);
-```
 
+System.out.println("---조회 : get()---");
+System.out.println("map.get(\"자바\")" + map.get("자바")); //없으면 null
+System.out.println("map.get(\"파이썬\")" + map.get("파이썬")); //value : 95
+System.out.println(map);
+		
+System.out.println("---전체 데이터 조회---");
+System.out.println("---keySet() 사용---");
+Set<String> KeySet = map.keySet();
+System.out.println("map.keySet() : " + KeySet);
+
+for (String key : KeySet) {
+	System.out.println(key + " : " + map.get(key));
+}
+
+// iterator() 메서드 사용 : Iterator객체 사용 방식으로 전체 데이터 조회
+
+System.out.println("---values() 사용---");
+Collection<Integer> values = map.values();
+System.out.println("values : " + values);
+
+for (Integer value : values) {
+	System.out.println("점수 : " + values);
+}
+
+System.out.println("---점수 합계---");
+int sum = 0;
+for (Integer value : values) {
+	sum += value;
+}
+System.out.println(">> 점수 합계 : " + sum);
+System.out.println("map.size() : " + map.size());
+```
+```java
+---입력 : put(key, value)---
+{파이썬=95, html=88, 자바=100}
+null
+100
+{css=11, 파이썬=95, html=88, 자바=16}
+---수정 : replace()---
+자바 점수 : 16
+{css=11, 파이썬=95, html=88, 자바=16}
+---삭제 : remove()---
+>> map.remove("자바") : 16
+>> map.remove("html") : false
+{css=11, 파이썬=95, html=88}
+---조회 : get()---
+map.get("자바")null
+map.get("파이썬")95
+{css=11, 파이썬=95, html=88}
+---전체 데이터 조회---
+---keySet() 사용---
+map.keySet() : [css, 파이썬, html]
+css : 11
+파이썬 : 95
+html : 88
+---values() 사용---
+values : [11, 95, 88]
+점수 : [11, 95, 88]
+점수 : [11, 95, 88]
+점수 : [11, 95, 88]
+---점수 합계---
+>> 점수 합계 : 194
+map.size() : 3
+
+```
+```java
+System.out.println("---entrySet() : Map.Entry 타입---");
+//Entry : Map.Entry<K,V>
+Set<Entry<String, Integer>> entrySet = map.entrySet();
+System.out.println("entrySet : " + entrySet);
+
+Iterator<Entry<String, Integer>> ite = entrySet.iterator();
+while (ite.hasNext()) {
+	Entry<String, Integer> entry = ite.next();
+	System.out.println("key : " + entry.getKey()
+			+ ", value : " + entry.getValue());
+```
+```java
+---entrySet() : Map.Entry 타입---
+entrySet : [css=11, 파이썬=95, html=88]
+key : css, value : 11
+key : 파이썬, value : 95
+key : html, value : 88
+```
 
 
