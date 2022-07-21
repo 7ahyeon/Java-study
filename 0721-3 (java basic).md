@@ -6,9 +6,10 @@ StudentVO stu2 = new StudentVO("이순신", 95, 88, 92);
 StudentVO stu3 = new StudentVO("김유신", 90, 87, 77);
 
 HashMap<String, StudentVO> map = new HashMap<>();
-map.put("홍길동", stu1);
-map.put("이순신", stu2);
-map.put("김유신", stu3);
+map.put(stu1.getName(), stu1);
+map.put(stu2.getName(), stu2);
+map.put(stu3.getName(), stu3);
+
 
 System.out.println("성명\t국어\t영어\t수학\t총점\t평균");
 
@@ -40,6 +41,11 @@ for (String key : KeySet) {
 System.out.println("---전체 데이터 출력 메서드---");
 printData(map, KeySet);
 
+Collection<StudentVO> collectVO = map.values();
+  for (StudentVO vo : collectVO) {
+    System.out.println(vo.getName() + " " + vo.getTot() + " " + vo.getAvg());
+  }
+		
 }
 static void printData(StudentVO vo) { //list에 담아두고 기능은 StudentVO를 이용
 System.out.println(vo.getName() + "\t" + 
@@ -55,9 +61,6 @@ for (String key : KeySet) {
   printData(map.get(key));
 }
 }
-```
-```java
-
 ```
 
 
