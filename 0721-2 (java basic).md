@@ -139,5 +139,9 @@ key : css, value : 11
 key : 파이썬, value : 95
 key : html, value : 88
 ```
+```java
+//TreeMap : 키 key값 기준으로 정렬해서 데이터 저장
+TreeMap<String, Integer> map = new TreeMap<String, Integer>();
+```
 
 
