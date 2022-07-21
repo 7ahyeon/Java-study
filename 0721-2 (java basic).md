@@ -70,6 +70,12 @@ for (String key : KeySet) {
 }
 
 // iterator() 메서드 사용 : Iterator객체 사용 방식으로 전체 데이터 조회
+System.out.println("---Iterator 사용---");
+Iterator<String> ite2 = map.keySet().iterator();
+while (ite2.hasNext()) {
+	String key = ite2.next();
+	System.out.println( key + " : " + map.get(key));
+}
 
 System.out.println("---values() 사용---");
 Collection<Integer> values = map.values();
@@ -107,6 +113,10 @@ map.get("파이썬")95
 ---전체 데이터 조회---
 ---keySet() 사용---
 map.keySet() : [css, 파이썬, html]
+css : 11
+파이썬 : 95
+html : 88
+---Iterator 사용---
 css : 11
 파이썬 : 95
 html : 88
