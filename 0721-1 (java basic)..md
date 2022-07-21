@@ -19,5 +19,15 @@ Collections.sort(lottoList); // Set 사용 X List 사용 O
 System.out.println("금주의 로또 번호 : " + lottoList);
 ```
 
+**TreeSet**
 
+```java
+// TreeSet : 데이터를 정렬해서 저장 
+TreeSet<Integer> lottoSet = new TreeSet<>();
+
+while (lottoSet.size() < 6) { //생성은 무작위
+  lottoSet.add((int)(Math.random() * 45 + 1));
+}
+System.out.println("로또 번호 : " + lottoSet);
+```
 
