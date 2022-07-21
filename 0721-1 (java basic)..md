@@ -71,25 +71,25 @@ System.out.println("로또 번호 : " + lottoSet);
     }
   }
 
-	}
-	static void title() {
-		System.out.println("성명\t국어\t영어\t수학\t총점\t평균");
-	}
+}
+static void title() {
+	System.out.println("성명\t국어\t영어\t수학\t총점\t평균");
+}
 
-	static void printData(StudentVO vo) { 
-		System.out.println(vo.getName() + "\t" + 
-						   vo.getKor() + "\t" + 
-						   vo.getEng() + "\t" + 
-						   vo.getMath() + "\t" + 
-						   vo.getTot() + "\t" + 
-						   vo.getAvg());	
-	}	
-	
-	static void printData(HashSet<StudentVO> set) {
-		for (StudentVO vo : set) {
-			printData(vo);
-		}
+static void printData(StudentVO vo) { 
+	System.out.println(vo.getName() + "\t" + 
+					   vo.getKor() + "\t" + 
+					   vo.getEng() + "\t" + 
+					   vo.getMath() + "\t" + 
+					   vo.getTot() + "\t" + 
+					   vo.getAvg());	
+}	
+
+static void printData(HashSet<StudentVO> set) {
+	for (StudentVO vo : set) {
+		printData(vo);
 	}
+}
 
 }
 
