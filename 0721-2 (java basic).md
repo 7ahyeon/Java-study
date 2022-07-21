@@ -4,7 +4,7 @@
 public class StudentVO implements Comparable<StudentVO>{
 
 @Override
-	public int compareTo(StudentVO o) {
+	public int compareTo(StudentVO o) { //Source -> Delegate Method
 		//return this.name.compareTo(o.name); //이름순 정렬(오름차순)
 		//return this.tot - o.tot; //성적순 정렬(오름차순)
 		return o.tot - this.tot; //성적순 정렬(내림차순)
