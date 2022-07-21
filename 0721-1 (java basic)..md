@@ -30,4 +30,76 @@ while (lottoSet.size() < 6) { //생성은 무작위
 }
 System.out.println("로또 번호 : " + lottoSet);
 ```
+# Set을 사용한 성적 처리 실습
+
+```java
+  StudentVO stu1 = new StudentVO("홍길동", 100, 90, 81);
+  StudentVO stu2 = new StudentVO("이순신", 95, 88, 92);
+  StudentVO stu3 = new StudentVO("김유신", 90, 87, 77);
+
+  HashSet<StudentVO> set = new HashSet<>();
+  set.add(stu1);
+  set.add(stu2);
+  set.add(stu3);
+
+  System.out.println("---개선된 for문---");
+  title();
+  for (StudentVO vo : set) {
+    printData(vo);
+  }
+  System.out.println("---Iterator 사용---");
+
+  Iterator<StudentVO> ite = set.iterator();
+  while (ite.hasNext()) {
+    printData(ite.next());
+  }
+
+  System.out.println("---김유신 국어 점수 변경 처리---");
+  for (StudentVO vo : set) {
+    if (vo.getName().equals("김유신")) {
+      vo.setKor(95);
+      break;
+    }
+  }
+  System.out.println(">> 변경 후 전체 데이터 확인");
+  printData(set);
+
+  System.out.println("---김유신 학생 정보만 출력---");
+  for (StudentVO vo : set) {
+    if (vo.getName().equals("김유신")) {
+      printData(vo);				
+    }
+  }
+
+	}
+	static void title() {
+		System.out.println("성명\t국어\t영어\t수학\t총점\t평균");
+	}
+
+	static void printData(StudentVO vo) { 
+		System.out.println(vo.getName() + "\t" + 
+						   vo.getKor() + "\t" + 
+						   vo.getEng() + "\t" + 
+						   vo.getMath() + "\t" + 
+						   vo.getTot() + "\t" + 
+						   vo.getAvg());	
+	}	
+	
+	static void printData(HashSet<StudentVO> set) {
+		for (StudentVO vo : set) {
+			printData(vo);
+		}
+	}
+
+}
+
+```
+
+
+
+
+
+
+
+
 
