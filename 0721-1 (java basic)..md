@@ -15,7 +15,7 @@ while (lottoSet.size() < 6) { //중복값 저장 안되므로 사이즈로 판�
 }
 
 ArrayList<Integer> lottoList = new ArrayList<>(lottoSet);
-Collections.sort(lottoList);
+Collections.sort(lottoList); // Set 사용 X List 사용 O
 System.out.println("금주의 로또 번호 : " + lottoList);
 ```
 
