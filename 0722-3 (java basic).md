@@ -48,6 +48,9 @@ System.out.println(">> " + temp);
 숫자 입력2 : 16
 num1 : 10, num2 : 16
 sum : 26
+---
+문자열 입력 : blue
+>> blue
 ```
 
 
