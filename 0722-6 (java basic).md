@@ -71,6 +71,10 @@ public class Cafe {
 			try {
 				System.out.print("메뉴를 선택하세요(1~4) : ");
 				select = Integer.parseInt(scan.nextLine());
+				if (select < 0 || select > 4) {
+					System.out.println(">> 0~4 범위의 숫자를 선택하세요");
+					continue;
+				}
 				break;
 			} catch (Exception e) {
 				System.out.println("[예외발생] 숫자가 아닙니다. 다시 입력~");
@@ -102,8 +106,12 @@ public class Cafe {
 		System.out.println("1.아메리카노   2.카페라떼   3.카페모카   4.과일주스   0.종료");
 		
 	}
+
+	
+	
 	
 }
+
 ```
 ```java
 public class CafeTest {
