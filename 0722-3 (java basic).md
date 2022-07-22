@@ -28,7 +28,8 @@ int num1 = scan.nextInt();
 
 System.out.print("숫자 입력2 : ");
 int num2 = scan.nextInt();
-//scan.nextLine(); //줄바꿈
+// 주의 : next(), nextXxx()등의 뒤에 nextLine()사용시 발생오류 해결용
+scan.nextLine(); //줄바꿈 문자까지의 값 읽어서 없애기
 int num2 = Integer.parseInt(scan.nextLine()); //줄바꿈
 
 System.out.println("num1 : " + num1 + ", num2 : " + num2);
@@ -74,23 +75,31 @@ Scanner scan = new Scanner(System.in);
 
 System.out.println("----------");
 System.out.print("성명 : ");
-String name = scan.nextLine();
+String name = scan.next();
 
 System.out.print("국어 : ");
 int kor = scan.nextInt();
 
 System.out.print("영어 : ");
 int eng = scan.nextInt();
+// 주의 : next(), nextXxx()등의 뒤에 nextLine()사용시 발생오류 해결용
+scan.nextLine(); // 줄바꿈 문자까지의 값 읽어서 없애기
 
 System.out.print("수학 : ");
-int math = scan.nextInt();
+int math = Integer.parseInt(scan.nextLine());
 
 System.out.println("----------");
 
 int tot = kor + eng + math;
 double avg = tot * 100 / 3 / 100.0;
+System.out.println("성명 : " + name);
+System.out.println("국어 : " + kor);
+System.out.println("영어 : " + eng);
+System.out.println("수학 : " + math);
+System.out.println("----------");
 System.out.println("평균 : " + tot);
 System.out.println("총점 : " + avg);
+System.out.println("----------");
 ```
 ```java
 ----------
