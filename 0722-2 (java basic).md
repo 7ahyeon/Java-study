@@ -125,7 +125,6 @@ System.out.println("queue.poll() : " + queue.poll());
 System.out.println("queue.poll() : " + queue.poll()); 없으면 null 리턴
 //System.out.println("queue.remove() : " + queue.remove()); //NoSuchElementException
 
-
 System.out.println("queue : " + queue);
 System.out.println("queue.size() : " + queue.size());
 System.out.println("queue.isEmpty() : " + queue.isEmpty());
