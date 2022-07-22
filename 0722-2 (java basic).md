@@ -4,7 +4,7 @@
 
  - 바닥이 막힌 박스 형태 (접근 통로가 하나)
  - 후입 선출 : LIFO (Last In First Out)
- - 주요 메서드 : push(), peek(), pop()
+ - 주요 메서드 : push(), peek(), pop() (add() 사용 가능)
 
 ```java
 Stack<String> stack = new Stack<String>();
@@ -90,7 +90,7 @@ stack.empty() : true
  - 양쪽이 뚫린 파이프 형태 (접근 통로가 둘)
  - Queue interface 구현 -> LinkedList class
  - 선입 선출 : FIFO (First In First Out)
- - 주요 메서드 : offer(), peek(), poll()
+ - 주요 메서드 : offer(), peek(), poll() (remove() 사용 가능)
  
  ```java
 Queue<String> queue = new LinkedList<String>();
