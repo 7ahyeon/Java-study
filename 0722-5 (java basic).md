@@ -21,6 +21,11 @@
 ```java
 public class ScannerCafe {
 	
+	private final int AMERICANO = 3000;
+	private final int CAFE_LATTE = 3500;
+	private final int CAFE_MOCA = 4000;
+	private final int FRUIT_JUICE = 5000;
+	
 	Scanner cafe = new Scanner(System.in);
 	private String menu;
 	private int count; //수량
@@ -76,13 +81,13 @@ public class ScannerCafe {
 	
 	private void process() {
 			if (menu.equals("1")) {
-				income = 3000 * count;
+				income = AMERICANO * count;
 			} else if (menu.equals("2")) {
-				income = 3500 * count;
+				income = CAFE_LATTE * count;
 			} else if (menu.equals("3")) {
-				income = 4000 * count;
+				income = CAFE_MOCA * count;
 			} else if (menu.equals("4")) {
-				income = 5000 * count; 
+				income = FRUIT_JUICE * count; 
 			} else if (!menu.equals("0")){
 				System.out.println("----존재하지 않는 메뉴입니다.----");		
 			}
