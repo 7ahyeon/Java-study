@@ -36,7 +36,7 @@ System.out.println("stack.pop() : " + stack.pop());
 System.out.println("stack.pop() : " + stack.pop());
 System.out.println("stack.pop() : " + stack.pop());
 System.out.println("stack.pop() : " + stack.pop());
-//		System.out.println("stack.pop() : " + stack.pop()); //EmptyStackException
+//System.out.println("stack.pop() : " + stack.pop()); //EmptyStackException
 
 System.out.println("stack : " + stack);
 System.out.println("stack.size() : " + stack.size());
@@ -117,12 +117,14 @@ System.out.println("queue.size() : " + queue.size());
 System.out.println("queue.isEmpty() : " + queue.isEmpty());
 
 System.out.println("---poll() : 데이터 꺼내기---");
-// 단, 데이터가 없을시 null 출력
+// 단, 데이터가 없을시 null 리턴
 System.out.println("queue.poll() : " + queue.poll()); 
 System.out.println("queue.poll() : " + queue.poll()); 
 System.out.println("queue.poll() : " + queue.poll()); 
 System.out.println("queue.poll() : " + queue.poll()); 
-System.out.println("queue.poll() : " + queue.poll()); // null 출력
+System.out.println("queue.poll() : " + queue.poll()); 없으면 null 리턴
+//System.out.println("queue.remove() : " + queue.remove()); //NoSuchElementException
+
 
 System.out.println("queue : " + queue);
 System.out.println("queue.size() : " + queue.size());
