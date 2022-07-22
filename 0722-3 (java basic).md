@@ -1,7 +1,9 @@
 # Scanner
 
 **Scanner**
-- scan.nextInt()와 scan.nextLine() 연속 사용시 줄바꿈 처리를 위해 반드시 scan.nextLine()삽입
+- nextInt() / nextLine() 연속 사용시 줄바꿈 
+1. nextInt() / nextLine() 사이에 scan.nextLine() 삽입
+2. nextInt() 대신 int num = Integer.parseInt(scan.nextLine()) 사용
 
 ```java
 //Scanner 사용 값 읽기
@@ -26,7 +28,8 @@ int num1 = scan.nextInt();
 
 System.out.print("숫자 입력2 : ");
 int num2 = scan.nextInt();
-scan.nextLine(); //줄바꿈 문자까지의 값을 읽고 버림
+//scan.nextLine(); //줄바꿈
+int num2 = Integer.parseInt(scan.nextLine()); //줄바꿈
 
 System.out.println("num1 : " + num1 + ", num2 : " + num2);
 System.out.println("sum : " + (num1 + num2));
