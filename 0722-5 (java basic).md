@@ -1,7 +1,7 @@
 # Scanner 사용 카페 전산 처리 실습
 
 - 메뉴
-1. 아메리카노	3000
+1. 아메리카노 3000
 2. 카페라떼 3500
 3. 카페모카 4000
 4. 과일주스 5000
@@ -23,10 +23,10 @@ public class ScannerCafe {
 	
 	Scanner cafe = new Scanner(System.in);
 	private String menu;
-	private int num;
-	private int inpay;
-	private int outpay;
-	private int backpay;
+	private int count; //수량
+	private int inMoney; //입금액
+	private int income; //판매금액(매출)
+	private int change; //거스름돈(잔액)
 	private String again;
 	
 	public void system() {
@@ -67,28 +67,28 @@ public class ScannerCafe {
 	
 	private void input() {
 		System.out.println("주문 수량 : ");
-		num = cafe.nextInt();
+		count = cafe.nextInt();
 		cafe.nextLine();
 		
 		System.out.println(" 입금액 : ");
-		inpay = Integer.parseInt(cafe.nextLine());
+		inMoney = Integer.parseInt(cafe.nextLine());
 	}
 	
 	private void process() {
 			if (menu.equals("1")) {
-				outpay = 3000 * num;
+				income = 3000 * count;
 			} else if (menu.equals("2")) {
-				outpay = 3500 * num;
+				income = 3500 * count;
 			} else if (menu.equals("3")) {
-				outpay = 4000 * num;
+				income = 4000 * count;
 			} else if (menu.equals("4")) {
-				outpay = 5000 * num; 
+				income = 5000 * count; 
 			} else if (!menu.equals("0")){
 				System.out.println("----존재하지 않는 메뉴입니다.----");		
 			}
 			
-			if (inpay >= outpay) {
-			backpay = inpay - outpay;
+			if (inMoney >= income) {
+			change = inMoney - income;
 			} else {
 				System.out.println("----다시 입금해주십시오.----");
 				systemAgain();
@@ -97,9 +97,9 @@ public class ScannerCafe {
 	
 	private void output() {
 		System.out.println("-----------------");
-		System.out.println(" 입금액 : " + inpay);
-		System.out.println(" 판매액 : " + outpay);
-		System.out.println(" 잔액 : " + backpay);
+		System.out.println(" 입금액 : " + inMoney);
+		System.out.println(" 판매액 : " + income);
+		System.out.println(" 잔액 : " + change);
 		System.out.println("----주문을 종료합니다.----");
 
 	}
