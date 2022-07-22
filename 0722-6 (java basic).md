@@ -124,3 +124,10 @@ public class CafeTest {
 }
 
 ```
+
+# 실습 List, Set, Map<K,V>
+
+- "아메리카노,2,6000"
+- VO 만들어서 List에 저장하고 통계
+
+
