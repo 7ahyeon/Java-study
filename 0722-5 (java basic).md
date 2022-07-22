@@ -140,6 +140,3 @@ public class ScannerCafeMain {
 
 ```
 
-```java
-
-```
