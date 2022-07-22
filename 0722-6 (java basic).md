@@ -52,6 +52,7 @@ public class Cafe {
 			
 			System.out.print("> 입금액(원) : ");
 			inMoney = scan.nextInt();
+			scan.nextLine(); //줄바꿈까지 빈문자열("")값 읽기
 			
 			//판매액계산 : 단가 * 주문수량
 			computeIncome();
