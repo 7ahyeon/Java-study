@@ -65,7 +65,7 @@ stack.size() : 0
 stack.empty() : true
 ```
 ```java
-System.out.println("---Stack 전체 데이터 사용---");
+System.out.println("---Stack 전체 데이터 사용(추출)---");
 		
 while (!stack.empty()) {// stack이 비어있지 않으면 사용 가능
  System.out.println("stack.pop() : " + stack.pop());
