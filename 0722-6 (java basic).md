@@ -69,9 +69,10 @@ public class Cafe {
 	private void selectMenu() {
 		while (true) {
 			try {
-				select = scan.nextInt();
+				System.out.print("메뉴를 선택하세요(1~4) : ");
+				select = Integer.parseInt(scan.nextLine());
 				break;
-			} catch (InputMismatchException e) {
+			} catch (Exception e) {
 				System.out.println("[예외발생] 숫자가 아닙니다. 다시 입력~");
 			}
 		}
@@ -99,8 +100,9 @@ public class Cafe {
 	private void displayMenu() {
 		System.out.println("<메뉴>");
 		System.out.println("1.아메리카노   2.카페라떼   3.카페모카   4.과일주스   0.종료");
-		System.out.print("메뉴를 선택하세요(1~4) : ");
+		
 	}
+	
 }
 ```
 ```java
