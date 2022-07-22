@@ -147,15 +147,48 @@ queue.poll() : 1. 첫번째
 queue.poll() : 2. 두번째
 queue.poll() : 3. 세번째
 queue.poll() : 4. 네번째
+queue.poll() : null
 queue : []
 queue.size() : 0
 queue.isEmpty() : true
 ```
-  ```java
- 
- ```
-  ```java
- 
+```java
+System.out.println("---Stack 전체 데이터 사용(추출)---");
+
+System.out.println("---isEmpty() 사용---");
+
+while (!queue.isEmpty()) {
+	System.out.println("queue.poll() : " + queue.poll()); 
+}
+System.out.println("queue.size() : " + queue.size());
+System.out.println("queue.isEmpty() : " + queue.isEmpty());
+
+System.out.println("---size() 사용---");
+
+while (queue.size() > 0) {
+	System.out.println("queue.poll() : " + queue.poll()); 
+}
+System.out.println("queue.size() : " + queue.size());
+System.out.println("queue.isEmpty() : " + queue.isEmpty());
+
+```
+```java
+---Stack 전체 데이터 사용(추출)---
+---isEmpty() 사용---
+queue.poll() : 1. 첫번째
+queue.poll() : 2. 두번째
+queue.poll() : 3. 세번째
+queue.poll() : 4. 네번째
+queue.size() : 0
+queue.isEmpty() : true
+---size() 사용---
+queue.poll() : 1. 첫번째
+queue.poll() : 2. 두번째
+queue.poll() : 3. 세번째
+queue.poll() : 4. 네번째
+queue.size() : 0
+queue.isEmpty() : true
+
  ```
  
  
