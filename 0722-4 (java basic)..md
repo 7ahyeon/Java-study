@@ -11,16 +11,24 @@ private int tot;
 private double avg;
 
 public void start() {
+	while (true) {			
+		// 입력---
+		input(); 
 
-  // 입력---
-  input(); 
+		// 처리---
+		process();
 
-  // 처리---
-  process();
-
-  // 출력---
-  output();
-
+		// 출력---
+		output();
+		
+		System.out.println("------");
+			System.out.print(">> 종료하려면 0을 입력해주십시오 : ");
+			String answer = scan.nextLine();
+			if (answer.equals("0")) {
+				System.out.println("---성적 처리 종료---");
+				break;
+			}
+	}
 }
 
 void input() {
