@@ -69,3 +69,32 @@ sum : 26
 |총점|271|
 |평균|90.33|
 
+```java
+Scanner scan = new Scanner(System.in);
+
+System.out.println("----------");
+System.out.print("성명 : ");
+String name = scan.nextLine();
+
+System.out.print("국어 : ");
+int kor = scan.nextInt();
+
+System.out.print("영어 : ");
+int eng = scan.nextInt();
+
+System.out.print("수학 : ");
+int math = scan.nextInt();
+
+System.out.println("----------");
+
+int tot = kor + eng + math;
+double avg = tot * 100 / 3 / 100.0;
+System.out.println("평균 : " + tot);
+System.out.println("총점 : " + avg);
+```
+
+
+
+
+
+
