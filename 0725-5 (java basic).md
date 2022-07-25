@@ -36,7 +36,7 @@ public class GuessNumberGame {
 		comNo = (int) (Math.random() * 100 + 1);
 		System.out.println("컴) 1~100까지 숫자 중 하나를 생각했습니다. "
 				+ "맞춰보세요~~");
-		System.out.println("> 컴퓨터가 생각한 숫자 : " + comNo);
+		//System.out.println("> 컴퓨터가 생각한 숫자 : " + comNo);
 		
 		tryCnt = 0;
 		min = 1; //선택 최저값
@@ -45,7 +45,7 @@ public class GuessNumberGame {
 			tryCnt++;
 			//2. 사람이 숫자 선택
 			meNo = selectNumber();
-			System.out.println("> 사람 선택 숫자 : " + meNo);
+			//System.out.println("> 사람 선택 숫자 : " + meNo);
 			if (meNo < min || meNo > max) {
 				System.out.println("컴) 범위 확인하고 다시 선택하세요~~");
 				tryCnt--;
