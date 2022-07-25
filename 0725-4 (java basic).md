@@ -13,5 +13,84 @@
 - 다시 도전하시겠습니까?(y,n) 
 
 ```java
+public class GuessNumberGame {
+	
+	private int num;
+	private int guessNum;
+	private int chance = 0;
+	
+	private Scanner scan;
+	
+	
+	public GuessNumberGame() {
+		scan = new Scanner(System.in);
+	}
+
+	public GuessNumberGame(Scanner scan) {
+		this.scan = scan;
+	}
+
+	public void start() {
+		while (true) {
+			if (! game()) {
+				System.out.println("[실패] 맞출 숫자는 " + num + "이었습니다.");
+			}
+		}
+	}
+	
+	public boolean game() {
+		boolean isGamePlay = true;
+		
+		num = (int)(Math.random() * 99 + 1);
+		showDisp();
+		
+		while (true) {
+			
+			int guessNum = selectPerson();
+			checkNumber(num, guessNum);
+			if (num == guessNum) {
+				System.out.println("[성공] " + chance + "번 만에 맞췄습니다." );
+			}
+		if (chance == 5) {
+			return false;
+		}
+		}
+	}
+	
+	private void checkNumber(int num, int guessNum) {
+		if (num < guessNum) {
+			System.out.println(guessNum + "보다 작습니다.");
+		} else if (num > guessNum) {
+			System.out.println(guessNum + "보다 큽니다.");			
+		} 
+		chance++;
+	}
+	
+	
+	private int selectPerson() {
+		System.out.println("어떤 숫자라고 생각하십니까? : ");
+		int guessNum = 1; 
+		while (true) {
+			try {
+				guessNum = Integer.parseInt(scan.nextLine());
+				if (guessNum >= 1 && guessNum <= 100) {
+					break;
+				} else {
+					System.out.println("1~100사이의 숫자가 아닙니다.");
+				}
+				break;				
+			} catch (Exception e) {
+				System.out.println("[오류] 숫자가 아닙니다.");
+			}
+		}
+		return guessNum;
+	}
+	private void showDisp() {
+		System.out.println("<숫자 추측 게임>");
+		System.out.println("1~100사이의 숫자를 맞춰보세요.");
+		System.out.println("기회는 5번입니다.");
+	}
+	
+}
 
 ```
